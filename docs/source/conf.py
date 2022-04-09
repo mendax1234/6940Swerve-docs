@@ -32,7 +32,7 @@ templates_path = ['_templates']
 html_theme = 'sphinx_rtd_theme'
 
 # Sidebar logo
-html_logo = "assets/wpilibDocsLogo.png"
+html_logo = "assets/6940violetz-1.png"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
