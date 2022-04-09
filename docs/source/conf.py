@@ -27,6 +27,12 @@ intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
 
+# List of languages that frc-docs supports
+localization_languages = [
+    "en",
+    "zh_CN",
+]
+
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
