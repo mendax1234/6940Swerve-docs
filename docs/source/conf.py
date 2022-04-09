@@ -44,7 +44,7 @@ gettext_uuid = True  # optional.
 html_theme = 'sphinx_rtd_theme'
 
 # Sidebar logo
-html_logo = "assets/6940violetz-1.png"
+html_logo = "assets/6940violetz-transparent.png"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
