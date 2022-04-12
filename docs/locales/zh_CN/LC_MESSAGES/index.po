@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve Whitepaper 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-09 14:24+0800\n"
+"POT-Creation-Date: 2022-04-12 11:23+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,9 @@ msgid "Welcome to 6940 Swerve documentation!"
 msgstr "欢迎来到6940Swerve文档"
 
 #: ../../source/index.rst:6 1009f017771b47cf9d0f17452bc011bf
-msgid "This project is under active development."
-msgstr "这个项目目前还在开发"
+#, fuzzy
+msgid "This project is under active development.Maybe"
+msgstr "这个项目目前还在开发,可能"
 
 #: ../../source/index.rst:9 6f5cc47b7b61486f958791496edba08d
 msgid "Contents"
