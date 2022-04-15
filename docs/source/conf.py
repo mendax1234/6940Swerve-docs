@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = '6940 Swerve Whitepaper'
-copyright = '2022, mendax1234(Wenbo Zhu)'
-author = 'mendax1234(Wenbo Zhu)'
+project = '6940 Swerve Documentation'
+copyright = '2022, Wenbo Zhu(mendax1234)'
+author = 'Wenbo Zhu(mendax1234)'
 
 release = '0.1'
 version = '0.1.0'
