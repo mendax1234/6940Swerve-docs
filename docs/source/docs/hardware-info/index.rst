@@ -10,4 +10,4 @@ About Our Gyros
 ----------------
 
 We use one gyro on our robot. The `Gadgeteer Pigeon IMU <https://store.ctr-electronics.com/gadgeteer-pigeon-imu/>`_ from Cross the Road Electronics (CTRE)
-We have also test `NavX-MXP<>` on our robot and it works well.
+We have also test `NavX-MXP <https://pdocs.kauailabs.com/navx-mxp/>`_ on our robot and it works well.
