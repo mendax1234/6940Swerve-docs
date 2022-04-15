@@ -7,3 +7,17 @@ minimum_perc = 0
 source_file = docs/build/gettext/index.pot
 source_lang = en
 type = PO
+
+[6940swerve-docs.docs--about--index-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/about/index.po
+minimum_perc = 0
+source_file = docs/build/gettext/docs/about/index.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.docs--hardware-info--index-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/hardware-info/index.po
+minimum_perc = 0
+source_file = docs/build/gettext/docs/hardware-info/index.pot
+source_lang = en
+type = PO

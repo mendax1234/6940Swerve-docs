@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, mendax1234(Wenbo Zhu)
-# This file is distributed under the same license as the 6940 Swerve Whitepaper package.
+# Copyright (C) 2022, Wenbo Zhu (mendax1234)
+# This file is distributed under the same license as the 6940 Swerve Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 6940 Swerve Whitepaper 0.1.0\n"
+"Project-Id-Version: 6940 Swerve Documentation 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-12 11:23+0800\n"
+"POT-Creation-Date: 2022-04-15 20:50+0800\n"
 "PO-Revision-Date: 2022-04-12 08:16+0000\n"
 "Last-Translator: mendax1234, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -25,10 +25,22 @@ msgstr ""
 msgid "Welcome to 6940 Swerve documentation!"
 msgstr "欢迎来到6940Swerve文档！"
 
-#: ../../source/index.rst:6 1009f017771b47cf9d0f17452bc011bf
-msgid "This project is under active development.Maybe"
-msgstr "这个项目正在开发当中。也许"
-
-#: ../../source/index.rst:9 6f5cc47b7b61486f958791496edba08d
+#: ../../source/index.rst:5 6f5cc47b7b61486f958791496edba08d
 msgid "Contents"
 msgstr "目录"
+
+#: ../../source/index.rst:14 79ae8f24b977444692d349d849532e67
+msgid "About"
+msgstr ""
+
+#: ../../source/index.rst:18 6f851641dcce4c46a531692fff66590a
+msgid "About Swerve Drive in FRC"
+msgstr ""
+
+#: ../../source/index.rst:30 f2df058c81ff404c9bcf054cb0c54ba0
+msgid "Hardware/Electrical Info"
+msgstr ""
+
+#: ../../source/index.rst:34 a0e0b656aa24476eae0b6c96d38f52ab
+msgid "An overview of the hardware components of our swerve drive."
+msgstr ""

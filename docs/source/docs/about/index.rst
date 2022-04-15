@@ -50,7 +50,7 @@ This Is A Living Document
 We intend to revise this document as we acquire new swerve knowledge. Additionally, we will
 modify this document as needed to help add clarification and answer commonly asked questions.
 We also public our code for this documentation on the Github, you can see it from the top-right page.
-So, you can either open an issue or send me an `e-mail<mendax1234@sina.cn>` if you want to contribute to this documentation
+So, you can either open an issue or send me an `e-mail <mendax1234@sina.cn>` if you want to contribute to this documentation
 
 We want your feedback! Please let us know how we can improve this documentation!
 

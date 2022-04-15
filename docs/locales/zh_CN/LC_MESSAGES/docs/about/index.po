@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Wenbo Zhu (mendax1234)
+# This file is distributed under the same license as the 6940 Swerve Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 6940 Swerve Documentation 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-15 20:50+0800\n"
+"PO-Revision-Date: 2022-04-15 13:02+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../source/docs/about/index.rst:2 a18b9e5e16664f7e8cb6d80a717b7f79
+msgid "About this documentation"
+msgstr ""
+
+#: ../../source/docs/about/index.rst:5 0ee4b21c4baa45e3af69e7e382405262
+msgid "Swerve IS HARD"
+msgstr ""
+
+#: ../../source/docs/about/index.rst:7 b1365977f69a41f0aea47285b137487b
+msgid ""
+"We’re not joking. SWERVE IS HARD! Please do not attempt to do swerve if your"
+" team does not have:"
+msgstr ""
+
+#: ../../source/docs/about/index.rst:9 2f71567171474382bab94758f62e0ec8
+msgid "lots of mechanical knowledge"
+msgstr ""
+
+#: ../../source/docs/about/index.rst:10 7bb8298b5cc1443f9184532fb98761d3
+msgid "lots of programming experience"
+msgstr ""
+
+#: ../../source/docs/about/index.rst:11 9fd90d603632499b89ec69aeba508a32
+msgid "substantial funding for a crazy expensive drivetrain"
+msgstr ""
+
+#: ../../source/docs/about/index.rst:12 0a5fc0080b744b5b8e390aaadaa62ee2
+msgid "ridiculous persistence and dedication"
+msgstr ""
+
+#: ../../source/docs/about/index.rst:14 5c793cb499674c87aca4e1cd836fc527
+msgid ""
+"We DON’T want to deter you from achieving your dream machine. We DO want to "
+"limit the number of broken-down robots on the field. As FRC Team 1684's "
+"drive coach Jon Uren says, “Build within your means.” If your team doesn’t "
+"meet all the requirements listed above, please reconsider attempting to do "
+"swerve. Poorly implemented swerve (in both a programming and mechanical "
+"sense) will do your team a major disservice. Sure, that robot might look "
+"cool or sound epic. But, does it work!? Most of the time, the simpler the "
+"better."
+msgstr ""
+
+#: ../../source/docs/about/index.rst:22 e581cbbdbc32454a90e0c9096b1fe835
+msgid "We’re Not THE EXPERTS… Just Experienced People"
+msgstr ""
+
+#: ../../source/docs/about/index.rst:24 bf5aa8f220594e4fbc28a654dea7fe5d
+msgid ""
+"If your team decides to go down this path, please pay close attention to the"
+" advice in this documentation. We have lived through the joys and sorrows of"
+" swerve. Please note that we are not claiming to be THE EXPERTS at swerve. "
+"Regardless, we are just experienced people . We just want to share "
+"everything we’ve learned since day 1 of the 2022 season. Like everyone, we "
+"are still learning from our mistakes . We will continue to iterate our "
+"designs so our robot can be its absolute best. We urge you all to do the "
+"same."
+msgstr ""
+
+#: ../../source/docs/about/index.rst:32 8bbe03a423e84d68baee01a546dcf998
+msgid "Don’t Be Afraid To Ask For Help!"
+msgstr ""
+
+#: ../../source/docs/about/index.rst:34 906943508c344c36ba3c0d6dddefcc43
+msgid ""
+"We all know that time on the robot is limited. Programmers always wish for "
+"more time on the finished robot. Time is the most valuable build season "
+"commodity. Before something does not go as planned, it should be part of "
+"your programming strategy to know when to reach out for help. Help can mean "
+"looking for sample code, asking on a forum if someone has had a similar "
+"issue, or even reaching out to other teams to review your code. Remember "
+"that other FRC programmers will likely be in the same semi-frantic state "
+"that you are trying to figure out the one thing that isn’t working. Someone "
+"outside of your programming team may not have the time to help you. Asking "
+"for another team’s time during build season is a BIG ASK!"
+msgstr ""
+
+#: ../../source/docs/about/index.rst:43 4f37be67f9314cda9530ca3e6732bcba
+msgid ""
+"Some day, you may be the one being asked for assistance. It is an honor to "
+"be worthy of being asked to help. Give whatever assistance that you can, but"
+" your responsibility will still be getting your own robot ready to go."
+msgstr ""
+
+#: ../../source/docs/about/index.rst:48 b7a0047233bc4fe781d8497a69867c88
+msgid "This Is A Living Document"
+msgstr ""
+
+#: ../../source/docs/about/index.rst:50 ec483dd205da4d9188a49f6a249f2c12
+msgid ""
+"We intend to revise this document as we acquire new swerve knowledge. "
+"Additionally, we will modify this document as needed to help add "
+"clarification and answer commonly asked questions. We also public our code "
+"for this documentation on the Github, you can see it from the top-right "
+"page. So, you can either open an issue or send me an `e-mail "
+"<mendax1234@sina.cn>` if you want to contribute to this documentation"
+msgstr ""
+
+#: ../../source/docs/about/index.rst:55 631b5989849444fa9fe27dc45438c7f8
+msgid ""
+"We want your feedback! Please let us know how we can improve this "
+"documentation!"
+msgstr ""

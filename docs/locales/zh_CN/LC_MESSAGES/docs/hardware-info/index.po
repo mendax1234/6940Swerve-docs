@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Wenbo Zhu (mendax1234)
+# This file is distributed under the same license as the 6940 Swerve Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 6940 Swerve Documentation 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-15 20:50+0800\n"
+"PO-Revision-Date: 2022-04-15 13:13+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../source/docs/hardware-info/index.rst:2
+#: 7b7c595bd9854475aa63947c438648c4
+msgid "Hardware/Electrical Info"
+msgstr ""
+
+#: ../../source/docs/hardware-info/index.rst:5
+#: 67bec52ae2e74db09cb714d4cf8772be
+msgid "About Our Swerve Modules"
+msgstr ""
+
+#: ../../source/docs/hardware-info/index.rst:7
+#: 31951e25e1d64c62b039dfc3821f0ab9
+msgid "We are using the MK5 swerve modules from SJTU."
+msgstr ""
+
+#: ../../source/docs/hardware-info/index.rst:10
+#: 3386d68cb6c244a69a474d09f01e1db4
+msgid "About Our Gyros"
+msgstr ""
+
+#: ../../source/docs/hardware-info/index.rst:12
+#: 7a9c00c073384789b19534926453d2a3
+msgid ""
+"We use one gyro on our robot. The `Gadgeteer Pigeon <https://store.ctr-"
+"electronics.com/gadgeteer-pigeon-imu/>` IMU from Cross the Road Electronics "
+"(CTRE) We have also test `NavX-MXP<>` on our robot and it works well."
+msgstr ""
