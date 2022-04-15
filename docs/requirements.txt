@@ -1,3 +1,4 @@
 sphinx
 lutra
 furo
+readthedocs-sphinx-search
