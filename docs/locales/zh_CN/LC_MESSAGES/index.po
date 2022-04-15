@@ -31,16 +31,16 @@ msgstr "目录"
 
 #: ../../source/index.rst:14 79ae8f24b977444692d349d849532e67
 msgid "About"
-msgstr ""
+msgstr "关于"
 
 #: ../../source/index.rst:18 6f851641dcce4c46a531692fff66590a
 msgid "About Swerve Drive in FRC"
-msgstr ""
+msgstr "关于FRC中的Swerve底盘"
 
 #: ../../source/index.rst:30 f2df058c81ff404c9bcf054cb0c54ba0
 msgid "Hardware/Electrical Info"
-msgstr ""
+msgstr "硬件/电机信息"
 
 #: ../../source/index.rst:34 a0e0b656aa24476eae0b6c96d38f52ab
 msgid "An overview of the hardware components of our swerve drive."
-msgstr ""
+msgstr "一个有关我们Swerve底盘硬件结构的总览"
