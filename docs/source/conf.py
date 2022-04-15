@@ -41,7 +41,7 @@ gettext_uuid = True  # optional.
 
 # -- Options for HTML output
 
-html_theme = 'furo'
+html_theme = 'sphinx_rtd_theme'
 
 # Sidebar logo
 html_logo = "assets/6940violetz-transparent.png"
