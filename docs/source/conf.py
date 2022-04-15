@@ -3,8 +3,8 @@
 # -- Project information
 
 project = '6940 Swerve Documentation'
-copyright = '2022, Wenbo Zhu(mendax1234)'
-author = 'Wenbo Zhu(mendax1234)'
+copyright = '2022, Wenbo Zhu (mendax1234)'
+author = 'Wenbo Zhu (mendax1234)'
 
 release = '0.1'
 version = '0.1.0'
@@ -17,6 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx_panels',
 ]
 
 intersphinx_mapping = {

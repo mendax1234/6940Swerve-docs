@@ -2,3 +2,4 @@ sphinx
 lutra
 furo
 readthedocs-sphinx-search
+sphinx-panels
