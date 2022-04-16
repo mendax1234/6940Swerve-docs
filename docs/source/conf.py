@@ -18,6 +18,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx_panels',
+    'sphinx_search.extension',
 ]
 
 intersphinx_mapping = {
