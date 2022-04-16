@@ -42,8 +42,15 @@ Contents
 
 .. toctree::
    :maxdepth: 1
+   :caption: About
    :hidden:
 
    docs/about/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Hardware Info
+   :hidden:
+
    docs/hardware-info/index
 
