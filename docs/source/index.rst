@@ -42,10 +42,6 @@ Contents
 
    ---
 
-.. panels::
-   :column: col-sm-4 d-flex pb-3
-   :footer: bg-white border-0
-
    :header: bg-info font-weight-bold text-white
 
    Software Info
