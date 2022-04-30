@@ -40,6 +40,23 @@ Contents
       :text: Go to Hardware/Electrical Info
       :classes: btn-outline-primary btn-block
 
+   ---
+
+   :header: bg-info font-weight-bold text-white
+
+   Software Info
+
+   ^^^
+
+   An overview of the software of our swerve drive.
+
+   +++
+
+   .. link-button:: /docs/software-info/index
+      :type: ref
+      :text: Go to Software Info
+      :classes: btn-outline-primary btn-block
+
 .. toctree::
    :maxdepth: 1
    :caption: About
@@ -53,4 +70,11 @@ Contents
    :hidden:
 
    docs/hardware-info/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Software Info
+   :hidden:
+
+   docs/software-info/index
 
