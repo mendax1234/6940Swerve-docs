@@ -69,7 +69,7 @@ Contents
    docs/about/index
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Hardware Info
    :hidden:
 
