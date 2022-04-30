@@ -30,7 +30,7 @@ For example, use them on our shooter and intaker.
 Other Sensors
 --------------
 We use several other sensors that weave into our swerve code. The most obvious is the `Limelight2+ <https://limelightvision.io/>`_ .
-We also use two `Pixy2 <https://pixycam.com/pixy2/>`_ , 2 `IR Sensors <https://www.amazon.com/HiLetgo-E18-D80NK-Infrared-Photoelectric-Avoidance/dp/B07VKR1GBJ/ref=sr_1_2?keywords=E18-D80NK&qid=1651325946&sr=8-2>`_ 
+We also use two `Pixy2 <https://pixycam.com/pixy2/>`_ , two `IR Sensors <https://www.amazon.com/HiLetgo-E18-D80NK-Infrared-Photoelectric-Avoidance/dp/B07VKR1GBJ/ref=sr_1_2?keywords=E18-D80NK&qid=1651325946&sr=8-2>`_ 
 and one `REV color sensor <https://www.revrobotics.com/rev-31-1557/>`_.
 We will address the exact usage of these sensors in later sections.
 
