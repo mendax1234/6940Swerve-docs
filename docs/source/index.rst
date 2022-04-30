@@ -41,7 +41,6 @@ Contents
       :classes: btn-outline-primary btn-block
 
    ---
-
    :header: bg-info font-weight-bold text-white
 
    Software Info
