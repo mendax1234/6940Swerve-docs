@@ -27,6 +27,7 @@ verify our teleop swerve control was working properly.
    :maxdepth: 1
 
    software-info-old/how-it-should-work
+   software-info-old/the-math
 
 
 Software Info - New(We use)
