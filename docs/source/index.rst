@@ -55,6 +55,7 @@ Contents
       :type: ref
       :text: Go to Software Info
       :classes: btn-outline-primary btn-block
+   ---
 
 .. toctree::
    :maxdepth: 1
