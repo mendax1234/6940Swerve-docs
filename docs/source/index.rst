@@ -1,8 +1,6 @@
 Welcome to 6940 Swerve documentation!
 =========================================
 
-Contents
---------
 
 .. panels::
    :column: col-sm-6 d-flex pb-3
@@ -19,7 +17,7 @@ Contents
 
    +++
 
-   .. link-button:: /docs/about/index
+   .. link-button:: /docs/about/about
       :type: ref
       :text: Go to About
       :classes: btn-outline-primary btn-block
@@ -35,7 +33,7 @@ Contents
 
    +++
 
-   .. link-button:: /docs/hardware-info/index
+   .. link-button:: /docs/hardware-info/hardware-info
       :type: ref
       :text: Go to Hardware/Electrical Info
       :classes: btn-outline-primary btn-block
@@ -47,34 +45,58 @@ Contents
 
    ^^^
 
-   An overview of the software of our swerve drive.
+   Old but basic sofware algorithm overview of swerve drive.
 
    +++
 
-   .. link-button:: /docs/software-info/index
+   .. link-button:: /docs/software-info-old/index
       :type: ref
-      :text: Go to Software Info
+      :text: Go to Software Info - Old
+      :classes: btn-outline-primary btn-block
+   ---
+   :header: bg-info font-weight-bold text-white
+
+   Software Info
+
+   ^^^
+
+   New but easy software algorithm overview of our swerve drive.
+
+   +++
+
+   .. link-button:: /docs/software-info-new/index
+      :type: ref
+      :text: Go to Software Info - New
       :classes: btn-outline-primary btn-block
    ---
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: About
    :hidden:
 
-   docs/about/index
+   docs/about/about
 
 .. toctree::
    :maxdepth: 2
    :caption: Hardware Info
    :hidden:
 
-   docs/hardware-info/index
+   docs/hardware-info/hardware-info
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Software Info
+   :maxdepth: 2
+   :caption: Software Info - Old
    :hidden:
 
-   docs/software-info/index
+   docs/software-info-old/index
+   docs/software-info-old/swerve-in-teleop/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Software Info - New
+   :hidden:
+
+   docs/software-info-new/index
+
 

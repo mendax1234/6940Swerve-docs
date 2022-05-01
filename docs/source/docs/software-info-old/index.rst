@@ -23,13 +23,6 @@ the most important things we found was this Chief Delphi post .
 We used SwerveTester_8.xls to understand how each wheel reacts with different inputs and to
 verify our teleop swerve control was working properly.
 
-.. toctree::
-   :maxdepth: 1
-
-   software-info-old/how-it-should-work
-   software-info-old/the-math
 
 
-Software Info - New(We use)
-============================
 
