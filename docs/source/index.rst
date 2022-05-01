@@ -84,7 +84,7 @@ Welcome to 6940 Swerve documentation!
    docs/hardware-info/hardware-info
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Software Info - Old
    :hidden:
 
