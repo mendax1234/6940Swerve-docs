@@ -19,6 +19,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx_panels',
     'sphinx_search.extension',
+    'sphinx.ext.mathjax',
 ]
 
 intersphinx_mapping = {
@@ -50,3 +51,9 @@ html_logo = "assets/6940violetz-transparent.png"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# Required to display LaTeX in hover content
+hoverxref_mathjax = True
+
+# Use MathJax3 for better page loading times
+mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
