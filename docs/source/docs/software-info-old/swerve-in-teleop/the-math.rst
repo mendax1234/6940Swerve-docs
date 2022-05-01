@@ -53,7 +53,7 @@ understand why this is, consider that
 
 To explain this further, let’s look at the results of the the following three situations:
 
-Example 1: Robot is aligned with field
+**Example 1: Robot is aligned with field**
 
 The key here is to think about what the value of θ is, and how the value of our sines and cosines
 changes as a result. Here, since we’re aligned with the field, :math:`θ=0°`. Let’s check our sine and cosine
@@ -71,7 +71,7 @@ Our math tells us that we haven’t changed anything by doing this! Physically, 
 the robot is aligned with the field, what it considers to be forward is the same as the field’s forward;
 we don’t need to modify our commands at all.
 
-Example 2: Robot is at 90 degrees to field
+**Example 2: Robot is at 90 degrees to field**
 
 Let’s say that we’re now at a right angle to the field; our robot is sideways, so our angle :math:`θ=90°`.
 Again, let’s check our trigonometry. :math:`cos90°` = 0, and :math:`sin90°` = 1. What does our math do with
@@ -84,7 +84,7 @@ Our commands have switched (with a small change of sign)! Again, physically, thi
 sense. The robot is sideways; in order to go forward, it has to do what it considers a strafe, and in
 order to strafe, it has to go what it considers forward.
 
-Example 3: Robot is at 30 degrees to field
+**Example 3: Robot is at 30 degrees to field**
 
 We’re now at some angle that doesn’t produce as nice a result. The robot is aligned differently from
 the field, so to go straight forward or straight sideways, the robot is going to need to do some combination of what it considers going forward and going sideways. With our angle θ=30°,
