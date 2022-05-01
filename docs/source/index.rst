@@ -48,7 +48,7 @@ Welcome to 6940 Swerve documentation!
 
    +++
 
-   .. link-button:: /docs/software-info-old/index
+   .. link-button:: /docs/software-info-old/disclaimer
       :type: ref
       :text: Go to Software Info - Old
       :classes: btn-outline-primary btn-block
@@ -88,7 +88,9 @@ Welcome to 6940 Swerve documentation!
    :caption: Software Info - Old
    :hidden:
 
-   docs/software-info-old/index
+   docs/software-info-old/disclaimer
+   docs/software-info-old/overview
+   docs/software-info-old/swerve-in-teleop/index
 
 .. toctree::
    :maxdepth: 2
