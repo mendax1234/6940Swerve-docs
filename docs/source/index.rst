@@ -1,7 +1,6 @@
 Welcome to 6940 Swerve documentation!
 =========================================
 
-
 .. panels::
    :column: col-sm-6 d-flex pb-3
    :footer: bg-white border-0
@@ -90,7 +89,6 @@ Welcome to 6940 Swerve documentation!
    :hidden:
 
    docs/software-info-old/index
-   docs/software-info-old/swerve-in-teleop/index
 
 .. toctree::
    :maxdepth: 2

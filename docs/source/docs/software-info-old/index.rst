@@ -24,5 +24,15 @@ We used SwerveTester_8.xls to understand how each wheel reacts with different in
 verify our teleop swerve control was working properly.
 
 
+Swerve in Teleop
+-----------------
+
+.. toctree::
+   :maxdepth: 2
+
+   swerve-in-teleop/how-it-should-work
+   swerve-in-teleop/the-math
+
+
 
 
