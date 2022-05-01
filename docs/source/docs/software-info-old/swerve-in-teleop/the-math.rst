@@ -88,7 +88,7 @@ order to strafe, it has to go what it considers forward.
 
 We’re now at some angle that doesn’t produce as nice a result. The robot is aligned differently from
 the field, so to go straight forward or straight sideways, the robot is going to need to do some combination of what it considers going forward and going sideways. With our angle θ=30°,
-:math:`cos30°` = 0.866, and :math:`sin30°` = 0.5. Following through the equations, then,
+:math:`cos30°` = 0.866, and :math:`sin30°` = 0.5. Following through the equations, then, 
 
 .. math::FWD_{new} = FWD * cos(30°) + STR * sin(30°) = FWD * 0.866 + STR * 0.5
 .. math::STR_{new} = STR * cos(30°) − FWD * sin(30°) = STR * 0.866 − FWD * 0.5
