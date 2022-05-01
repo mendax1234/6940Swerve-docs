@@ -1,8 +1,7 @@
 Swerve in Teleop
 =================
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    how-it-should-work
    the-math
-   
