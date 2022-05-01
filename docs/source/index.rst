@@ -44,7 +44,7 @@ Welcome to 6940 Swerve documentation!
 
    ^^^
 
-   Old but basic sofware algorithm overview of swerve drive.
+   Old but basic software algorithm overview of swerve drive.
 
    +++
 
