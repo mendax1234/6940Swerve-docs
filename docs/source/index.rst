@@ -41,7 +41,7 @@ Welcome to 6940 Swerve documentation!
    ---
    :header: bg-info font-weight-bold text-white
 
-   Software Info
+   Software Info - Old
 
    ^^^
 
@@ -56,7 +56,7 @@ Welcome to 6940 Swerve documentation!
    ---
    :header: bg-info font-weight-bold text-white
 
-   Software Info
+   Software Info - New
 
    ^^^
 
