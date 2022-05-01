@@ -117,7 +117,7 @@ a square (e.g. if the robot is not square), we’ll account for that as we make 
 
 First, let’s define the length and width of our wheelbase
 as L and W, and let’s define an additional value :math:`R`, as
-:math:`R = (L^2 + W^2)^0.5` , or the diameter of the circle that contacts all
+:math:`R = (L^2 + W^2)^{0.5}` , or the diameter of the circle that contacts all
 four wheel axles. The units of these values don’t matter, as we’re
 only going to be taking their ratios in our wheel calculations.
 
