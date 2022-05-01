@@ -38,8 +38,8 @@ the robot is aligned with the field, away from the driver. This angle can be eit
 to 180°, or from 0 to 360 degrees - the math in this case works the same. With these in mind, we can
 transform our :math:`FWD` and :math:`STR` commands as follows:
 
-.. math:: FWDnew = FWD * cos(θ) + STR * sin(θ)
-.. math:: STRnew = STR * cos(θ) − FWD * sin(θ)
+.. math:: FWDnew = FWD * cosθ + STR * sinθ
+.. math:: STRnew = STR * cosθ − FWD * sinθ
 
 First, we calculate our new :math:`FWD`, which can be thought of as simply figuring out how much of each
 original command (:math:`FWD` and :math:`STR`) are in the actual direction of the robot’s “:math:`FWD`”. Likewise, we can
@@ -63,7 +63,7 @@ plots to see where that puts us at, in terms of values:
    :width: 100%
    :align: center
 
-:math:`cos(0°)` is 1, and :math:`sin(0°)` is 0. If we think about a right triangle, with one of its angles being 0° and a
+:math:`cos0°` is 1, and :math:`sin0°` is 0. If we think about a right triangle, with one of its angles being 0° and a
 hypotenuse of 1, the opposing side of that triangle would have no height - and the adjacent side
 would have the length of the hypotenuse, or 1. Let’s see what our math does with this.
 
@@ -73,8 +73,8 @@ we don’t need to modify our commands at all.
 
 Example 2: Robot is at 90 degrees to field
 
-Let’s say that we’re now at a right angle to the field; our robot is sideways, so our angle θ=90°.
-Again, let’s check our trigonometry. cos(90°) = 0, and sin(90°) = 1. What does our math do with
+Let’s say that we’re now at a right angle to the field; our robot is sideways, so our angle :math:`θ=90°`.
+Again, let’s check our trigonometry. :math:`cos90°` = 0, and :math:`sin90°` = 1. What does our math do with
 these?
 
 .. math:: FWDnew = FWD * cos(90°) + STR * sin(90°) = FWD * 0 + STR * 1 = STR
@@ -88,7 +88,7 @@ Example 3: Robot is at 30 degrees to field
 
 We’re now at some angle that doesn’t produce as nice a result. The robot is aligned differently from
 the field, so to go straight forward or straight sideways, the robot is going to need to do some combination of what it considers going forward and going sideways. With our angle θ=30°,
-cos(30°) = 0.866, and sin(30°) = 0.5. Following through the equations, then,
+:math:`cos30°` = 0.866, and :math:`sin30°` = 0.5. Following through the equations, then,
 
 .. math:: FWDnew = FWD * cos(30°) + STR * sin(30°) = FWD * 0.866 + STR * 0.5
 .. math:: STRnew = STR * cos(30°) − FWD * sin(30°) = STR * 0.866 − FWD * 0.5
