@@ -77,8 +77,9 @@ Let’s say that we’re now at a right angle to the field; our robot is sideway
 Again, let’s check our trigonometry. :math:`cos90°` = 0, and :math:`sin90°` = 1. What does our math do with
 these?
 
-.. math:: FWDnew = FWD * cos(90°) + STR * sin(90°) = FWD * 0 + STR * 1 = STR
-.. math:: STRnew = STR * cos(90°) − FWD * sin(90°) = STR * 0 − FWD * 1 = −FWD
+.. math:: 
+   FWD_{\new} = FWD * cos(90°) + STR * sin(90°) = FWD * 0 + STR * 1 = STR
+   STR_{\new} = STR * cos(90°) − FWD * sin(90°) = STR * 0 − FWD * 1 = −FWD
 
 Our commands have switched (with a small change of sign)! Again, physically, this makes some
 sense. The robot is sideways; in order to go forward, it has to do what it considers a strafe, and in
@@ -90,8 +91,9 @@ We’re now at some angle that doesn’t produce as nice a result. The robot is 
 the field, so to go straight forward or straight sideways, the robot is going to need to do some combination of what it considers going forward and going sideways. With our angle θ=30°,
 :math:`cos30°` = 0.866, and :math:`sin30°` = 0.5. Following through the equations, then,
 
-.. math:: FWDnew = FWD * cos(30°) + STR * sin(30°) = FWD * 0.866 + STR * 0.5
-.. math:: STRnew = STR * cos(30°) − FWD * sin(30°) = STR * 0.866 − FWD * 0.5
+.. math:: 
+   FWD_{\new} = FWD * cos(30°) + STR * sin(30°) = FWD * 0.866 + STR * 0.5
+   STR_{\new} = STR * cos(30°) − FWD * sin(30°) = STR * 0.866 − FWD * 0.5
 
 Both :math:`FWD` and :math:`STR` contribute to each of the transformed values. This pattern will carry through for
 any non-right angle, and as long as we consider our angle properly (with clockwise as positive) we’re
