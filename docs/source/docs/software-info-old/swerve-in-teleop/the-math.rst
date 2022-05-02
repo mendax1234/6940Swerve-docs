@@ -118,10 +118,135 @@ a square (e.g. if the robot is not square), we’ll account for that as we make 
 
 First, let’s define the length and width of our wheelbase
 as L and W, and let’s define an additional value :math:`R`, as
-:math:`R = (L^2 + W^2)^{0.5}` , or the diameter of the circle that contacts all
+:math:`R = \sqrt{L^2 + W^2}` , or the diameter of the circle that contacts all
 four wheel axles. The units of these values don’t matter, as we’re
 only going to be taking their ratios in our wheel calculations.
 
 .. figure:: https://pic.imgdb.cn/item/626dfe54239250f7c5964d5d.jpg
    :width: 50%
    :align: center
+
+Intuition
++++++++++++++
+To understand how we can turn our overall commands (what we
+want the robot as a whole to do) into what each wheel needs to do,
+we should build some intuition. It’s perfectly possible to borrow the math and program it into place
+without this, but it really helps to understand how things work under the hood.
+
+As we derive our inverse kinematics, we make some underlying assumptions, including that the
+robot’s chassis acts as a rigid body - within its own reference frame, one point cannot move closer
+or further away to another point. Imagine a metal cube on a desk. You can move it forward, back,
+and spin it, but it’s solid and unchanging relative to itself. From a kinematics standpoint, there’s an
+important fact we can draw from this. If we look at one side of the robot, all points along it have to 
+have the same velocity forward or backward. If they had different speeds, the side would be
+changing in length. Hopefully that’s not actually happening, and if our robot is built sufficiently
+rigidly, it shouldn’t be.
+
+.. figure:: https://pic.imgdb.cn/item/626f5b68239250f7c56f4711.jpg
+   :width: 100%
+   :align: center
+
+We can back this assumption out by doing some vector math . ChiefDelphi user Ether’s `Derivation of
+Inverse Kinematics for Swerve <https://www.chiefdelphi.com/t/paper-4-wheel-independent-drive-independent-steering-swerve/107383>`_ 
+document explains this in detail. To do this, we can combine our
+desired strafe and speed commands into a translation vector , and our rotation command can be
+combined with our robot geometry to form a rotational component. By adding these vectors, we get
+our required wheel movement vector, in the form of a direction and a magnitude.
+
+From here, we’ll define some variables to save us some work. Standard convention has them as A, B,
+C, and D.
+
+.. math:: A = STR - ROT * L/R
+.. math:: B = STR + ROT * L/R
+.. math:: C = FWD - ROT * W/R
+.. math:: D = FWD - ROT * W/R
+
+We’ll use these to calculate our resultant wheel speeds and wheel angles (or azimuth angles), or ws
+and wa respectively.
+
+.. math:: ws_{FR} = \sqrt{B^2 + C^2}    
+.. math:: wa_{FR} = atan2(B,C)
+.. math:: ws_{FL} = \sqrt{B^2 + D^2}    
+.. math:: wa_{FL} = atan2(B,D)
+.. math:: ws_{RR} = \sqrt{A^2 + C^2}    
+.. math:: wa_{RR} = atan2(A,C)
+.. math:: ws_{RL} = \sqrt{A^2 + D^2}    
+.. math:: wa_{RL} = atan2(A,D)
+
+.. note:: The atan2 function is defined in many programming languages, and provides quadrant-aware calculations for the arctangent function, meaning the angle output will range from -π to π, instead of 0 to π/2.
+
+What we see here is that we have common factors between our wheels. For both front wheels, we
+have a common horizontal factor B, and for both rear wheels, a different common factor A. For both
+right wheels, and left, we see the same thing, with common forward/backward components C and
+D. This is the mathematical realization of the fact that our robot’s chassis can’t change in size or
+shape. Bonus: if you know a bit of vector math, you’ll notice that we’re doing a transformation from
+cartesian to polar coordinates.
+
+Where FR, FL, RR, and RL refer to front right, front left, rear right, and rear left wheels. Our azimuth
+angles should range from -π to π, with positive as clockwise and zero being straight π π ahead. These
+can be converted to degrees as necessary - just multiply by 180/π . Our wheel speeds should range
+from 0 to 1, absolute, but we’ll need to check if they need to be normalized. To do this, we just check
+if the maximum of our ws values is greater than 1, and if it is, scale the values such that it’s 1.
+
+.. math:: ws_{max} = max(ws_{FR}, ws_{FL}, ws_{RR}, ws_{RL})
+.. math:: if ws_{max} > 1.0 :
+.. math:: ws_{FR} = ws_{FR}/ws_{max}
+.. math:: ws_{FL} = ws_{FL}/ws_{max}
+.. math:: ws_{RR} = ws_{RR}/ws_{max}
+.. math:: ws_{RL} = ws_{RL}/ws_{max}
+
+Now we have all ws values ranging from 0 to 1. The wheel speed assumed to be in the direction the
+wheel is facing ( wa ), and thus does not go negative, as that would imply the wheel has turned 180°.
+
+Our algorithm to this point brings up a problem. If our control input quickly changes from, for
+example, moving entirely forward to moving backward, our wheel pods need to turn all the way
+around in order to execute the new command. Given that we’re working with motors that can go full
+power forward or backward, that’s an inefficient thing to do. Ideally, we’d just flip the motor into
+reverse and move on.
+
+In order to solve this problem, we implement what we call inversion awareness . If we assume we
+know the wheel’s current azimuth angle, and we’ve calculated the azimuth we need, we can check if
+we’d need to “flip” our module or not. If we would, we can just invert the speed output, readjust
+where our azimuth is headed, and continue on our way. We’ll implement this in a bit.
+
+Power to the ground (Speed and Azimuth drivers)
+-------------------------------------------------
+Finally, we’re at the point where we can get things moving. We have the parameters we want, a set
+of wheel speeds and angles, generated from our desired output, transformed to be oriented relative
+to the field. Now we want to get our swerve modules to execute those commands. These next bits
+of code can be considered analogous to drivers in a computer system - layers of code that handle
+the nitty-gritty low-level communication and control while providing an abstracted interface for
+control. In our case, we grouped azimuth and wheel speed into one module that we can use to set a
+wheel’s target state.
+
+Azimuth
++++++++++
+Azimuth control is accomplished using a proportional feedback controller sensing the angle of the
+wheel with an absolute encoder. Depending on the specific encoder used, this may come in the
+form of a degree value, a voltage, or an integer number of ticks. For our US Digital MA3 encoders,
+the output is in the form of a 0-5V signal, with the full range representing 360° of rotation. In many
+cases, the encoder housing cannot repeatably and precisely be oriented to the “correct” physical
+position. This means that the reading of our encoder when our azimuth is straight forward (0°, the
+wheel is straight) can be any value. As such, we’re going to have some offset value on a per-module
+basis, and we’ll factor it into our calculations.
+
+For our feedback controller, we need to calculate the error between our setpoint and position.
+Because we’re working with angles and have a range of 0-360°, we need to use the remainder
+function to make sure our error is calculated properly. We’ll also use this for incorporating our
+offset. Assuming we have the angle we want for this wheel (wa), we can calculate our error:
+
+.. math:: encoder_{w} = Encoder.GetValue()
+.. math:: azimuthAngle = remainder(Encoder.GetV alue() − wheelAngleOffset)
+.. math:: azimuthError = remainder(azimuthAngle − wa)
+
+Inversion Awareness
+_____________________
+Using the Talon FX’s SetInverted method makes implementing inversion control very
+straightforward. We simply “flip” our azimuth error to the other side.
+
+.. math:: azimuthError = azimuthPosition − wa ;
+.. math:: if abs(azimuthError) > 90 : //assuming our angles are in degrees
+.. math:: azimuthError = azimuthError − 180 * sgn(azimuthError)
+.. math:: SpeedMotorController.SetInverted(true)
+.. math:: else :
+.. math:: SpeedMotorController.SetInverted(false)
