@@ -237,7 +237,7 @@ offset. Assuming we have the angle we want for this wheel (wa), we can calculate
 
 ::
 
-   encoder_{w} = Encoder.GetValue()
+   encoder = Encoder.GetValue()
    azimuthAngle = remainder(Encoder.GetValue() − wheelAngleOffset)
    azimuthError = remainder(azimuthAngle − wa)
 
