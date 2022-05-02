@@ -1,8 +1,15 @@
 [main]
 host = https://www.transifex.com
 
-[6940swerve-docs.swerve--in--teleop--index-pot]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/index.pot
+[6940swerve-docs.index-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/index.po
+minimum_perc = 0
+source_file = docs/build/gettext/index.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.docs--softrware--info--old--swerve--in--teleop--index-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/index.po
 minimum_perc = 0
 source_file = docs/build/gettext/docs/software-info-old/swerve-in-teleop/index.pot
 source_lang = en
@@ -22,37 +29,31 @@ source_file = docs/build/gettext/docs/hardware-info/index.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.disclaimer-pot]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/disclaimer.pot
+[6940swerve-docs.docs--softrware--info--old--disclaimer-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/disclaimer.po
 minimum_perc = 0
 source_file = docs/build/gettext/docs/software-info-old/disclaimer.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.overview-pot]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/overview.pot
+[6940swerve-docs.docs--softrware--info--old--overview-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/overview.po
 minimum_perc = 0
 source_file = docs/build/gettext/docs/software-info-old/overview.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.how-it-should-work-pot]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/how-it-should-work.pot
+[6940swerve-docs.docs--softrware--info--old--swerve--in--teleop--how-it-should-work-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/how-it-should-work.po
 minimum_perc = 0
 source_file = docs/build/gettext/docs/software-info-old/swerve-in-teleop/how-it-should-work.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.the-math-pot]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/the-math.pot
+[6940swerve-docs.docs--softrware--info--old--swerve--in--teleop--the-math-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/the-math.po
 minimum_perc = 0
 source_file = docs/build/gettext/docs/software-info-old/swerve-in-teleop/the-math.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.index-pot]
-file_filter = docs/locales/<lang>/LC_MESSAGES/index.pot
-minimum_perc = 0
-source_file = docs/build/gettext/index.pot
-source_lang = en
-type = PO
