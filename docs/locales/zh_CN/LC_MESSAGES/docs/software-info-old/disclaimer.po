@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Wenbo Zhu (mendax1234)
+# This file is distributed under the same license as the 6940 Swerve Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 6940 Swerve Documentation 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-01 12:11+0800\n"
+"PO-Revision-Date: 2022-05-02 09:30+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../source/docs/software-info-old/disclaimer.rst:2
+#: d9bdf4a90d334903a7516f7dc27cdcbc
+msgid "Disclaimer"
+msgstr ""
+
+#: ../../source/docs/software-info-old/disclaimer.rst:3
+#: 77269a88c1904afe93e1c97b3fdd18a4
+msgid ""
+"This part is from Team 1684 Chimeras . We have communicated with them and "
+"are allowed to copy this part in our documentation. We really thanks FRC "
+"Team 1684 for their wonderful whitepaper!"
+msgstr ""
+
+#: ../../source/docs/software-info-old/disclaimer.rst:6
+#: 6398cd2a77ee40bdb3088a4c585a0ea3
+msgid "In this part, all We refer to Team 1684"
+msgstr ""

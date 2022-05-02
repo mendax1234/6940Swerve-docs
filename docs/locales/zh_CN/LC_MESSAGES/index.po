@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Wenbo Zhu (mendax1234)
+# This file is distributed under the same license as the 6940 Swerve Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 6940 Swerve Documentation 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-02 16:26+0800\n"
+"PO-Revision-Date: 2022-04-12 08:16+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../source/index.rst:71 ../../source/index.rst:11
+#: 79ae8f24b977444692d349d849532e67
+msgid "About"
+msgstr ""
+
+#: ../../source/index.rst:78
+msgid "Hardware Info"
+msgstr ""
+
+#: ../../source/index.rst:85 ../../source/index.rst:43
+#: 8a6fc95a297343169ce9f4302e1cce1f
+msgid "Software Info - Old"
+msgstr ""
+
+#: ../../source/index.rst:94 ../../source/index.rst:58
+#: 8a6fc95a297343169ce9f4302e1cce1f
+msgid "Software Info - New"
+msgstr ""
+
+#: ../../source/index.rst:2 3f0ceb759da04f03a4911c005b4caacb
+msgid "Welcome to 6940 Swerve documentation!"
+msgstr ""
+
+#: ../../source/index.rst:15 6f851641dcce4c46a531692fff66590a
+msgid "About Swerve Drive in FRC"
+msgstr ""
+
+#: ../../source/index.rst:27 f2df058c81ff404c9bcf054cb0c54ba0
+msgid "Hardware/Electrical Info"
+msgstr ""
+
+#: ../../source/index.rst:31 a0e0b656aa24476eae0b6c96d38f52ab
+msgid "An overview of the hardware components of our swerve drive."
+msgstr ""
+
+#: ../../source/index.rst:47 a0e0b656aa24476eae0b6c96d38f52ab
+msgid "Old but basic software algorithm overview of swerve drive."
+msgstr ""
+
+#: ../../source/index.rst:62 a0e0b656aa24476eae0b6c96d38f52ab
+msgid "New but easy software algorithm overview of our swerve drive."
+msgstr ""

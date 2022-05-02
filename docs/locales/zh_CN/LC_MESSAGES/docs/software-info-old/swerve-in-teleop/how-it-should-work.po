@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Wenbo Zhu (mendax1234)
+# This file is distributed under the same license as the 6940 Swerve Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 6940 Swerve Documentation 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-01 12:11+0800\n"
+"PO-Revision-Date: 2022-05-02 09:30+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../source/docs/software-info-old/swerve-in-teleop/how-it-should-work.rst:2
+#: 4f80a995be044caeb07e60c8d7aa5574
+msgid "How It Should Work"
+msgstr ""
+
+#: ../../source/docs/software-info-old/swerve-in-teleop/how-it-should-work.rst:3
+#: 1c1af40bb02b4fd7b6928946412e7c5a
+msgid ""
+"You move the controller and the robot magically does what you think it "
+"should. Isn’t that the goal? Of course it is! The way that we chose is the "
+"same way that our driver would operate a drone. Although, we have not worked"
+" out the levitate functionality."
+msgstr ""
+
+#: ../../source/docs/software-info-old/swerve-in-teleop/how-it-should-work.rst:7
+#: f6c1e09a091243eb9376c60eed0fcd3d
+msgid ""
+"The robot should be free to move in any direction on the single plane of the"
+" field. It should be able to do that at the same speed and torque."
+msgstr ""
+
+#: ../../source/docs/software-info-old/swerve-in-teleop/how-it-should-work.rst:10
+#: 84ddcfa3c8934ed09d8d41fcb9d72273
+msgid ""
+"Given the extra freedom that swerve gives the robot, both literally and in "
+"terms of holonomic movement (can freely move in any direction, ideally with "
+"no preferred direction), operating in a field-centric manner is immensely "
+"helpful. We consider field-centric motion essential to utilizing swerve "
+"effectively at a competition level."
+msgstr ""
