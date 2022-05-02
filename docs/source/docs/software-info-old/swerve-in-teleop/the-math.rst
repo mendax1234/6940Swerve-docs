@@ -235,18 +235,22 @@ Because we’re working with angles and have a range of 0-360°, we need to use 
 function to make sure our error is calculated properly. We’ll also use this for incorporating our
 offset. Assuming we have the angle we want for this wheel (wa), we can calculate our error:
 
-.. math:: encoder_{w} = Encoder.GetValue()
-.. math:: azimuthAngle = remainder(Encoder.GetV alue() − wheelAngleOffset)
-.. math:: azimuthError = remainder(azimuthAngle − wa)
+::
+
+   encoder_{w} = Encoder.GetValue()
+   azimuthAngle = remainder(Encoder.GetValue() − wheelAngleOffset)
+   azimuthError = remainder(azimuthAngle − wa)
 
 Inversion Awareness
 _____________________
 Using the Talon FX’s SetInverted method makes implementing inversion control very
 straightforward. We simply “flip” our azimuth error to the other side.
 
-.. math:: azimuthError = azimuthPosition − wa ;
-.. math:: if abs(azimuthError) > 90 : //assuming our angles are in degrees
-.. math:: azimuthError = azimuthError − 180 * sgn(azimuthError)
-.. math:: SpeedMotorController.SetInverted(true)
-.. math:: else :
-.. math:: SpeedMotorController.SetInverted(false)
+::
+
+    azimuthError = azimuthPosition − wa ;
+    if abs(azimuthError) > 90 : //assuming our angles are in degrees
+      azimuthError = azimuthError − 180 * sgn(azimuthError)
+      SpeedMotorController.SetInverted(true)
+    else :
+      SpeedMotorController.SetInverted(false)
