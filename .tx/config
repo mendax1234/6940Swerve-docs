@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[6940swerve-docs.index-pot]
+[6940swerve-docs.swerve--in--teleop--index-pot]
 file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/index.pot
 minimum_perc = 0
 source_file = docs/build/gettext/docs/software-info-old/swerve-in-teleop/index.pot
