@@ -67,6 +67,9 @@ plots to see where that puts us at, in terms of values:
 hypotenuse of 1, the opposing side of that triangle would have no height - and the adjacent side
 would have the length of the hypotenuse, or 1. Let’s see what our math does with this.
 
+.. math:: FWD_{new} = FWD * cos(0°) + STR * sin(0°) = FWD * 1 + STR * 0 = FWD
+.. math:: STR_{new} = STR * cos(0°) − FWD * sin(0°) = STR * 1 − FWD * 0 = STR
+
 Our math tells us that we haven’t changed anything by doing this! Physically, this makes sense; if
 the robot is aligned with the field, what it considers to be forward is the same as the field’s forward;
 we don’t need to modify our commands at all.
@@ -77,8 +80,8 @@ Let’s say that we’re now at a right angle to the field; our robot is sideway
 Again, let’s check our trigonometry. :math:`cos90°` = 0, and :math:`sin90°` = 1. What does our math do with
 these?
 
-.. math::FWD_{new} = FWD * cos(90°) + STR * sin(90°) = FWD * 0 + STR * 1 = STR
-.. math::STR_{new} = STR * cos(90°) − FWD * sin(90°) = STR * 0 − FWD * 1 = −FWD
+.. math:: FWD_{new} = FWD * cos(90°) + STR * sin(90°) = FWD * 0 + STR * 1 = STR
+.. math:: STR_{new} = STR * cos(90°) − FWD * sin(90°) = STR * 0 − FWD * 1 = −FWD
 
 Our commands have switched (with a small change of sign)! Again, physically, this makes some
 sense. The robot is sideways; in order to go forward, it has to do what it considers a strafe, and in
@@ -101,8 +104,8 @@ Inverse Kinematics (Wheel Speeds and Azimuths)
 ------------------------------------------------
 
 Now that we have our :math:`FWD` and :math:`STR` commands transformed, we need to figure out what each wheel
-should be doing to execute them. What we’re doing here is commonly referred to as inverse
-kinematics , or IK. We have some goal output we want to get to, and we have some actuator
+should be doing to execute them. What we’re doing here is commonly referred to as `inverse
+kinematics <https://en.wikipedia.org/wiki/Inverse_kinematics>`_ , or IK. We have some goal output we want to get to, and we have some actuator
 parameters (or joints) we can adjust, those being our wheel speeds and azimuth angles. Inverse
 kinematics is the calculation of a unique set of output settings that will give us our overall output.
 Forward kinematics (which we’ll cover elsewhere) is the opposite - determining the state (or pose)
