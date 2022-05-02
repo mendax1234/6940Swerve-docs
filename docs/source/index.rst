@@ -67,7 +67,6 @@ Welcome to 6940 Swerve documentation!
       :type: ref
       :text: Go to Software Info - New
       :classes: btn-outline-primary btn-block
-   ---
 
 .. toctree::
    :maxdepth: 2
