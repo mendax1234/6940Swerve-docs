@@ -2,9 +2,9 @@
 host = https://www.transifex.com
 
 [6940swerve-docs.index-pot]
-file_filter = docs/locales/<lang>/LC_MESSAGES/index.po
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/index.pot
 minimum_perc = 0
-source_file = docs/build/gettext/index.pot
+source_file = docs/build/gettext/docs/software-info-old/swerve-in-teleop/index.pot
 source_lang = en
 type = PO
 
@@ -19,5 +19,33 @@ type = PO
 file_filter = docs/locales/<lang>/LC_MESSAGES/docs/hardware-info/index.po
 minimum_perc = 0
 source_file = docs/build/gettext/docs/hardware-info/index.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.disclaimer-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/disclaimer.pot
+minimum_perc = 0
+source_file = docs/build/gettext/docs/software-info-old/disclaimer.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.overview-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/overview.pot
+minimum_perc = 0
+source_file = docs/build/gettext/docs/software-info-old/overview.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.how-it-should-work-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/how-it-should-work.pot
+minimum_perc = 0
+source_file = docs/build/gettext/docs/software-info-old/swerve-in-teleop/how-it-should-work.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.the-math-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/the-math.pot
+minimum_perc = 0
+source_file = docs/build/gettext/docs/software-info-old/swerve-in-teleop/the-math.pot
 source_lang = en
 type = PO
