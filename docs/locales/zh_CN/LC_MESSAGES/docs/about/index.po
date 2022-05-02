@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the 6940 Swerve Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# mendax1234, 2022
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve Documentation 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-15 20:50+0800\n"
+"POT-Creation-Date: 2022-04-26 16:16+0800\n"
 "PO-Revision-Date: 2022-04-15 13:02+0000\n"
+"Last-Translator: mendax1234, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +23,7 @@ msgstr ""
 
 #: ../../source/docs/about/index.rst:2 a18b9e5e16664f7e8cb6d80a717b7f79
 msgid "About this documentation"
-msgstr ""
+msgstr "关于这个文档"
 
 #: ../../source/docs/about/index.rst:5 0ee4b21c4baa45e3af69e7e382405262
 msgid "Swerve IS HARD"
@@ -111,7 +115,7 @@ msgid ""
 "clarification and answer commonly asked questions. We also public our code "
 "for this documentation on the Github, you can see it from the top-right "
 "page. So, you can either open an issue or send me an `e-mail "
-"<mendax1234@sina.cn>` if you want to contribute to this documentation"
+"<mendax1234@sina.cn>`_ if you want to contribute to this documentation"
 msgstr ""
 
 #: ../../source/docs/about/index.rst:55 631b5989849444fa9fe27dc45438c7f8
