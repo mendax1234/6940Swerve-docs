@@ -90,6 +90,7 @@ Welcome to 6940 Swerve documentation!
    docs/software-info-old/disclaimer
    docs/software-info-old/overview
    docs/software-info-old/swerve-in-teleop/index
+   docs/software-info-old/swerve-in-auton/index
 
 .. toctree::
    :maxdepth: 2
