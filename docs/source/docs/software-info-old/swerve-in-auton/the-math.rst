@@ -37,7 +37,7 @@ suitable odometry method for the limitations of the 15 second autonomous period,
 combined with other sensors to “close the loop” on navigation.
 
 In this formulation of forward kinematics, we start from a position where we assume we know our
-wheel speeds and wheel angles; call them with :math:`ws_{FR}`,:math:`ws_{FL}`,:math:`wa_{RL}`,and so on, with F/R and L/R again
+wheel speeds and wheel angles; call them with :math:`ws_{FR}`, :math:`ws_{FL}`, :math:`wa_{RL}`,and so on, with F/R and L/R again
 representing front/rear and left/right. Using motors that have a built in encoder, such as CTRE
 Falcon 500s or REV Neos, is advantageous for determining wheel speed.
 
