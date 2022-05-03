@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the 6940 Swerve Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# mendax1234, 2022
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve Documentation 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-15 20:50+0800\n"
+"POT-Creation-Date: 2022-04-30 22:40+0800\n"
 "PO-Revision-Date: 2022-04-15 13:13+0000\n"
+"Last-Translator: mendax1234, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,27 +24,111 @@ msgstr ""
 #: ../../source/docs/hardware-info/index.rst:2
 #: 7b7c595bd9854475aa63947c438648c4
 msgid "Hardware/Electrical Info"
-msgstr ""
+msgstr "硬件/电气信息"
 
 #: ../../source/docs/hardware-info/index.rst:5
 #: 67bec52ae2e74db09cb714d4cf8772be
 msgid "About Our Swerve Modules"
-msgstr ""
+msgstr "关于我们的Swerve模块"
 
 #: ../../source/docs/hardware-info/index.rst:7
 #: 31951e25e1d64c62b039dfc3821f0ab9
 msgid "We are using the MK5 swerve modules from SJTU."
-msgstr ""
+msgstr "我们正在使用由上海交通大学设计的MK5 Swerve模块"
 
 #: ../../source/docs/hardware-info/index.rst:10
 #: 3386d68cb6c244a69a474d09f01e1db4
 msgid "About Our Gyros"
-msgstr ""
+msgstr "关于我们的陀螺仪"
 
 #: ../../source/docs/hardware-info/index.rst:12
 #: 7a9c00c073384789b19534926453d2a3
 msgid ""
-"We use one gyro on our robot. The `Gadgeteer Pigeon <https://store.ctr-"
-"electronics.com/gadgeteer-pigeon-imu/>` IMU from Cross the Road Electronics "
-"(CTRE) We have also test `NavX-MXP<>` on our robot and it works well."
+"We use one gyro on our robot. The `Gadgeteer Pigeon IMU <https://store.ctr-"
+"electronics.com/gadgeteer-pigeon-imu/>`_ from Cross the Road Electronics "
+"(CTRE) We have also test `NavX-MXP <https://pdocs.kauailabs.com/navx-mxp/>`_"
+" on our robot and it works well."
+msgstr ""
+"我们在机器人上使用了一个陀螺仪，是由CTRE提供的`Pigeon IMU <https://store.ctr-"
+"electronics.com/gadgeteer-pigeon-imu/>`_ 。我们也在机器上测试了 `NavX-MXP "
+"<https://pdocs.kauailabs.com/navx-mxp/>`_ 并且运行良好。"
+
+#: ../../source/docs/hardware-info/index.rst:16
+#: 9048ac99d2d741eeade7ded2349d0023
+msgid "About Our Motor Controllers"
+msgstr "关于我们的电机和马达控制器"
+
+#: ../../source/docs/hardware-info/index.rst:18
+#: cdb426df239c4d44a39144b49d1930c7
+msgid ""
+"Our choice for motor controllers for the swerve modules was the `Falcon 500 "
+"<https://www.vexrobotics.com/217-6515.html>`_ with the integrated brushless "
+"motor by VEX Robotics and the Talon FX controller by CTRE. The reason for "
+"using this as the drive motor was simple, power and control. The integrated "
+"encoder is adequate for counting the distance travelled using the velocity "
+"mode to get the most consistent results regardless of voltage differences "
+"(within reason.)"
+msgstr ""
+"我们选择了`Falcon 500 <https://www.vexrobotics.com/217-6515.html>`_ "
+"作为我们Swerve上的电机"
+
+#: ../../source/docs/hardware-info/index.rst:24
+#: 296a9eea4b684b1388d610243faad1e8
+msgid ""
+"The turning motor is `775 pro <https://www.vexrobotics.com/775pro.html>`_ by"
+" VEX Robotics and the `Talon SRX "
+"<https://www.vexrobotics.com/217-8080.html>`_ controller by CTRE. The reason"
+" for using this is that the swerve is designed to use a 775 pro as its "
+"turning motor. Another reason is that we don't have enough Falcon 500 and we"
+" want to make full use of them. For example, use them on our shooter and "
+"intaker."
+msgstr ""
+
+#: ../../source/docs/hardware-info/index.rst:31
+#: fc7075258f494dbb9c4ce6f35822740e
+msgid "Other Sensors"
+msgstr ""
+
+#: ../../source/docs/hardware-info/index.rst:32
+#: 2bfc9d4066aa4feea7196c5b1496d7d3
+msgid ""
+"We use several other sensors that weave into our swerve code. The most "
+"obvious is the `Limelight2+ <https://limelightvision.io/>`_ . We also use "
+"two `Pixy2 <https://pixycam.com/pixy2/>`_ , two `IR Sensors "
+"<https://www.amazon.com/HiLetgo-E18-D80NK-Infrared-Photoelectric-"
+"Avoidance/dp/B07VKR1GBJ/ref=sr_1_2?keywords=E18-D80NK&qid=1651325946&sr=8-2>`_"
+" and one `REV color sensor <https://www.revrobotics.com/rev-31-1557/>`_. We "
+"will address the exact usage of these sensors in later sections."
+msgstr ""
+
+#: ../../source/docs/hardware-info/index.rst:37
+#: 99dea03a7f5443c9a306b16ec20d31bf
+msgid ""
+"The Limelight is used to visually target the goal. We use the x and y "
+"offsets that are in the Limelight to turn the shooter to the goal and gauge "
+"the distance from the goal. The Limelight has excellent range and is able to"
+" target the goal from anywhere on the field that has a shooting solution. "
+"The Limelight is mounted in front of our shooter. With the interpoltion "
+"table, we can achieve shooting at every place in the field with the help of "
+"Limelight2+."
+msgstr ""
+
+#: ../../source/docs/hardware-info/index.rst:43
+#: 620e0e87fd1d46e5a7bd6643e35897f2
+msgid ""
+"The Pixy2 is also a visual targeting camera and processor, but due to the "
+"color ofthis season's (2022 Season Rapid React) cargo (blue and red), Pixy2 "
+"may not be able tell the difference between team's bumper and the cargo, so "
+"l am sorry to say that Pixy2 may not be able to be used as a camera to do "
+"game-piece centric. But we will also introduce the game-piece centric in the"
+" later chapters with Pixy2."
+msgstr ""
+
+#: ../../source/docs/hardware-info/index.rst:49
+#: 1f4666267e334ab09e01232caf1d8c9a
+msgid ""
+"The IR Sensors are used to detect whether we have a ball intaked into our "
+"robot. And the REV color sensor is used to shoot away the wrong color ball. "
+"The exact usage of these two sensors will be introduced in the later "
+"chapters."
 msgstr ""
