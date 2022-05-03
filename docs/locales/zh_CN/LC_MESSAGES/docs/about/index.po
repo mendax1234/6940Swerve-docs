@@ -27,29 +27,29 @@ msgstr "关于这个文档"
 
 #: ../../source/docs/about/index.rst:5 0ee4b21c4baa45e3af69e7e382405262
 msgid "Swerve IS HARD"
-msgstr ""
+msgstr "Swerve很难"
 
 #: ../../source/docs/about/index.rst:7 b1365977f69a41f0aea47285b137487b
 msgid ""
 "We’re not joking. SWERVE IS HARD! Please do not attempt to do swerve if your"
 " team does not have:"
-msgstr ""
+msgstr "我们并没有在开玩笑。Swerve真的很难。请不要尝试使用Swerve如果你的队伍没有："
 
 #: ../../source/docs/about/index.rst:9 2f71567171474382bab94758f62e0ec8
 msgid "lots of mechanical knowledge"
-msgstr ""
+msgstr "大量的机械知识"
 
 #: ../../source/docs/about/index.rst:10 7bb8298b5cc1443f9184532fb98761d3
 msgid "lots of programming experience"
-msgstr ""
+msgstr "大量的编程经验"
 
 #: ../../source/docs/about/index.rst:11 9fd90d603632499b89ec69aeba508a32
 msgid "substantial funding for a crazy expensive drivetrain"
-msgstr ""
+msgstr "用以支持这个相当贵的底盘的大量资金"
 
 #: ../../source/docs/about/index.rst:12 0a5fc0080b744b5b8e390aaadaa62ee2
 msgid "ridiculous persistence and dedication"
-msgstr ""
+msgstr "大量的坚持和投入"
 
 #: ../../source/docs/about/index.rst:14 5c793cb499674c87aca4e1cd836fc527
 msgid ""
@@ -62,10 +62,12 @@ msgid ""
 "cool or sound epic. But, does it work!? Most of the time, the simpler the "
 "better."
 msgstr ""
+"我们并没有阻止你去做出一个理想的机器。我们仅仅想减少在比赛场上坏掉的机器的数量。 正如FRC Team 1684 "
+"的驾驶教练所说，“在你的能力范围之内设计并搭建机器。”如果你的队伍并没有满足上述列出的所有要求，请再三考虑你们是否要做Swerve。一个不好的Swerve（无论是在程序还是机械方面）不仅不会提升你们队伍的实力，反而会帮倒忙。的确，用Swerve的机器确实看起来很酷并且听起来很厉害。但是，他们的机器究竟能否正常运行起来！？很多时候，越是简单的机器，效果往往越好。"
 
 #: ../../source/docs/about/index.rst:22 e581cbbdbc32454a90e0c9096b1fe835
 msgid "We’re Not THE EXPERTS… Just Experienced People"
-msgstr ""
+msgstr "我们并不是Swerve的专家……我们只是有经验的人罢了"
 
 #: ../../source/docs/about/index.rst:24 bf5aa8f220594e4fbc28a654dea7fe5d
 msgid ""
@@ -78,10 +80,13 @@ msgid ""
 "designs so our robot can be its absolute best. We urge you all to do the "
 "same."
 msgstr ""
+"如果你的队伍决定要走swerve这条路，请一定要注意这个文档中的建议。我们经历了做出swerve的快乐和遇到问题的痛苦和无奈。请再次注意我们并没有声称自己是Swerve方面的专家。无论如何，"
+" "
+"我们都只是有经验的人罢了。我们只是想向大家分享我们从2022赛季的第一天开始所学到的关于swerve的所有知识。就像任何一个普通FRCer一样，我们也仍然在错误中摸索着前进。我们会不断完善我们的设计以致我们的机器可以做到最好。我们也强烈希望你们所有人也能这样做。"
 
 #: ../../source/docs/about/index.rst:32 8bbe03a423e84d68baee01a546dcf998
 msgid "Don’t Be Afraid To Ask For Help!"
-msgstr ""
+msgstr "不要害怕提问！"
 
 #: ../../source/docs/about/index.rst:34 906943508c344c36ba3c0d6dddefcc43
 msgid ""
