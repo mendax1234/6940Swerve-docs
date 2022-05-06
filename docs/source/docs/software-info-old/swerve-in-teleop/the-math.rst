@@ -188,12 +188,14 @@ can be converted to degrees as necessary - just multiply by 180/π . Our wheel s
 from 0 to 1, absolute, but we’ll need to check if they need to be normalized. To do this, we just check
 if the maximum of our ws values is greater than 1, and if it is, scale the values such that it’s 1.
 
-.. math:: ws_{max} = max(ws_{FR}, ws_{FL}, ws_{RR}, ws_{RL})
-.. math:: if ws_{max} > 1.0 :
-.. math:: ws_{FR} = ws_{FR}/ws_{max}
-.. math:: ws_{FL} = ws_{FL}/ws_{max}
-.. math:: ws_{RR} = ws_{RR}/ws_{max}
-.. math:: ws_{RL} = ws_{RL}/ws_{max}
+::
+
+   ws_{max} = max(ws_{FR}, ws_{FL}, ws_{RR}, ws_{RL})
+   if ws_{max} > 1.0 :
+   ws_{FR} = ws_{FR}/ws_{max}
+   ws_{FL} = ws_{FL}/ws_{max}
+   ws_{RR} = ws_{RR}/ws_{max}
+   ws_{RL} = ws_{RL}/ws_{max}
 
 Now we have all ws values ranging from 0 to 1. The wheel speed assumed to be in the direction the
 wheel is facing ( wa ), and thus does not go negative, as that would imply the wheel has turned 180°.
