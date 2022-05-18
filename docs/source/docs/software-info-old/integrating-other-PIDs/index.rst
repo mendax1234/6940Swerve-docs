@@ -11,3 +11,8 @@ Not convinced yet? Think about it this way. The more control the driver has, the
 driving will feel. The more comfortable the driver is, the better they will play. The better they play,
 the better your whole team will do. That is why we are so hard-set on having solid controls. We want
 to perform well. And we want you to as well.
+
+.. toctree::
+   :maxdepth: 4
+
+    PIDF-loops

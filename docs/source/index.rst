@@ -91,6 +91,7 @@ Welcome to 6940 Swerve documentation!
    docs/software-info-old/overview
    docs/software-info-old/swerve-in-teleop/index
    docs/software-info-old/swerve-in-auton/index
+   docs/software-info-old/integrating-other-PIDs/index
 
 .. toctree::
    :maxdepth: 2
