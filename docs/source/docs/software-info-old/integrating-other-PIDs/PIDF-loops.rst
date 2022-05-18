@@ -31,7 +31,7 @@ please see this article . Below we will talk about each gain .
 .. note:: These sample calculations are not tuned PID loops. These are simply examples to show how the numbers work.
 
 P - Proportion
-^^^^^^^^^^^^^^^^^^
++++++++++++++++++
 We multiply the error by P .
 ::
 
@@ -51,7 +51,7 @@ Here is a simple numerical example:
 .. note:: In this scenario, our correction is 10% motor output.
 
 I - Integral
-^^^^^^^^^^^^^
++++++++++++++++
 We continuously accumulate the error when we are very close to our target (within an
 IZone ). Then, we scale the integral by the responseTime . Finally, we multiply this number by
 I and add it into the correction calculation.
@@ -94,7 +94,7 @@ Here is a simple numerical example:
 .. note:: In this scenario, our correction is 1.89% motor output. Yes, this is a very small number. However, after a few more cycles the integral will make correction grow strong enough to creep the system right to the target state .
 
 D - Derivative
-^^^^^^^^^^^^^^^^^^^
+++++++++++++++++++
 We take the difference between our current error and our previous error divided by our
 responseTime . Then, we add the derivative into the correction equation.
 ::
@@ -130,7 +130,7 @@ Here is a simple numerical example:
 .. note:: In this scenario, our correction is 40% reverse motor output.
 
 F - Feed Forward
-^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++
 We multiply the target by feed forward . Then, we add that into the existing correction
 equation. All we are doing is providing the system an initial boost in power based on our
 existing knowledge of the system.
@@ -147,44 +147,44 @@ system a boost, so the rest of the PID doesn’t need to work as hard.
 Other Control Loop Terms
 --------------------------
 Open Loops
-^^^^^^^^^^^
+++++++++++++++
 Dead reckoning : controlling the system based on time . There is no feedback from sensors ,
 so the system is not able to correct for changing conditions. This method should be used as
 a starting point for building closed loops .
 
 Closed Loops
-^^^^^^^^^^^^^^^^
+++++++++++++++++++
 PID(F) loops. Based on feedback we get from sensors, our system is able to automatically
 correct for changing conditions.
 
 Internal Loops (our version)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++
 PID(F) loops that are built into the motor controller. The feedback sensor is directly
 communicating with the motor controller. Use this whenever possible. They react quicker
 than external loops because the motor controller has a faster running clock than the
 RoboRIO (typically 1 ms vs. 50 ms).
 
 External Loops (our version)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+++++++++++++++++++++++++++++++++
 PID(F) loops that run on the RoboRIO. The feedback sensor is directly communicating with
 the RoboRIO. Use this when you have to. They react slower than internal loops because the
 RoboRIO has a slower running clock than the motor controller (50 ms vs. typically 1 ms).
 Also, you are responsible for writing the control loop yourself.
 
 Positioning Loops
-^^^^^^^^^^^^^^^^^^
++++++++++++++++++++
 PID(F) loops that have a target positio n in mind. Using an encoder (or other distance
 measurement device), they allow you to achieve a certain distance in a timely, consistent
 manner.
 
 Velocity Loops
-^^^^^^^^^^^^^^^
+++++++++++++++++++
 PID(F) loops that have a target velocity in mind. Using an encoder (or other velocity
 measurement device), they allow you to achieve a certain speed in a timely, consistent
 manner.
 
 “Inside Outside” Loops (our definition)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
++++++++++++++++++++++++++++++++++++++++++++
 Using an external position loop to set an internal velocity loop . The encoder (or other
 distance sensor) communicates with the RoboRIO, while another encoder (or other velocity
 sensor) communicates with the motor controller. Use this for ultimate control IF you are
@@ -203,7 +203,7 @@ weight differences between them.
 See this article by CTRE for more information about tuning control loops.
 
 Start with kP
-^^^^^^^^^^^^^^^
++++++++++++++++++
 .. note:: If the control loop for your system is going to maintain a certain setpoint , then it is a
 good idea to start with kF , and come back to this step.
 
@@ -253,7 +253,7 @@ oscillation , the gain is just right. That is why we go through this process. Ju
 value alone is not enough. You have to test and tweak the gain to fit your system.
 
 Next is kD
-^^^^^^^^^^^^^^
+++++++++++++
 Now that we are happy with our kP , we can start tuning kD .
 .. note:: Depending on how your mechanism is designed and the type of control loop , you might not need to use kD . Brushless motors themselves behave much differently from brushed motors. We have found that control loops using brushless motors and kD are much harder to tune. They have a lot more torque, making the derivative difficult to control.
 
@@ -295,7 +295,7 @@ the gain is just right. That is why we go through this process. Just calculating
 is not enough. You have to test and tweak the gain to fit your system.
 
 Then kI
-^^^^^^^^^^
+++++++++++
 Now that we are happy with our kD , we can start tuning kI .
 .. note:: Depending on how your mechanism is designed and the type of control loop , you
 might not need to use kI.
@@ -349,7 +349,7 @@ oscillation , the gain is just right. That is why we go through this process. Ju
 value alone is not enough. You have to test and tweak the gain to fit your system.
 
 What about kF?
-^^^^^^^^^^^^^^^
++++++++++++++++
 .. note:: To use feedforward effectively you have to have a good idea of how your system will
 behave ahead of time.
 
