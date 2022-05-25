@@ -48,6 +48,7 @@ Here is a simple numerical example:
     correction = error * kP;
                 = 1000 * 0.0001;
                 = 0.1;
+
 .. note:: In this scenario, our correction is 10% motor output.
 
 I - Integral
@@ -91,6 +92,7 @@ Here is a simple numerical example:
                = 9 * 0.0001 + 9 * 0.002;
                = 0.0009 + 0.018 ;
                = 0.0189 ;
+
 .. note:: In this scenario, our correction is 1.89% motor output. Yes, this is a very small number. However, after a few more cycles the integral will make correction grow strong enough to creep the system right to the target state .
 
 D - Derivative
@@ -127,6 +129,7 @@ Here is a simple numerical example:
                = 1000 * 0.0001 +− 500 * 0.001;
                = 0.1 − 0.5;
                = − 0.4;
+               
 .. note:: In this scenario, our correction is 40% reverse motor output.
 
 F - Feed Forward

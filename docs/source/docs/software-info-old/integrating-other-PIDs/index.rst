@@ -15,4 +15,4 @@ to perform well. And we want you to as well.
 .. toctree::
    :maxdepth: 2
 
-    PIDF-loops
+   PIDF-loops
