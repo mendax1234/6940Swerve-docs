@@ -207,8 +207,7 @@ See this article by CTRE for more information about tuning control loops.
 
 Start with kP
 +++++++++++++++++
-.. note:: If the control loop for your system is going to maintain a certain setpoint , then it is a
-good idea to start with kF , and come back to this step.
+.. note:: If the control loop for your system is going to maintain a certain setpoint , then it is a good idea to start with kF , and come back to this step.
 
 Make a logical guess based on the units of measurement you are using and your output
 units. Let’s think about a simple positioning loop . Let’s say our encoder reads 100 ticks/inch
@@ -282,8 +281,7 @@ Once you see more of this, lower the gain a tiny bit.
 You may want to increase your kP slightly to maximize the speed of your system. Ideally,
 you want to find the balance between speed and accuracy with any control loop .
 
-.. note:: The derivative is not intended to get you exactly to your target ; that’s what the
-integra l is for. Instead, we use kD to help eliminate overshooting the target.
+.. note:: The derivative is not intended to get you exactly to your target ; that’s what the integral is for. Instead, we use kD to help eliminate overshooting the target.
 
 Now that we are content with our gain , we need to make sure it works throughout our
 entire operating range.We have to test the control loop under different conditions. In our
@@ -353,8 +351,7 @@ value alone is not enough. You have to test and tweak the gain to fit your syste
 
 What about kF?
 +++++++++++++++
-.. note:: To use feedforward effectively you have to have a good idea of how your system will
-behave ahead of time.
+.. note:: To use feedforward effectively you have to have a good idea of how your system will behave ahead of time.
 
 kF is the simplest gain to tune. You just need to find a value that gets you right into your
 operating range. Feedforward doesn’t perform any corrections , rather it moves your
