@@ -6,9 +6,6 @@ project = '6940 Swerve Documentation'
 copyright = '2022, Wenbo Zhu (mendax1234)'
 author = 'Wenbo Zhu (mendax1234)'
 
-release = '1.0'
-version = '1.0.0'
-
 # -- General configuration
 
 extensions = [
