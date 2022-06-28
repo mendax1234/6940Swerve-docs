@@ -5,7 +5,7 @@ Why Do We Even Need Fancy Control Loops?
 ------------------------------------------
 Control. We are completely serious. Loops enable us to finely control practically any part of the
 robot. Yes, you can just set power to a motor with a joystick. That is fine for some mechanisms. If
-you haven’t even tried doing this yet, STOP RIGHT NOW! Go and make your robot move! Start simple,
+you haven't even tried doing this yet, STOP RIGHT NOW! Go and make your robot move! Start simple,
 then build your way up to complex controls.
 
 Other mechanisms are very difficult to manage. Anything from battery voltage, to wheel wear can
@@ -104,7 +104,7 @@ responseTime . Then, we add the derivative into the correction equation.
     derivative = (error – prevError) / responseTime;
     correction = error * kP + derivative * kD;
 
-Think of this like we’re slowly using the brakes instead of stomping on them. The derivative
+Think of this like we're slowly using the brakes instead of stomping on them. The derivative
 helps us smooth out our movements.
 
 We can also think about this in graphical terms. We are finding the slope of the correction
@@ -145,7 +145,7 @@ existing knowledge of the system.
 Here is another way of thinking about it. We are supplying a known starting value to get us
 into our operating range. Think about a shooter wheel. If we want the wheel to run at a
 constant velocity, we already know how fast we want it to go. The feed forward gives our
-system a boost, so the rest of the PID doesn’t need to work as hard.
+system a boost, so the rest of the PID doesn't need to work as hard.
 
 Other Control Loop Terms
 --------------------------
@@ -210,10 +210,10 @@ Start with kP
 .. note:: If the control loop for your system is going to maintain a certain setpoint , then it is a good idea to start with kF , and come back to this step.
 
 Make a logical guess based on the units of measurement you are using and your output
-units. Let’s think about a simple positioning loop . Let’s say our encoder reads 100 ticks/inch
+units. Let's think about a simple positioning loop . Let's say our encoder reads 100 ticks/inch
 and we are using percent output. Approximately how much power do we want applied to at
 a certain distance? We already have an idea of how far we want to move: we know the field
-measurements. So, let’s say we want this positioning loop to give 100% output when we are
+measurements. So, let's say we want this positioning loop to give 100% output when we are
 10 ft away. This is what the math would look like:
 
 ::
@@ -243,7 +243,7 @@ entire operating range.We have to test the control loop under different conditio
 earlier example, we would need to physically test our positioning loop at different
 distances. We want the robot to always achieve its distance, no matter the distance (within
 reason). To perform this test, we set up a range target distances, both traveling forwards
-and backwards. DO NOT OVERLOOK THIS STEP! Please don’t ever assume your loop will work
+and backwards. DO NOT OVERLOOK THIS STEP! Please don't ever assume your loop will work
 correctly in both directions.
 
 If a system is traveling too quickly in certain scenarios, it may be a good idea to apply a
@@ -281,14 +281,14 @@ Once you see more of this, lower the gain a tiny bit.
 You may want to increase your kP slightly to maximize the speed of your system. Ideally,
 you want to find the balance between speed and accuracy with any control loop .
 
-.. note:: The derivative is not intended to get you exactly to your target ; that’s what the integral is for. Instead, we use kD to help eliminate overshooting the target.
+.. note:: The derivative is not intended to get you exactly to your target ; that's what the integral is for. Instead, we use kD to help eliminate overshooting the target.
 
 Now that we are content with our gain , we need to make sure it works throughout our
 entire operating range.We have to test the control loop under different conditions. In our
 earlier example, we would need to physically test our positioning loop at different
 distances. We want the robot to always achieve its distance, no matter the distance (within
 reason). To perform this test, we set up a range target distances, both traveling forwards
-and backwards. DO NOT OVERLOOK THIS STEP! Please don’t ever assume your loop will work
+and backwards. DO NOT OVERLOOK THIS STEP! Please don't ever assume your loop will work
 correctly in both directions.
 
 We want to maximize the responsiveness of our system. When it is just shy of the target ,
@@ -334,7 +334,7 @@ It is recommended you double your kI value until you see oscillation , or what w
 going 75% of the previous value. If that looks good, continue increasing the gain slightly
 until you see more oscillation . Once you see more oscillation , lower the gain a tiny bit.
 
-Don’t forget that you can also play with IZone and ILimit . These values can help create a
+Don't forget that you can also play with IZone and ILimit . These values can help create a
 strong, yet controlled correction right to the target .
 
 Now that we are content with our gain , we need to make sure it works throughout our
@@ -342,7 +342,7 @@ entire operating range.We have to test the control loop under different conditio
 earlier example, we would need to physically test our positioning loop at different
 distances. We want the robot to always achieve its distance, no matter the distance (within
 reason). To perform this test, we set up a range target distances, both traveling forwards
-and backwards. DO NOT OVERLOOK THIS STEP! Please don’t ever assume your loop will work
+and backwards. DO NOT OVERLOOK THIS STEP! Please don't ever assume your loop will work
 correctly in both directions.
 
 We want to maximize the responsiveness of our system. When it is on the edge of
@@ -354,7 +354,7 @@ What about kF?
 .. note:: To use feedforward effectively you have to have a good idea of how your system will behave ahead of time.
 
 kF is the simplest gain to tune. You just need to find a value that gets you right into your
-operating range. Feedforward doesn’t perform any corrections , rather it moves your
+operating range. Feedforward doesn't perform any corrections , rather it moves your
 starting point from 0 to “whatever you want”. This makes it much easier to tune the rest of
 the PID . Having a tighter range to correct results in faster reactions and finer control.
 

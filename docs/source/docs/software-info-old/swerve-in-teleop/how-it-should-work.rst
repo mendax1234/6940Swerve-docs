@@ -1,6 +1,6 @@
 How It Should Work
 ====================
-You move the controller and the robot magically does what you think it should. Isn’t that the goal?
+You move the controller and the robot magically does what you think it should. Isn't that the goal?
 Of course it is! The way that we chose is the same way that our driver would operate a drone.
 Although, we have not worked out the levitate functionality.
 
