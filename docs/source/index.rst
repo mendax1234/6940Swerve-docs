@@ -1,72 +1,32 @@
 Welcome to 6940 Swerve documentation!
 =========================================
+.. grid:: 2
 
-.. panels::
-   :column: col-sm-6 d-flex pb-3
-   :footer: bg-white border-0
+    .. grid-item-card::  About
+        :link: /docs/about/about
+        :link-type: doc
 
-   ---
-   :header: bg-info font-weight-bold text-white
+        About Swerve Drive in FRC
 
-   About
+    .. grid-item-card::  Hardware/Electrical Info
+        :link: /docs/hardware-info/hardware-info
+        :link-type: doc
 
-   ^^^
+        An overview of the hardware components of our swerve drive.
 
-   About Swerve Drive in FRC
+.. grid:: 2
 
-   +++
+    .. grid-item-card::  Software Info - Old
+        :link: /docs/software-info-old/disclaimer
+        :link-type: doc
 
-   .. link-button:: /docs/about/about
-      :type: ref
-      :text: Go to About
-      :classes: btn-outline-primary btn-block
+        Old but basic software algorithm overview of swerve drive.
 
-   ---
-   :header: bg-info font-weight-bold text-white
+    .. grid-item-card:: Software Info - New
+        :link: /docs/hardware-info/hardware-info
+        :link-type: doc
 
-   Hardware/Electrical Info
-
-   ^^^
-
-   An overview of the hardware components of our swerve drive.
-
-   +++
-
-   .. link-button:: /docs/hardware-info/hardware-info
-      :type: ref
-      :text: Go to Hardware/Electrical Info
-      :classes: btn-outline-primary btn-block
-
-   ---
-   :header: bg-info font-weight-bold text-white
-
-   Software Info - Old
-
-   ^^^
-
-   Old but basic software algorithm overview of swerve drive.
-
-   +++
-
-   .. link-button:: /docs/software-info-old/disclaimer
-      :type: ref
-      :text: Go to Software Info - Old
-      :classes: btn-outline-primary btn-block
-   ---
-   :header: bg-info font-weight-bold text-white
-
-   Software Info - New
-
-   ^^^
-
-   New but easy software algorithm overview of our swerve drive.
-
-   +++
-
-   .. link-button:: /docs/software-info-new/index
-      :type: ref
-      :text: Go to Software Info - New
-      :classes: btn-outline-primary btn-block
+         New but easy software algorithm overview of our swerve drive.
 
 .. toctree::
    :maxdepth: 2
