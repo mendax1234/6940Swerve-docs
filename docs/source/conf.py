@@ -20,7 +20,6 @@ extensions = [
     'sphinx_panels',
     'sphinx_search.extension',
     'sphinx.ext.mathjax',
-    'sphinx_rtd_dark_mode'
 ]
 
 intersphinx_mapping = {
@@ -59,5 +58,6 @@ hoverxref_mathjax = True
 # Use MathJax3 for better page loading times
 mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 
-# user starts in dark mode
-default_dark_mode = True
+html_css_files = [
+    'css/rtd_dark.css',
+]
