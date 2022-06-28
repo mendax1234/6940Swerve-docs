@@ -23,10 +23,10 @@ Welcome to 6940 Swerve documentation!
         Old but basic software algorithm overview of swerve drive.
 
     .. grid-item-card:: Software Info - New
-        :link: /docs/hardware-info/hardware-info
+        :link: /docs/oftware-info-new/index
         :link-type: doc
 
-         New but easy software algorithm overview of our swerve drive.
+        New but easy software algorithm overview of our swerve drive.
 
 .. toctree::
    :maxdepth: 2
