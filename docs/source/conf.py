@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = '6940 Swerve Documentation'
+project = '6940 Swerve'
 copyright = '2022, Wenbo Zhu (mendax1234)'
 author = 'Wenbo Zhu (mendax1234)'
 
