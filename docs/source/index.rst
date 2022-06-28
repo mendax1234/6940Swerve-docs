@@ -1,4 +1,4 @@
-Welcome to 6940 Swerve documentation!
+6940 Swerve documentation!
 =========================================
 .. grid:: 2
 
