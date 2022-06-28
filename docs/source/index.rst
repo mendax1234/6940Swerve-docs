@@ -1,5 +1,8 @@
 6940 Swerve documentation!
 =========================================
+
+Welcome to the FRC Team 6940 Violet Z's Swerve Documentation! This site contains everything you want to know about 6940's code in 2022 Rapid React and our code for swerve!
+
 .. grid:: 2
 
     .. grid-item-card::  About
@@ -23,7 +26,7 @@
         Old but basic software algorithm overview of swerve drive.
 
     .. grid-item-card:: Software Info - New
-        :link: /docs/oftware-info-new/index
+        :link: /docs/software-info-new/index
         :link-type: doc
 
         New but easy software algorithm overview of our swerve drive.
