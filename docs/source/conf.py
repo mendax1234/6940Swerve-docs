@@ -59,9 +59,5 @@ hoverxref_mathjax = True
 # Use MathJax3 for better page loading times
 mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 
-#html_css_files = [
-#    'css/rtd_dark.css',
-#]
-
 # user starts in dark mode
 default_dark_mode = True

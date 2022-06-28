@@ -3,4 +3,3 @@ lutra
 furo
 readthedocs-sphinx-search
 sphinx-panels
-sphinx-rtd-theme
