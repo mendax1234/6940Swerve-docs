@@ -3,3 +3,4 @@ lutra
 furo
 readthedocs-sphinx-search
 sphinx-panels
+sphinx_rtd_dark_mode
