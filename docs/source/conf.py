@@ -20,7 +20,7 @@ extensions = [
     'sphinx_panels',
     'sphinx_search.extension',
     'sphinx.ext.mathjax',
-    "sphinx_rtd_dark_mode',
+    'sphinx_rtd_dark_mode'
 ]
 
 intersphinx_mapping = {
