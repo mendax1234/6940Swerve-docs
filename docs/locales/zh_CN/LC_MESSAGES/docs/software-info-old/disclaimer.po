@@ -39,4 +39,4 @@ msgstr ""
 #: ../../source/docs/software-info-old/disclaimer.rst:6
 #: e34114cf80d44da6871c113830f39080
 msgid "In this part, all 'We' refer to Team 1684"
-msgstr "在这一部分，所有的“我们”都只Team 1684"
+msgstr "在这一部分，所有的“我们”都指Team 1684"
