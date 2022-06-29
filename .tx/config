@@ -114,9 +114,9 @@ source_lang = en
 type = PO
 
 [6940swerve-docs.docs--software-info-old--other-miscs--index]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old--other-miscs/index.po
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/other-miscs/index.po
 minimum_perc = 0
-source_file = docs/build/gettext/docs/software-info-old--other-miscs/index.pot
+source_file = docs/build/gettext/docs/software-info-old/other-miscs/index.pot
 source_lang = en
 type = PO
 
