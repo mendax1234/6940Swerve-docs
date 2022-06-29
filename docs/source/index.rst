@@ -63,6 +63,7 @@ Welcome to the FRC Team 6940's Swerve Documentation! This site contains everythi
    docs/software-info-old/swerve-in-teleop/index
    docs/software-info-old/swerve-in-auton/index
    docs/software-info-old/integrating-other-PIDs/index
+   docs/software-info-old/other-miscs/index
 
 .. toctree::
    :maxdepth: 2

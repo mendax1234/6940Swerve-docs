@@ -16,3 +16,6 @@ to perform well. And we want you to as well.
    :maxdepth: 3
 
    PIDF-loops
+   goal-centric
+   gamepiece-centric
+   drive-straight
