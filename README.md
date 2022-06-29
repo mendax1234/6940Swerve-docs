@@ -15,4 +15,4 @@ https://6940swerve-docs.readthedocs.io/en/latest/
 
 l am happy to have you contributing to 6940swerve-docs, whether it's: writing articles, fixing code, new extensions, or adding translations!
 
-All the information needed to contribute to 6940swerve-docs is located in the [contributing]() section on 6940swerve-docs.
+All the information needed to contribute to 6940swerve-docs is located in the [contributing](https://6940swerve-docs.readthedocs.io/en/latest/docs/contributing/index.html) section on 6940swerve-docs.
