@@ -47,6 +47,8 @@ msgid ""
 "everything you want to know about 6940's code in 2022 Rapid React and our "
 "code for swerve!"
 msgstr ""
+"欢迎来到FRC Team 6940的Swerve文档！这个网站包括了所有你想知道的关于6940 Swerve的代码和6940在2022赛季Rapid "
+"React中的代码！"
 
 #: ../../source/index.rst:12 e0d6ff4a984b4615a1b30c9566d64794
 msgid "About Swerve Drive in FRC"
