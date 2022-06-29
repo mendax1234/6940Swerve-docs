@@ -19,11 +19,11 @@ Welcome to the FRC Team 6940's Swerve Documentation! This site contains everythi
 
 .. grid:: 2
 
-    .. grid-item-card::  Software Info - Old
+    .. grid-item-card::  Software Info - Team 1684
         :link: /docs/software-info-old/disclaimer
         :link-type: doc
 
-        Old but basic software algorithm overview of swerve drive.
+        FRC Team 1684 software algorithm overview of swerve drive.
 
     .. grid-item-card:: Software Info - New
         :link: /docs/software-info-new/index
