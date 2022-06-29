@@ -8,17 +8,17 @@ source_file = docs/build/gettext/index.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--about--index-pot]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/about/index.po
+[6940swerve-docs.docs--about--about-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/about/about.po
 minimum_perc = 0
-source_file = docs/build/gettext/docs/about/index.pot
+source_file = docs/build/gettext/docs/about/about.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--hardware-info--index-pot]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/hardware-info/index.po
+[6940swerve-docs.docs--hardware-info--hardware-info-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/hardware-info/hardware-info.po
 minimum_perc = 0
-source_file = docs/build/gettext/docs/hardware-info/index.pot
+source_file = docs/build/gettext/docs/hardware-info/hardware-info.pot
 source_lang = en
 type = PO
 

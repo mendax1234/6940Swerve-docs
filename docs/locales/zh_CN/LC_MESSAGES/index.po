@@ -1,19 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2022, Wenbo Zhu (mendax1234)
-# This file is distributed under the same license as the 6940 Swerve Documentation package.
+# This file is distributed under the same license as the 6940 Swerve package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# mendax1234, 2022
+# Daniel Webber, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 6940 Swerve Documentation 0.1.0\n"
+"Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-02 16:26+0800\n"
+"POT-Creation-Date: 2022-06-29 11:14+0800\n"
 "PO-Revision-Date: 2022-05-02 09:42+0000\n"
-"Last-Translator: mendax1234, 2022\n"
+"Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,45 +21,45 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../source/index.rst:71 ../../source/index.rst:11
-#: 79ae8f24b977444692d349d849532e67
+#: ../../source/index.rst:34
 msgid "About"
 msgstr "关于"
 
-#: ../../source/index.rst:78
+#: ../../source/index.rst:41
 msgid "Hardware Info"
 msgstr "硬件信息"
 
-#: ../../source/index.rst:85 ../../source/index.rst:43
-#: 8a6fc95a297343169ce9f4302e1cce1f
+#: ../../source/index.rst:48
 msgid "Software Info - Old"
 msgstr "软件信息-“旧”"
 
-#: ../../source/index.rst:94 ../../source/index.rst:58
-#: 8a6fc95a297343169ce9f4302e1cce1f
+#: ../../source/index.rst:59
 msgid "Software Info - New"
 msgstr "软件信息-“新”"
 
-#: ../../source/index.rst:2 3f0ceb759da04f03a4911c005b4caacb
-msgid "Welcome to 6940 Swerve documentation!"
-msgstr "欢迎来到6940 Swerve文档！"
+#: ../../source/index.rst:2 2641b2bbb4d54567b261637a22f3f879
+msgid "6940 Swerve Documentation"
+msgstr ""
 
-#: ../../source/index.rst:15 6f851641dcce4c46a531692fff66590a
+#: ../../source/index.rst:4 c08f338b95e948aa86529418fafbaffe
+msgid ""
+"Welcome to the FRC Team 6940's Swerve Documentation! This site contains "
+"everything you want to know about 6940's code in 2022 Rapid React and our "
+"code for swerve!"
+msgstr ""
+
+#: ../../source/index.rst:12 e0d6ff4a984b4615a1b30c9566d64794
 msgid "About Swerve Drive in FRC"
 msgstr "关于FRC中的Swerve底盘"
 
-#: ../../source/index.rst:27 f2df058c81ff404c9bcf054cb0c54ba0
-msgid "Hardware/Electrical Info"
-msgstr "硬件/电气信息"
-
-#: ../../source/index.rst:31 a0e0b656aa24476eae0b6c96d38f52ab
+#: ../../source/index.rst:18 01a74f9bc59c4b1893551437cf535ec6
 msgid "An overview of the hardware components of our swerve drive."
 msgstr "一个关于我们Swerve底盘硬件组成的总览"
 
-#: ../../source/index.rst:47 a0e0b656aa24476eae0b6c96d38f52ab
+#: ../../source/index.rst:26 9e5b9a9749604dc89bae5430af652e71
 msgid "Old but basic software algorithm overview of swerve drive."
 msgstr "“旧”但是基础的Swerve底盘软件算法总览"
 
-#: ../../source/index.rst:62 a0e0b656aa24476eae0b6c96d38f52ab
+#: ../../source/index.rst:32 eb7aae96fe604acebbb2aea9296c07fb
 msgid "New but easy software algorithm overview of our swerve drive."
 msgstr "“新”但是简单的Swerve底盘软件算法总览"
