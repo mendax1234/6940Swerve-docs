@@ -44,7 +44,7 @@ msgid ""
 "2, After you create a Transifex account, you will see the page below. Click "
 "the **Join an exist organization** and enter the necessary information."
 msgstr ""
-"2，在你创建好一个Transifex账号后，你将会看见如下页面。点击**Join an exist organization** 然后输入必要的信息。"
+"2，在你创建好一个Transifex账号后，你将会看见如下页面。点击 **Join an exist organization** 然后输入必要的信息。"
 
 #: ../../source/docs/contributing/index.rstNone
 #: d450fd53fe3f4ed387edb61424a044e1
