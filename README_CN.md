@@ -12,7 +12,7 @@ https://6940swerve-docs.readthedocs.io/en/latest/
 
 # 我的愿景
 
-# Contributing to 6940swerve-docs
+# 如何贡献到6940swerve-docs
 
 我很高兴你能够贡献到6940swerve-docs，无论是写文章，修复代码，新扩展，或者添加翻译！
 
