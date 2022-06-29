@@ -1,0 +1,603 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Wenbo Zhu (mendax1234)
+# This file is distributed under the same license as the 6940 Swerve package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 6940 Swerve\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-29 11:14+0800\n"
+"PO-Revision-Date: 2022-06-29 03:50+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:2
+#: 32611f7837184d86997dee28e3189f3b
+msgid "PIDs (PIDFs) Loops: A Primer"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:5
+#: 399b9fb960214ab98a14cee91836b9f0
+msgid "Why Do We Even Need Fancy Control Loops?"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:6
+#: c7b4f4c9ca9d4f5aa95e92ab033d3b55
+msgid ""
+"Control. We are completely serious. Loops enable us to finely control "
+"practically any part of the robot. Yes, you can just set power to a motor "
+"with a joystick. That is fine for some mechanisms. If you haven't even tried"
+" doing this yet, STOP RIGHT NOW! Go and make your robot move! Start simple, "
+"then build your way up to complex controls."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:11
+#: 23324e4cda534f92bf07d8b33aa92762
+msgid ""
+"Other mechanisms are very difficult to manage. Anything from battery "
+"voltage, to wheel wear can impact how effectively the mechanism is operated."
+" No matter what, there will always be physical variance affecting robots. "
+"Never ever assume you will be driving your robot under certain, specific "
+"conditions. Nothing is ever perfect, even in auton!"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:16
+#: 01762f7532524a0793062ccd7d95444c
+msgid ""
+"We are able to compensate for these differences using control loops. Yes, we"
+" also use some awesome sensors to help us. However, control loops are the "
+"heart of reliable systems. Using a well implemented PID or PIDF system will "
+"produce smooth, repeatable movements."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:20
+#: e6f7e76c51e14cd4b94f8aedea0f69f3
+msgid ""
+"It is important to also note that there are other types of control loops. "
+"Compared to the others, PID and PIDF are arguably the simplest and "
+"universal. That is why we use them wherever we can."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:24
+#: bf5ca0fcf598444bac068d8edee2edce
+msgid "What Do These Letters Even Mean!?"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:25
+#: bc104c87fa7c42bea79e750a107f2158
+msgid ""
+"These values are technically called gains . They help scale the error (the "
+"difference between our target state , “where we want to be”, and our current"
+" state , “where we are right now”) in different ways. This ends up being the"
+" correction we apply to the motor(s). For a more detailed explanation, "
+"please see this article . Below we will talk about each gain ."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:30
+#: 741fded2031d411189efaa1cd48c0957
+msgid "These gains can be used together in different combinations."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:31
+#: 22c86899175d41e8a1e0d08bec812cc2
+msgid ""
+"These sample calculations are not tuned PID loops. These are simply examples"
+" to show how the numbers work."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:34
+#: cc34bcfa58c24f78b81a3b434a10f8f0
+msgid "P - Proportion"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:35
+#: bf6df8eb0b654254a16dd139b46eb268
+msgid "We multiply the error by P . ::"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:41
+#: cbb5de5fb6cd4cbb9567596ac2d5f7fc
+msgid ""
+"All we are doing is converting the error into a useful number (e.g. a motor "
+"controller input)."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:43
+#: 91057ff5a51b4e78ab16492de26733e7
+msgid "Here is a simple numerical example: ::"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:52
+#: 95d72075b02c425890bc62105222c56c
+msgid "In this scenario, our correction is 10% motor output."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:55
+#: aaf02a63c5b0490f95c5758701162b63
+msgid "I - Integral"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:56
+#: ecb244761f18443e99f07c3119b39543
+msgid ""
+"We continuously accumulate the error when we are very close to our target "
+"(within an IZone ). Then, we scale the integral by the responseTime . "
+"Finally, we multiply this number by I and add it into the correction "
+"calculation."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:66
+#: 88fdae6eb72e46f3a5e0b0c4cf932cfd
+msgid ""
+"All we are doing is allowing a little more power to be applied at the end."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:68
+#: cd2cf0e5ab9248fe9b8da7f4e68b95e4
+msgid ""
+"The integral cannot be stored as a local variable . It must be external to "
+"your PID function. We need to have a record of all previous tiny error "
+"values, otherwise the integral will not be large enough to do anything. "
+"Because of this, you have to reset the integral before using your PID again "
+"."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:73
+#: 05a1fb8784bc4e56a7ab86c4452f8ea4
+msgid ""
+"Additionally, it is very important that you use an ILimit to restrict how "
+"strong the integral can get . Without this, the integra l can cause overrun "
+"and/or oscillation ."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:76
+#: 873f61b7991a4e6aa81f43ef041b4c82
+msgid ""
+"We can creep right to our target at an adjustable rate using responseTime . "
+"Slower systems have smaller values, while faster systems have large values."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:79
+#: 259d943148704d4899c6040be1742dd9
+msgid ""
+"Depending on your system, you might not need to incorporate the integral."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:81
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:120
+#: b619a57c8cb14b3d97598ace57a56162 b8994d92db30474dbc0366c509c9b9e5
+msgid "Here is a simple numerical example:"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:96
+#: 37db76b859f547cd8b6d7b8c1bde4f3d
+msgid ""
+"In this scenario, our correction is 1.89% motor output. Yes, this is a very "
+"small number. However, after a few more cycles the integral will make "
+"correction grow strong enough to creep the system right to the target state "
+"."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:99
+#: a38f640d5be74d68afec6015a8766d6c
+msgid "D - Derivative"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:100
+#: 5ac69b469bcd40158339106dc85ea3b8
+msgid ""
+"We take the difference between our current error and our previous error "
+"divided by our responseTime . Then, we add the derivative into the "
+"correction equation. ::"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:107
+#: 5dd566405d3e4397ab2e7990a64ec331
+msgid ""
+"Think of this like we're slowly using the brakes instead of stomping on "
+"them. The derivative helps us smooth out our movements."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:110
+#: 7b521e10c7a74b8590be702ecd9b1ae7
+msgid ""
+"We can also think about this in graphical terms. We are finding the slope of"
+" the correction line. The slope tells us what the correction should look "
+"like in the near future. This helps to smooth out the correction . As a "
+"result, derivatives can eliminate both overrun and oscillation ."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:115
+#: 8304ad8b0b8d4b4385ebaf7c63fff810
+msgid ""
+"Unfortunately, control loops using derivatives are highly susceptible to "
+"noise issues. Sudden jumps in values will cause unexpected behaviors."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:118
+#: a06a7a68b7fd4573aff1e2941096e64e
+msgid ""
+"Depending on your system, you might not need to incorporate the derivative ."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:133
+#: 493ff92a83b1484983632252826ed3b2
+msgid "In this scenario, our correction is 40% reverse motor output."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:136
+#: 1c7ffaa99fb040139385209705d01d4d
+msgid "F - Feed Forward"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:137
+#: 80729b0cf6064ecb8f90b582466a0934
+msgid ""
+"We multiply the target by feed forward . Then, we add that into the existing"
+" correction equation. All we are doing is providing the system an initial "
+"boost in power based on our existing knowledge of the system."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:145
+#: e51ccde2fca84891b48a3c4625019362
+msgid ""
+"Here is another way of thinking about it. We are supplying a known starting "
+"value to get us into our operating range. Think about a shooter wheel. If we"
+" want the wheel to run at a constant velocity, we already know how fast we "
+"want it to go. The feed forward gives our system a boost, so the rest of the"
+" PID doesn't need to work as hard."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:151
+#: a683c7fac1a147db94769684dd3a49c2
+msgid "Other Control Loop Terms"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:153
+#: dd074cc5821f404296d8c763409e5f5a
+msgid "Open Loops"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:154
+#: a7a01dfb3aec4e36a0866ddc0dc4cd1a
+msgid ""
+"Dead reckoning : controlling the system based on time . There is no feedback"
+" from sensors , so the system is not able to correct for changing "
+"conditions. This method should be used as a starting point for building "
+"closed loops ."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:159
+#: 6555f275b0f44c199866a3d418068a3b
+msgid "Closed Loops"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:160
+#: c3ddb5a4df3a48eca1a20ebebf9ccb07
+msgid ""
+"PID(F) loops. Based on feedback we get from sensors, our system is able to "
+"automatically correct for changing conditions."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:164
+#: 94b595af083443a2b8b1706880d2a011
+msgid "Internal Loops (our version)"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:165
+#: 239f45e8cfb14cd68e2d26a5c371bc7a
+msgid ""
+"PID(F) loops that are built into the motor controller. The feedback sensor "
+"is directly communicating with the motor controller. Use this whenever "
+"possible. They react quicker than external loops because the motor "
+"controller has a faster running clock than the RoboRIO (typically 1 ms vs. "
+"50 ms)."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:171
+#: c94b14f0a6a14d7d8f99c571c88fe35f
+msgid "External Loops (our version)"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:172
+#: 3f713a9566eb450fb09060c856797f9d
+msgid ""
+"PID(F) loops that run on the RoboRIO. The feedback sensor is directly "
+"communicating with the RoboRIO. Use this when you have to. They react slower"
+" than internal loops because the RoboRIO has a slower running clock than the"
+" motor controller (50 ms vs. typically 1 ms). Also, you are responsible for "
+"writing the control loop yourself."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:178
+#: 842faad7651b4c80864fa59868e5cdeb
+msgid "Positioning Loops"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:179
+#: 4cd38542e5fa41f5804925ac3a927052
+msgid ""
+"PID(F) loops that have a target positio n in mind. Using an encoder (or "
+"other distance measurement device), they allow you to achieve a certain "
+"distance in a timely, consistent manner."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:184
+#: d74e6b3c295e4a22a7170ef97ed5042a
+msgid "Velocity Loops"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:185
+#: 2274c15b41a346bf9b49e21851c70bb2
+msgid ""
+"PID(F) loops that have a target velocity in mind. Using an encoder (or other"
+" velocity measurement device), they allow you to achieve a certain speed in "
+"a timely, consistent manner."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:190
+#: 210638d45c4a4f93b5fdebeec3df113a
+msgid "“Inside Outside” Loops (our definition)"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:191
+#: f88c3e9f91fa40aa8458b67fe7976954
+msgid ""
+"Using an external position loop to set an internal velocity loop . The "
+"encoder (or other distance sensor) communicates with the RoboRIO, while "
+"another encoder (or other velocity sensor) communicates with the motor "
+"controller. Use this for ultimate control IF you are experienced. It can "
+"negate variations in battery levels."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:197
+#: db334f12b42f4f9783d1055e25321151
+msgid "General Tips for Tuning Control Loops"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:198
+#: 610313c4099d43f4a00bed2830a1f4e9
+msgid ""
+"Good ole “trial and error”. The cool kids call it “The WAG Method”: Wild "
+"______ Guess. (Use your imagination.)"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:201
+#: 8e20f49889cc4fdba0096f3b1b34a0ba
+msgid ""
+"Tuning control loops can be a very time-intensive process. It is a necessary"
+" step though. You have to customize the PID or PIDF to fit your robot. Each "
+"robot is different, so no two PIDs are alike. Even practice and competition "
+"robots might need to have slightly different gains . This is primarily due "
+"to weight differences between them."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:206
+#: ff3dbd799c3145f7870a6796f2461a0d
+msgid ""
+"See this article by CTRE for more information about tuning control loops."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:209
+#: e96cfe3648b64a78857b750ac7ac497c
+msgid "Start with kP"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:210
+#: 5fe07a149ba64dac96a77b629ced2247
+msgid ""
+"If the control loop for your system is going to maintain a certain setpoint "
+", then it is a good idea to start with kF , and come back to this step."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:212
+#: cd7c7f3bf17d432394de5be1f8e63083
+msgid ""
+"Make a logical guess based on the units of measurement you are using and "
+"your output units. Let's think about a simple positioning loop . Let's say "
+"our encoder reads 100 ticks/inch and we are using percent output. "
+"Approximately how much power do we want applied to at a certain distance? We"
+" already have an idea of how far we want to move: we know the field "
+"measurements. So, let's say we want this positioning loop to give 100% "
+"output when we are 10 ft away. This is what the math would look like:"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:225
+#: eae94ddc54704beebad8640c32c18f50
+msgid ""
+"Using that kP , we can do some quick math to see how this behaves when we "
+"are 3 ft from our target distance."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:234
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:273
+#: eeb40932fdbc46fe9a379a8110e08eb2 1bb5df6dcf86438685d58b96f9b56bf7
+msgid ""
+"Based on this, it seems we are within our operating range. Onward to tuning "
+"time!"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:236
+#: fcef2c20abd849b4a3dbf6ad433d6c1b
+msgid ""
+"It is recommended you double your kP value until you see oscillation , or "
+"what we call “wagging” . If your robot starts shimmying and shaking, that "
+"means your gain is too high. Try going 75% of the previous value. If that "
+"looks good, continue increasing the gain slightly until you see more "
+"oscillation . Once you see more oscillation , lower the gain a tiny bit."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:241
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:286
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:340
+#: 574ac7c5eba543b0a42a5f06f600d2ca 47ec0187c120432590b63e1c309fd3d7
+#: b02a2ae659ba470895821a8ef02f0047
+msgid ""
+"Now that we are content with our gain , we need to make sure it works "
+"throughout our entire operating range.We have to test the control loop under"
+" different conditions. In our earlier example, we would need to physically "
+"test our positioning loop at different distances. We want the robot to "
+"always achieve its distance, no matter the distance (within reason). To "
+"perform this test, we set up a range target distances, both traveling "
+"forwards and backwards. DO NOT OVERLOOK THIS STEP! Please don't ever assume "
+"your loop will work correctly in both directions."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:249
+#: da322df6dfba4182a7f971ae3adb4bca
+msgid ""
+"If a system is traveling too quickly in certain scenarios, it may be a good "
+"idea to apply a correction cap . This allows us to keep our tuned gain "
+"without sacrificing control due to momentum."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:253
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:348
+#: b18c132099ac4c9ab4767882247b7bdd 473f2d2992034c23a678df29c1f1b15c
+msgid ""
+"We want to maximize the responsiveness of our system. When it is on the edge"
+" of oscillation , the gain is just right. That is why we go through this "
+"process. Just calculating a value alone is not enough. You have to test and "
+"tweak the gain to fit your system."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:258
+#: 45d5996f2b43480a9e55d0acecf5c38b
+msgid "Next is kD"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:259
+#: 4f272e5580ad473397bd9ea7457e353b
+msgid ""
+"Now that we are happy with our kP , we can start tuning kD . .. note:: "
+"Depending on how your mechanism is designed and the type of control loop , "
+"you might not need to use kD . Brushless motors themselves behave much "
+"differently from brushed motors. We have found that control loops using "
+"brushless motors and kD are much harder to tune. They have a lot more "
+"torque, making the derivative difficult to control."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:262
+#: 36c158f9952b4839aee087316b1cc4fa
+msgid ""
+"It is recommended that you start the kD at 10 times kP . In our previous "
+"example, that would mean:"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:275
+#: 8fc2a6aa86924d6fac14cfa5946b5b89
+msgid ""
+"It is recommended you double your kD value until you see you come short of "
+"your target . If your mechanism overshoots (or travels past your target ), "
+"that means your gain is too low. If it stops abruptly, that means your gain "
+"is too high. Try going 75% of the previous value. If that looks good, "
+"continue increasing the gain slightly until you see it come short again. "
+"Once you see more of this, lower the gain a tiny bit."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:281
+#: b5d98ddbbaea4b5186ba959f28cd3bb0
+msgid ""
+"You may want to increase your kP slightly to maximize the speed of your "
+"system. Ideally, you want to find the balance between speed and accuracy "
+"with any control loop ."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:284
+#: e18f9d6e1a6e45a8a924c77cbe80d0e4
+msgid ""
+"The derivative is not intended to get you exactly to your target ; that's "
+"what the integral is for. Instead, we use kD to help eliminate overshooting "
+"the target."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:294
+#: f12c2dc6237e4a99966eb856551d6248
+msgid ""
+"We want to maximize the responsiveness of our system. When it is just shy of"
+" the target , the gain is just right. That is why we go through this "
+"process. Just calculating a value alone is not enough. You have to test and "
+"tweak the gain to fit your system."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:299
+#: 189ff88bdad34c68886b3a00535f992e
+msgid "Then kI"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:300
+#: cbe62d8931e14d6e9663b2b66c575eeb
+msgid ""
+"Now that we are happy with our kD , we can start tuning kI . .. note:: "
+"Depending on how your mechanism is designed and the type of control loop , "
+"you might not need to use kI."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:304
+#: 06b7c1d782f5481c9e4997b3040b14ce
+msgid ""
+"It is recommended that you start the kI with a fairly small value. We only "
+"want the integral to be active when we are extremely close to our target. "
+"So, let's look at an example without the integra l, then with it:"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:328
+#: 06a717d22ae14749a5de71eeec567452
+msgid ""
+"See the difference? Without kI , we are stuck just short of our target . "
+"With kI , we will accumulate enough correction to get right to our target . "
+"Based on this, it seems we are within our operating range. Onward to tuning "
+"time!"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:332
+#: 9f42bd3b49634987b5895abd52e647d9
+msgid ""
+"It is recommended you double your kI value until you see oscillation , or "
+"what we call “wagging” . If your robot starts shimmying and shaking, that "
+"means your gain is too high. Try going 75% of the previous value. If that "
+"looks good, continue increasing the gain slightly until you see more "
+"oscillation . Once you see more oscillation , lower the gain a tiny bit."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:337
+#: e1c2c084da5f4c1283ab9cc8645ff035
+msgid ""
+"Don't forget that you can also play with IZone and ILimit . These values can"
+" help create a strong, yet controlled correction right to the target ."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:353
+#: fc5da057c72a41738d185bece10d1bb4
+msgid "What about kF?"
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:354
+#: 92fd1d8884564ecdb49be5c374341169
+msgid ""
+"To use feedforward effectively you have to have a good idea of how your "
+"system will behave ahead of time."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:356
+#: 84e53f3aeed04aae8baf14f7f9fe7678
+msgid ""
+"kF is the simplest gain to tune. You just need to find a value that gets you"
+" right into your operating range. Feedforward doesn't perform any "
+"corrections , rather it moves your starting point from 0 to “whatever you "
+"want”. This makes it much easier to tune the rest of the PID . Having a "
+"tighter range to correct results in faster reactions and finer control."
+msgstr ""
+
+#: ../../source/docs/software-info-old/integrating-other-PIDs/PIDF-loops.rst:361
+#: 69c173d036204dfca40ef447f7959509
+msgid ""
+"Once your feedforward has your system off to a good start, then you can "
+"return to tuning kP ."
+msgstr ""

@@ -39,7 +39,7 @@ msgstr "软件信息-“新”"
 
 #: ../../source/index.rst:2 2641b2bbb4d54567b261637a22f3f879
 msgid "6940 Swerve Documentation"
-msgstr ""
+msgstr "6940 Swerve文档"
 
 #: ../../source/index.rst:4 c08f338b95e948aa86529418fafbaffe
 msgid ""

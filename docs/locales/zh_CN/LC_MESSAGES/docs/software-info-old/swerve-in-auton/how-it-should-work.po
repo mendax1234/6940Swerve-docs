@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Wenbo Zhu (mendax1234)
+# This file is distributed under the same license as the 6940 Swerve package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 6940 Swerve\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-29 11:14+0800\n"
+"PO-Revision-Date: 2022-06-29 03:50+0000\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../source/docs/software-info-old/swerve-in-auton/how-it-should-work.rst:2
+#: a4e93432499148a3b5cc06f4a6afba46
+msgid "How It Should Work"
+msgstr ""
+
+#: ../../source/docs/software-info-old/swerve-in-auton/how-it-should-work.rst:3
+#: 4c4bb122e5074a3dab16c991f5b10a79
+msgid ""
+"We want to tell the robot to go to a coordinate on the field and face a "
+"specific direction when it gets there. Sometimes we want the rotation to "
+"happen at different places along the route. Sometimes we want it to rotate "
+"first or last. Sometimes we even want the robot to travel around an "
+"obstacle. The robot should switch modes as desired along the overall route "
+"to achieve the game objectives. We used a case generator to give us each "
+"motion in the desired order and change states primarily by sensors. The end "
+"result should be a robot that travels at the maximum controllable speed "
+"while achieving the desired positions with maximum accuracy."
+msgstr ""
