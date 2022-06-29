@@ -13,6 +13,6 @@ https://6940swerve-docs.readthedocs.io/en/latest/
 
 # Contributing to 6940swerve-docs
 
-l am happy to have you contributing to 6940swerve-docs,whether it's:writing articles, fixing code, new extensions, or adding translations!
+l am happy to have you contributing to 6940swerve-docs, whether it's: writing articles, fixing code, new extensions, or adding translations!
 
 All the information needed to contribute to 6940swerve-docs is located in the [contributing]() section on 6940swerve-docs.

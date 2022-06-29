@@ -31,6 +31,14 @@ Welcome to the FRC Team 6940's Swerve Documentation! This site contains everythi
 
         New but easy software algorithm overview of our swerve drive.
 
+.. grid::2
+
+    .. grid-item-card:: Contributing
+        :link: /docs/contributing/index
+        :link-type: doc
+
+        Contributing to 6940swerve-docs
+
 .. toctree::
    :maxdepth: 2
    :caption: About
@@ -63,4 +71,9 @@ Welcome to the FRC Team 6940's Swerve Documentation! This site contains everythi
 
    docs/software-info-new/index
 
+.. toctree:: 
+    :maxdepth: 2
+    :caption: Contributing
+    :hidden:
 
+    docs/contributing/index
