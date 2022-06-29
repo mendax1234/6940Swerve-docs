@@ -58,7 +58,7 @@ msgid ""
 "docs/>`_ and post a request to join in the organization to translate "
 "6940swerve-docs."
 msgstr ""
-"3，点击 `链接 <https://www.transifex.com/frc-team-6940-1/6940swerve-docs/`_ "
+"3，点击 `链接 <https://www.transifex.com/frc-team-6940-1/6940swerve-docs/>`_ "
 "然后发送一个加入组织进行6940swerve-dcos翻译的请求"
 
 #: ../../source/docs/contributing/index.rst:19
