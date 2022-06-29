@@ -58,12 +58,3 @@ mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 html_theme_options = {
     "sidebar_hide_name": True,
 }
-
-# These folders are copied to the documentation's HTML output
-html_static_path = ['_static']
-
-# These paths are either relative to html_static_path
-# or fully qualified paths (eg. https://...)
-html_css_files = [
-    'css/custom.css',
-]
