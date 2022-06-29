@@ -91,3 +91,10 @@ minimum_perc = 0
 source_file = docs/build/gettext/docs/software-info-old/integrating-other-PIDs/PIDF-loops.pot
 source_lang = en
 type = PO
+
+[6940swerve-docs.docs--contributing--index]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/index.po
+minimum_perc = 0
+source_file = docs/build/gettext/docs/contributing/index.pot
+source_lang = en
+type = PO
