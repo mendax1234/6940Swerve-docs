@@ -1,3 +1,5 @@
+**English** | [Chinese](README_CN.md)
+
 [![Documentation Status](https://readthedocs.org/projects/6940swerve-docs/badge/?version=latest)](https://6940swerve-docs.readthedocs.io/en/latest/?badge=latest)
 
 # 6940 Swerve documentation
