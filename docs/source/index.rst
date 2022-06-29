@@ -1,7 +1,7 @@
 6940 Swerve Documentation
 =========================================
 
-Welcome to the FRC Team 6940 Violet Z's Swerve Documentation! This site contains everything you want to know about 6940's code in 2022 Rapid React and our code for swerve!
+Welcome to the FRC Team 6940's Swerve Documentation! This site contains everything you want to know about 6940's code in 2022 Rapid React and our code for swerve!
 
 .. grid:: 2
 
