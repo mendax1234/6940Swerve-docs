@@ -24,7 +24,7 @@ msgstr ""
 #: ../../source/docs/hardware-info/hardware-info.rst:2
 #: 60c56f810514464cba839665d5c81298
 msgid "Hardware/Electrical Info"
-msgstr "硬件/电气信息"
+msgstr "硬件信息"
 
 #: ../../source/docs/hardware-info/hardware-info.rst:5
 #: 5a7a5415b23f4f539e0832d2c46be9a4
