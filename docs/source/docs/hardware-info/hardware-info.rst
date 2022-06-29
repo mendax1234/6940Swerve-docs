@@ -40,7 +40,7 @@ range and is able to target the goal from anywhere on the field that has a shoot
 Limelight is mounted in front of our shooter. With the interpoltion table, we can achieve shooting at
 every place in the field with the help of Limelight2+.
 
-The Pixy2 is also a visual targeting camera and processor, but due to the color ofthis season's 
+The Pixy2 is also a visual targeting camera and processor, but due to the color of this season's 
 (2022 Season Rapid React) cargo (blue and red), Pixy2 may not be able tell the difference between
 team's bumper and the cargo, so l am sorry to say that Pixy2 may not be able to be used as a camera 
 to do game-piece centric. But we will also introduce the game-piece centric in the later chapters with

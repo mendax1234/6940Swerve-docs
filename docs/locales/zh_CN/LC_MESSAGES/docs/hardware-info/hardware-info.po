@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, Wenbo Zhu (mendax1234)
+# Copyright (C) 2022, Daniel Webber (mendax1234)
 # This file is distributed under the same license as the 6940 Swerve package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 11:14+0800\n"
+"POT-Creation-Date: 2022-06-29 16:37+0800\n"
 "PO-Revision-Date: 2022-06-29 03:31+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -84,11 +84,14 @@ msgid ""
 " want to make full use of them. For example, use them on our shooter and "
 "intaker."
 msgstr ""
+"转向电机是由VEX Robotics提供的 `775 pro <https://www.vexrobotics.com/775pro.html>`_ "
+"和CTRE提供的 `Talon SRX <https://www.vexrobotics.com/217-8080.html>`_ "
+"组成。用775pro的原因是因为我们的swerve就是被设计成用775pro作为转向电机的。另一个原因是因为我们的Falcon不够用了，我们想要充分利用已有的Falcon，比如把他们用在shooter和intake上，而不是用在我们的swerve上。"
 
 #: ../../source/docs/hardware-info/hardware-info.rst:31
 #: f17e1b652d764c708847a05d09768d1b
 msgid "Other Sensors"
-msgstr ""
+msgstr "其他传感器"
 
 #: ../../source/docs/hardware-info/hardware-info.rst:32
 #: 0bb0be60e8684279a94e961c15781858
@@ -101,6 +104,13 @@ msgid ""
 " and one `REV color sensor <https://www.revrobotics.com/rev-31-1557/>`_. We "
 "will address the exact usage of these sensors in later sections."
 msgstr ""
+"我们还使用了其他几个传感器来辅助我们的swerve程序。最明显的就是 `Limelight2+ "
+"<https://limelightvision.io/>`_ 。我们还使用了两个 `Pixy2 "
+"<https://pixycam.com/pixy2/>`_ ，两个 `IR Sensors "
+"<https://www.amazon.com/HiLetgo-E18-D80NK-Infrared-Photoelectric-"
+"Avoidance/dp/B07VKR1GBJ/ref=sr_1_2?keywords=E18-D80NK&qid=1651325946&sr=8-2>`_"
+" 和一个 `REV color sensor "
+"<https://www.revrobotics.com/rev-31-1557/>`_。我们会在后面几章详细阐述他们的用途。"
 
 #: ../../source/docs/hardware-info/hardware-info.rst:37
 #: 96915c544f134e66b78732cd5fe45373
@@ -113,17 +123,23 @@ msgid ""
 "table, we can achieve shooting at every place in the field with the help of "
 "Limelight2+."
 msgstr ""
+"Limelight 是用来瞄准目标的。我们使用了 Limelight 里的 x 和 y 偏移去使我们的 shooter "
+"始终对准目标并且计算其到目标的距离。Limelight 有一个很好的范围使我们能够从场地里的任何一个地方射球。Limelight 被固定在我们 "
+"shooter 的前面。在插值表和 Limelight 2+ 的帮助下，我们能实现从场地的任何一个地方射球。"
 
 #: ../../source/docs/hardware-info/hardware-info.rst:43
 #: db95e203b79e4e04a43b6dbf08c58430
 msgid ""
 "The Pixy2 is also a visual targeting camera and processor, but due to the "
-"color ofthis season's (2022 Season Rapid React) cargo (blue and red), Pixy2 "
-"may not be able tell the difference between team's bumper and the cargo, so "
-"l am sorry to say that Pixy2 may not be able to be used as a camera to do "
+"color of this season's (2022 Season Rapid React) cargo (blue and red), Pixy2"
+" may not be able tell the difference between team's bumper and the cargo, so"
+" l am sorry to say that Pixy2 may not be able to be used as a camera to do "
 "game-piece centric. But we will also introduce the game-piece centric in the"
 " later chapters with Pixy2."
 msgstr ""
+"Pixy2 也有一个视觉瞄准相机和处理器，但是由于今年赛题（2022赛季 Rapid React ）的 cargo 颜色是蓝色和红色的， Pixy2 "
+"可能没有办法区分其他队伍的 Bumper 和 cargo 的颜色，所以我很抱歉 Pixy2 "
+"今年可能不能被用来自动找球。但是我们在后续也会介绍如何使用Pixy2 来自动找球。 "
 
 #: ../../source/docs/hardware-info/hardware-info.rst:49
 #: e2b3f87bf53549a78a39e6cbac5b7f06
@@ -132,4 +148,4 @@ msgid ""
 "robot. And the REV color sensor is used to shoot away the wrong color ball. "
 "The exact usage of these two sensors will be introduced in the later "
 "chapters."
-msgstr ""
+msgstr "红外传感器是用来检测我们的机器人是否吸进了一个球。REV 的颜色传感器是用来检测并射出异色球的。这两个传感器的用途都会在后续章节进行介绍。"
