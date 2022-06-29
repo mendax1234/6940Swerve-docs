@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2022, Wenbo Zhu (mendax1234)
+# Copyright (C) 2022, Daniel Webber (mendax1234)
 # This file is distributed under the same license as the 6940 Swerve package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-29 11:14+0800\n"
+"POT-Creation-Date: 2022-06-29 17:44+0800\n"
 "PO-Revision-Date: 2022-05-02 09:42+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -21,21 +21,25 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../source/index.rst:34
+#: ../../source/index.rst:42
 msgid "About"
 msgstr "关于"
 
-#: ../../source/index.rst:41
+#: ../../source/index.rst:49
 msgid "Hardware Info"
 msgstr "硬件信息"
 
-#: ../../source/index.rst:48
+#: ../../source/index.rst:56
 msgid "Software Info - Old"
 msgstr "软件信息-“旧”"
 
-#: ../../source/index.rst:59
+#: ../../source/index.rst:67
 msgid "Software Info - New"
 msgstr "软件信息-“新”"
+
+#: ../../source/index.rst:74
+msgid "Contributing"
+msgstr "贡献"
 
 #: ../../source/index.rst:2 2641b2bbb4d54567b261637a22f3f879
 msgid "6940 Swerve Documentation"
@@ -59,8 +63,8 @@ msgid "An overview of the hardware components of our swerve drive."
 msgstr "一个关于我们Swerve底盘硬件组成的总览"
 
 #: ../../source/index.rst:26 9e5b9a9749604dc89bae5430af652e71
-msgid "Old but basic software algorithm overview of swerve drive."
-msgstr "“旧”但是基础的Swerve底盘软件算法总览"
+msgid "FRC Team 1684 software algorithm overview of swerve drive."
+msgstr "FRC Team 1684的swerve底盘软件算法总览"
 
 #: ../../source/index.rst:32 eb7aae96fe604acebbb2aea9296c07fb
 msgid "New but easy software algorithm overview of our swerve drive."
