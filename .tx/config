@@ -92,6 +92,41 @@ source_file = docs/build/gettext/docs/software-info-old/integrating-other-PIDs/P
 source_lang = en
 type = PO
 
+[6940swerve-docs.docs--softrware-info-old--integrating-other-PIDs--drive-straight-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/integrating-other-PIDs/drive-straight.po
+minimum_perc = 0
+source_file = docs/build/gettext/docs/software-info-old/integrating-other-PIDs/drive-straight.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.docs--softrware-info-old--integrating-other-PIDs--drive-straight-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/integrating-other-PIDs/drive-straight.po
+minimum_perc = 0
+source_file = docs/build/gettext/docs/software-info-old/integrating-other-PIDs/drive-straight.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.docs--softrware-info-old--integrating-other-PIDs--gamepiece-centric-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/integrating-other-PIDs/gamepiece-centric.po
+minimum_perc = 0
+source_file = docs/build/gettext/docs/software-info-old/integrating-other-PIDs/gamepiece-centric.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.docs--softrware-info-old--integrating-other-PIDs--goal-centric-pot]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/integrating-other-PIDs/goal-centric.po
+minimum_perc = 0
+source_file = docs/build/gettext/docs/software-info-old/integrating-other-PIDs/goal-centric.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.docs--software-info-old--other-miscs--index]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old--other-miscs/index.po
+minimum_perc = 0
+source_file = docs/build/gettext/docs/software-info-old--other-miscs/index.pot
+source_lang = en
+type = PO
+
 [6940swerve-docs.docs--contributing--index]
 file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/index.po
 minimum_perc = 0
