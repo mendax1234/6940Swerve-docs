@@ -12,7 +12,7 @@ LANG_TO_PULL=${1:-'zh_CN'}
 cd `dirname $0`/..
 
 # Create POT Files
-sphinx-build -T -b gettext docs/source docs/build/gettext
+sphinx-build -T -b gettext docs/source docs/pot
 
 # Update .tx/config
 rm .tx/config
