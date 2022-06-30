@@ -1,4 +1,4 @@
--r docs/source/requirements.txt
+-r 6940swerve-docs/docs/source/requirements.txt
 transifex-client==0.14.4
 sphinx-intl==2.0.1
 python-dateutil==2.8.1
