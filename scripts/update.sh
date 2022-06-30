@@ -6,13 +6,13 @@ set -ex
 #LANG_TO_PULL=${1:-'fr_CA,es_MX,zh_CN,tr_TR,he_IL,pt'}
 LANG_TO_PULL=${1:-'zh_CN'}
 #LANG_MAP='es_MX: es, fr_CA: fr, he_IL: he, tr_TR: tr'
-MAINPROJECT=6940swerve-docs
+#MAINPROJECT=6940swerve-docs
 
 # Set working directory to repo root
 cd `dirname $0`/..
 
 # Create POT Files
-sphinx-build -T -b gettext $MAINPROJECT/source locale/pot
+sphinx-build -T -b gettext docs/source docs/build/gettext
 
 # Update .tx/config
 rm .tx/config
