@@ -23,4 +23,4 @@ Write articles
 
 1. You need to clone the `repo <https://github.com/mendax1234/6940Swerve-docs>`_ from Github.
 
-2. Test to see whether the workflow works
+2. Test to see whether the workflow works!
