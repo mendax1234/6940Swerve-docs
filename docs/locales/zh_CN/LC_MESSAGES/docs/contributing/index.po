@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Daniel Webber (mendax1234)
+# This file is distributed under the same license as the 6940 Swerve package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Daniel Webber, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 6940 Swerve\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-01 05:32+0000\n"
+"PO-Revision-Date: 2022-06-29 10:15+0000\n"
+"Last-Translator: Daniel Webber, 2022\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../source/docs/contributing/index.rst:2 befc48ebb6b9443c8d35246f657c93af
+msgid "Contributing to 6940swerve-docs"
+msgstr "向6940swerve-docs贡献"
+
+#: ../source/docs/contributing/index.rst:5 0c9960e5f03145c69896c418121a2299
+msgid "Translation"
+msgstr "翻译"
+
+#: ../source/docs/contributing/index.rst:7 0d2f70053202484d82b7ad418f8d637a
+msgid "Create a `Transifex <https://www.transifex.com/>`_ account."
+msgstr "创建一个 `Transifex <https://www.transifex.com/>`_ 账号。"
+
+#: ../source/docs/contributing/index.rstNone ca2d3bb3b0af48659dfe4903604f42be
+msgid "Transifex account"
+msgstr "Transifex账号"
+
+#: ../source/docs/contributing/index.rst:12 8d435e939f804034b7ad68cffae7326f
+msgid ""
+"After you create a Transifex account, you will see the page below. Click the"
+" **Join an exist organization** and enter the necessary information."
+msgstr ""
+"创建好一个Transifex账号后，你将会看见如下页面。点击 **Join an exist organization** 然后输入必要的信息。"
+
+#: ../source/docs/contributing/index.rstNone 9573666bc2b74135a474ce68ec0ecd08
+msgid "Choose mode"
+msgstr "选择模式"
+
+#: ../source/docs/contributing/index.rst:17 8cb8792e502c4fcc93d45ede1672268b
+msgid ""
+"Click this  `link <https://www.transifex.com/frc-team-6940-1/6940swerve-"
+"docs/>`_ and post a request to join in the organization to translate "
+"6940swerve-docs."
+msgstr ""
+"点击 `链接 <https://www.transifex.com/frc-team-6940-1/6940swerve-docs/>`_ "
+"然后发送一个加入组织进行6940swerve-dcos翻译的请求"
+
+#: ../source/docs/contributing/index.rst:19 49f72a84059440f3b2c9734f812bfdd2
+msgid "Start your translation journey!"
+msgstr "开始你的翻译之旅！"
+
+#: ../source/docs/contributing/index.rst:22 8b78ebf473394f8c853a7616a565a092
+msgid "Write articles"
+msgstr "写文章"
+
+#: ../source/docs/contributing/index.rst:24 92289809dc38468e924419e344168566
+msgid ""
+"You need to clone the `repo <https://github.com/mendax1234/6940Swerve-"
+"docs>`_ from Github."
+msgstr ""
+"你需要先从Github克隆 `这个仓库 <https://github.com/mendax1234/6940Swerve-docs>`_。"

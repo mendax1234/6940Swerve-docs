@@ -1,6 +1,6 @@
 [main]
 host = https://www.transifex.com
-lang_map = zh_CN: zh
+lang_map = zh_CN: zh_CN
 
 [6940swerve-docs.index]
 file_filter = docs/locales/<lang>/LC_MESSAGES/index.po

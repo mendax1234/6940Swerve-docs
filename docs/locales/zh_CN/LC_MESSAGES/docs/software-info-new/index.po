@@ -1,0 +1,27 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Daniel Webber (mendax1234)
+# This file is distributed under the same license as the 6940 Swerve package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Daniel Webber, 2022
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 6940 Swerve\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-01 05:32+0000\n"
+"PO-Revision-Date: 2022-07-01 03:24+0000\n"
+"Last-Translator: Daniel Webber, 2022\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../source/docs/software-info-new/index.rst:2
+#: 42844008fda54c65901d398e3973b90b
+msgid "Software Info - New (We use)"
+msgstr "软件信息——新（我们现在所使用的）"
