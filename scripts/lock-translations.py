@@ -9,8 +9,8 @@ import dateutil
 
 TX_TOKEN = os.getenv("TX_TOKEN")
 RESOURCES_URL = "https://rest.api.transifex.com/resources"
-PROJECT_FILTER_PARAM = {"filter[project]": "o:mendax1234:p:6940swerve-docs"}
-PROJECT_DELETE_PARAM = {"o:mendax1234:p:6940swerve-docs:r:"}  # resource slug appended to end
+PROJECT_FILTER_PARAM = {"filter[project]": "o:FRC Team 6940:p:6940swerve-docs"}
+PROJECT_DELETE_PARAM = {"o:FRC Team 6940:p:6940swerve-docs:r:"}  # resource slug appended to end
 
 lock_json = {
     "data": {
