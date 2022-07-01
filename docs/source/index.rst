@@ -1,9 +1,3 @@
-.. image:: about/images/6940.jpg
-    :alt: 6940
-.. image:: about/images/Swerve.
-    :alt: Swerve
-
-
 6940 Swerve Documentation
 =========================================
 
