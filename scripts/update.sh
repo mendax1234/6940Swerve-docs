@@ -6,7 +6,7 @@ set -ex
 #LANG_TO_PULL=${1:-'fr_CA,es_MX,zh_CN,tr_TR,he_IL,pt'}
 LANG_TO_PULL=${1:-'zh_CN'}
 #LANG_MAP='es_MX: es, fr_CA: fr, he_IL: he, tr_TR: tr'
-LANG_MAP='zh_CN: zh'
+LANG_MAP='zh_CN: zh_CN'
 MAINPROJECT=6940swerve-docs
 
 # Set working directory to repo root
