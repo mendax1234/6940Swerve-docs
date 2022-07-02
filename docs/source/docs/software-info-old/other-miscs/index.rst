@@ -38,7 +38,7 @@ direction become his backward direction. Our electronics panel is on the bottom 
 very, very, very compact space. Our two gyros have somewhat open reset buttons that can easily be
 touched by anything. When our driver went over the shield generator, the reset button would be
 pressed and field centric is out the window. Every time it reset, he gave the programming team a
-nice little grin and said “front isn’t front anymore.” We couldn’t understand why the gyros were not
+nice little grin and said “front isn't front anymore.” We couldn't understand why the gyros were not
 working and would power cycle and reset. Finally we turned the robot upside down and found that a
 cable was leaning directly on the reset button of our NavBoard.
 
@@ -65,11 +65,11 @@ By methodically writing down this information, it will be infinitely easier and 
 a. Program these electronics on the robot.
 b. Diagnose problematic devices & replace them.
 c. Fix broken wires & connections.
-Please, do this simple thing. We didn’t until we were forced to. That was a huge mistake . The day
+Please, do this simple thing. We didn't until we were forced to. That was a huge mistake . The day
 before our first competition in 2020, one of our motor controllers died. We spent at least 10 hours
-chasing the problem. We didn’t start down the right path until we knew exactly what the CAN
-network looked like. Seriously, this helps make debugging significantly faster! Don’t let your entire
-electronics board falling out of your robot stop you from making it to your next match. We didn’t; at
+chasing the problem. We didn't start down the right path until we knew exactly what the CAN
+network looked like. Seriously, this helps make debugging significantly faster! Don't let your entire
+electronics board falling out of your robot stop you from making it to your next match. We didn't; at
 least, not in 2020.
 
 Know Your Electronics
@@ -106,7 +106,7 @@ reliable. It could be a speed, a distance, or an angle.
 Invest in Good Controllers… And You Should Interpolate
 ---------------------------------------------------------
 
-Let’s get real. Swerve feels AMAZING to drive. But, that’s only if you have an AMAZING controller.
+Let's get real. Swerve feels AMAZING to drive. But, that's only if you have an AMAZING controller.
 “What do we mean by AMAZING,” you ask? It boils down to “non-sticky” joysticks. Minimal dead
 zones. Want to make the robot do “victory spins” whilst driving at 45°? Your joysticks need to have a
 full range of motion.
@@ -127,7 +127,7 @@ more information:
 `<https://www.howtogeek.com/241421/how-to-calibrate-your-gaming-controller-in-windows-10/>`_
 
 Makes sense right? To fully experience the epicness of swerve, you need to have quality inputs.
-Swerve simply can’t be at its best if it's being driven with a poor controller.
+Swerve simply can't be at its best if it's being driven with a poor controller.
 
 Seriously, Implement Brownout Protection!
 --------------------------------------------
@@ -137,7 +137,7 @@ match. If we were to brownout, we could lose both our gyros. Once the voltage co
 of 6.3 to 6.8 volts our NavBoard would lose power as the 6 volt rail of the RoboRio turns off. In the
 range 4.5 to 6.3 volts, all but the joystick communications to the RoboRio are lost. The PigeonIMU
 can be powered by a Talon, therefore is more tolerable to brownout voltage conditions. The
-PigeonIMU, when powered by a Talon, will not lose it’s telemetry until the voltage drops below 4.5
+PigeonIMU, when powered by a Talon, will not lose it's telemetry until the voltage drops below 4.5
 volts, at which time RoboRio shuts down. If the RoboRio shuts down, there will be no CANbus
 communication until it reboots again.
 
@@ -146,7 +146,7 @@ communication until it reboots again.
 
 There are two ways to best minimize your chances of brownouts. The first way (that is
 multi-purpose) is ramprate. It prevents the motors from drawing maximum amperage immediately,
-by forcing a ‘ramp-up’ of the motor controller output voltage, averting brownouts. The other
+by forcing a ‘ramp-up' of the motor controller output voltage, averting brownouts. The other
 purpose of ramprate is to keep from braking traction, by stopping the wheels from accelerating too
 rapidly. The second way to prevent brownouts is using current limiting. We used Falcon500 with the
 integrated Talon motor controller. Once we found the correct level to set the limiting at, it worked
@@ -157,7 +157,7 @@ quickly without drawing too much amperage and browning out.
 Handling Gyro Fault Conditions
 ---------------------------------
 
-We have two gyros on our robot. In the event that one can’t be used, we are still able to navigate. It’s a
+We have two gyros on our robot. In the event that one can't be used, we are still able to navigate. It's a
 backup. We average both yaw readings together. If either one of the gyros goes down, the system
 will use the reading from the other gyro. If both gyros go down, the system will switch to robot
 centric mode until at least one gyro is regained.
@@ -166,12 +166,12 @@ centric mode until at least one gyro is regained.
     :alt: miscs-5
 
 We did program in a gyro reset function to account for this possibility, but it has not and should not be
-needed in competition. This emergency gyro reset function is used to restore the robot’s heading to
-0 degrees for “field centric” operation. There is a reason why this shouldn’t be relied on during a
-match. If both gyros fail, you more than likely have bigger problems on your hands. Gyros don’t fail
+needed in competition. This emergency gyro reset function is used to restore the robot's heading to
+0 degrees for “field centric” operation. There is a reason why this shouldn't be relied on during a
+match. If both gyros fail, you more than likely have bigger problems on your hands. Gyros don't fail
 “randomly” all the time. There is always a cause behind it. Resetting the gyros is not going to fix
 electronic robot barf. Or perhaps a bug in the code. It is dangerous to rely on sensor reset functions
-instead of resolving the true issue. Please don’t hear us wrong. Having emergency reset functions is
+instead of resolving the true issue. Please don't hear us wrong. Having emergency reset functions is
 important; however, they should only ever be used in a true emergency.
 
 **THE END… or is it…?**
