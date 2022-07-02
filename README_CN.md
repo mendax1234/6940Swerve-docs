@@ -1,6 +1,6 @@
 [英文](README.md) | **中文**
 
-[![Documentation Status](https://readthedocs.org/projects/6940swerve-docs/badge/?version=latest)](https://6940swerve-docs.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/6940swerve-docs-zh-cn/badge/?version=latest)](https://6940swerve-docs.readthedocs.io/zh_CN/latest/?badge=latest)
 
 # 6940 Swerve 文档
 
