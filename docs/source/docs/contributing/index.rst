@@ -18,7 +18,9 @@ Translation
 3. Click this  `link <https://www.transifex.com/frc-team-6940-1/6940swerve-docs/>`_ and post a request to join in the organization to translate 6940swerve-docs.
 4. Start your translation journey!
 
-**More about how our translation flow works**
+More about how our translation flow works
+-------------------------------------------
+
 .. note:: Thanks `frc-docs-translation <https://github.com/wpilibsuite/frc-docs-translations>`_ for providing us with such good resources for reference. And all of our translation works are automatic!
 
 Introduction
@@ -54,6 +56,7 @@ In `scripts/lock-translations.py`
 ++++++++++++++++++++++++++++++++++++++
 In `scripts/update.sh`
 ++++++++++++++++++++++++++++++++++++++
+
 1. Change the `LANG_TO_PULL` and `LANG_MAP` to the language you want to be translated into.
 
 .. image:: images/Contributing-5.png
@@ -77,11 +80,13 @@ In `scripts/update.sh`
 ++++++++++++++++++++++++++++++++++++++
 In `.github/workflow/publish_main.yml`
 ++++++++++++++++++++++++++++++++++++++
+
 You know which parts should be changed and l won't go into it here.
 
 ++++++++++++++++++++++++++++++++++++++++++++++
 In `.github/workflow/update-translations.yml`
 ++++++++++++++++++++++++++++++++++++++++++++++
+
 1. Change the `github.repository` to your own repo.
 2. If you don't have a Submodule, just annotate the related three lines.
 3. Create a repository secret in your repository's settings , name it as `TX_TOKEN` and paste your Transifex api token in the secret.
