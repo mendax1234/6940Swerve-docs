@@ -32,7 +32,8 @@ please see this article . Below we will talk about each gain .
 
 P - Proportion
 +++++++++++++++++
-We multiply the error by P .
+We multiply the error by P.
+
 .. code-block:: text
 
     error = targetState − currentState;
@@ -41,6 +42,7 @@ We multiply the error by P .
 All we are doing is converting the error into a useful number (e.g. a motor controller input).
 
 Here is a simple numerical example:
+
 .. code-block:: text
 
     error = targetState − currentState;
@@ -208,6 +210,7 @@ See this article by CTRE for more information about tuning control loops.
 
 Start with kP
 +++++++++++++++++
+
 .. note:: If the control loop for your system is going to maintain a certain setpoint , then it is a good idea to start with kF , and come back to this step.
 
 Make a logical guess based on the units of measurement you are using and your output
@@ -258,6 +261,7 @@ value alone is not enough. You have to test and tweak the gain to fit your syste
 Next is kD
 ++++++++++++
 Now that we are happy with our kP , we can start tuning kD .
+
 .. note:: Depending on how your mechanism is designed and the type of control loop , you might not need to use kD . Brushless motors themselves behave much differently from brushed motors. We have found that control loops using brushless motors and kD are much harder to tune. They have a lot more torque, making the derivative difficult to control.
 
 It is recommended that you start the kD at 10 times kP . In our previous example, that would mean:
@@ -298,9 +302,9 @@ is not enough. You have to test and tweak the gain to fit your system.
 
 Then kI
 ++++++++++
-Now that we are happy with our kD , we can start tuning kI .
-.. note:: Depending on how your mechanism is designed and the type of control loop , you
-might not need to use kI.
+Now that we are happy with our kD , we can start tuning kI.
+
+.. note:: Depending on how your mechanism is designed and the type of control loop , you might not need to use kI.
 
 It is recommended that you start the kI with a fairly small value. We only want the integral
 to be active when we are extremely close to our target. So, let's look at an example without
