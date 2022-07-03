@@ -14,9 +14,33 @@ source_file = docs/pot/docs/about/about.pot
 source_lang = en
 type = PO
 
+[6940swerve-docs.docs--contributing--contributing-guidelines]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/contributing-guidelines.po
+source_file = docs/pot/docs/contributing/contributing-guidelines.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.docs--contributing--how-it-works]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/how-it-works.po
+source_file = docs/pot/docs/contributing/how-it-works.pot
+source_lang = en
+type = PO
+
 [6940swerve-docs.docs--contributing--index]
 file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/index.po
 source_file = docs/pot/docs/contributing/index.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.docs--contributing--translation]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/translation.po
+source_file = docs/pot/docs/contributing/translation.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.docs--contributing--write-articles]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/write-articles.po
+source_file = docs/pot/docs/contributing/write-articles.pot
 source_lang = en
 type = PO
 
