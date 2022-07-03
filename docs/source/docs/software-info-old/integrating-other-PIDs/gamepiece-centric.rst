@@ -24,7 +24,7 @@ positioning loop that took over the rotational control and calculated the error 
 and the center of the camera. The error was used to calculate our desired yaw until the digital
 signal showed no more target.
 
-::
+.. code-block:: text
 
     double pixyV oltageRange = 3.3; //volts
         double pixyHFOV = 60; //degrees
@@ -52,7 +52,7 @@ signal showed no more target.
 We use the Pixy in a different manner in auton. We use it to determine our position relative to the
 target ball to allow for automatic adjustment in the case of minor set up variances.
 
-::
+.. code-block:: text
 
     if(pixyFrontSeesBall() && (abs(pixyFrontAngle() + goalY aw) > 3.0)) {
         move(0, yc, − copysignf(0.1, pixyFrontAngle()), true);

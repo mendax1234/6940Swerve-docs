@@ -33,7 +33,7 @@ please see this article . Below we will talk about each gain .
 P - Proportion
 +++++++++++++++++
 We multiply the error by P .
-::
+.. code-block:: text
 
     error = targetState − currentState;
     correction = error * kP;
@@ -41,7 +41,7 @@ We multiply the error by P .
 All we are doing is converting the error into a useful number (e.g. a motor controller input).
 
 Here is a simple numerical example:
-::
+.. code-block:: text
 
     error = targetState − currentState;
         = 2000 − 1000;
@@ -57,7 +57,7 @@ We continuously accumulate the error when we are very close to our target (withi
 IZone ). Then, we scale the integral by the responseTime . Finally, we multiply this number by
 I and add it into the correction calculation.
 
-::
+.. code-block:: text
 
     if((abs(error) < IZone) integral += error;
     if(abs(integral) > ILimit) integral *= responseTime;
@@ -80,7 +80,7 @@ Depending on your system, you might not need to incorporate the integral.
 
 Here is a simple numerical example:
 
-::
+.. code-block:: text
 
     error = targetState − currentState;
            = 2000 -1991
@@ -99,7 +99,8 @@ D - Derivative
 ++++++++++++++++++
 We take the difference between our current error and our previous error divided by our
 responseTime . Then, we add the derivative into the correction equation.
-::
+
+.. code-block:: text
 
     derivative = (error – prevError) / responseTime;
     correction = error * kP + derivative * kD;
@@ -119,7 +120,7 @@ Depending on your system, you might not need to incorporate the derivative .
 
 Here is a simple numerical example:
 
-::
+.. code-block:: text
 
     error = targetState − currentState;
           = 2000 − 1000;
@@ -138,7 +139,7 @@ We multiply the target by feed forward . Then, we add that into the existing cor
 equation. All we are doing is providing the system an initial boost in power based on our
 existing knowledge of the system.
 
-::
+.. code-block:: text
 
     correction = error * kP + feedForward * kF;
 
@@ -216,7 +217,7 @@ a certain distance? We already have an idea of how far we want to move: we know 
 measurements. So, let's say we want this positioning loop to give 100% output when we are
 10 ft away. This is what the math would look like:
 
-::
+.. code-block:: text
 
     correction = error * kP;
     1 = 120000 * kP;
@@ -225,7 +226,7 @@ measurements. So, let's say we want this positioning loop to give 100% output wh
 Using that kP , we can do some quick math to see how this behaves when we are 3 ft from
 our target distance.
 
-::
+.. code-block:: text
 
     correction = error * kP;
     correction = 3600 * 0.0000833;
@@ -261,7 +262,7 @@ Now that we are happy with our kP , we can start tuning kD .
 
 It is recommended that you start the kD at 10 times kP . In our previous example, that would mean:
 
-::
+.. code-block:: text
 
     kD = 10 * kP = 10 * 0.0000833 k = 0.000833;
     derivative = (error – prevError) / responseTime;
@@ -305,7 +306,7 @@ It is recommended that you start the kI with a fairly small value. We only want 
 to be active when we are extremely close to our target. So, let's look at an example without
 the integra l, then with it:
 
-::
+.. code-block:: text
 
     derivative = (error - prevError) / responseTime;
                = (9 – 10) / 0.02 = − 50;
@@ -313,7 +314,7 @@ the integra l, then with it:
                = 9 * 0.000833 + − 50 * 0.000833;
                = 0.0075 − 0.0417 = − 0.0342 = − 3%;
 
-::
+.. code-block:: text
 
     derivative = (error – prevError) / responseTime;
                = (9 – 10) / 0.02 = − 50;

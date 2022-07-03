@@ -111,7 +111,7 @@ milliseconds; however, this is only a nominal value, and it can vary up and down
 depending on the behavior of the robot's code. In any case, we can take this timestep and our speed
 and integrate it into an accumulator value to get our position relative to where we started counting.
 
-::
+.. code-block:: text
 
     timeStep = LoopTimer.Get() − lastTime
     positionAlongField = positionAlongField + FWD * timeStep

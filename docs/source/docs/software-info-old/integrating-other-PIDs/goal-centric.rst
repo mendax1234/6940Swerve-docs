@@ -38,7 +38,7 @@ The simplest vision targeting PID you can do only uses `tx` . Basically, you jus
 the goal. This is done by applying a calculated correction in the opposite direction of `tx` . Here is
 what your targeting PID function might look like:
 
-::
+.. code-block:: text
 
     double limelightXPID(double tx){
         double kP = 0.008;
@@ -60,7 +60,7 @@ deadzone . Just like the previous one, tx is used the same way. However, the min
 allows the robot to creep into place and the error deadzone allows the robot to stop when it's close
 enough. Here is what your targeting PID function might look like:
 
-::
+.. code-block:: text
 
     double limelightXPID(double tx){
         double kP = 0.008;
@@ -80,7 +80,7 @@ approaches,9 tx is used the same way. However, the integra l adds a little power
 the robot crawl right into proper positioning. The integra l replaces the minimum correction seen in
 the previous section. Here is what your targeting PID function might look like:
 
-::
+.. code-block:: text
 
     double integral = 0;
     double limelightXPID(double tx){
@@ -110,7 +110,7 @@ Because ty gives us the vertical offset (in degrees) we are away from the target
 achieve a specific position. (For the purposes of simplicity, we are using the pseudocode from this
 example.) Here is what your targeting PID function might look like:
 
-::
+.. code-block:: text
 
     double limelightXPID(double tx){
         double kP = 0.008;

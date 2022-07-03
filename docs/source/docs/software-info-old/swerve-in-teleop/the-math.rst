@@ -237,7 +237,7 @@ Because we're working with angles and have a range of 0-360°, we need to use th
 function to make sure our error is calculated properly. We'll also use this for incorporating our
 offset. Assuming we have the angle we want for this wheel (wa), we can calculate our error:
 
-::
+.. code-block:: text
 
    encoder = Encoder.GetValue()
    azimuthAngle = remainder(Encoder.GetValue() − wheelAngleOffset)
@@ -248,7 +248,7 @@ _____________________
 Using the Talon FX's SetInverted method makes implementing inversion control very
 straightforward. We simply “flip” our azimuth error to the other side.
 
-::
+.. code-block:: text
 
     azimuthError = azimuthPosition − wa ;
     if abs(azimuthError) > 90 : //assuming our angles are in degrees
