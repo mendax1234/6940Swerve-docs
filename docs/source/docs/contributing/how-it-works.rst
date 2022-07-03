@@ -19,41 +19,53 @@ In `scripts/lock-translations.py`
 
 1. Change `PROJECT_FILTER_PARAM` and `PROJECT_DELETE_PARAM`
 
-`PROJECT_FILTER_PARAM = {"filter[project]": "o:Your organization on Transifex:p:Your project name"}`
-`PROJECT_DELETE_PARAM = {"o:Your organization on Transifex:p:Your project name:r:"}`
+.. tabs::
 
-.. image:: images/Contributing-3.png
-    :alt: lock-translations.py
+    .. code-tab:: python
+
+        PROJECT_FILTER_PARAM = {"filter[project]": "o:Your organization on Transifex:p:Your project name"}
+        PROJECT_DELETE_PARAM = {"o:Your organization on Transifex:p:Your project name:r:"}
 
 .. note:: `Your organization on Transifex` can be found in the URL of your Transifex project. And remember that all the letters are lowercase.
 
-2. Change content in the quotes to your project's name.
+1. Change content in the quotes to your project's name.
 
-.. image:: images/Contributing-4.png
-    :alt: lock-translations.py
+.. tabs::
+
+    .. code-tab:: python
+
+        section = section.split("6940swerve-docs.", 1)
 
 In `scripts/update.sh`
 ------------------------------------
 
 1. Change the `LANG_TO_PULL` and `LANG_MAP` to the language you want to be translated into.
 
-.. image:: images/Contributing-5.png
-    :alt: update.sh
+.. code-block:: shell
+
+        #LANG_TO_PULL=${1:-'fr_CA,es_MX,zh_CN,tr_TR,he_IL,pt'}
+        LANG_TO_PULL=${1:-'zh_CN'}
+        #LANG_MAP='es_MX: es, fr_CA: fr, he_IL: he, tr_TR: tr'
+        LANG_MAP='zh_CN: zh_CN'
 
 2. Change the `MAINPROJECT` name to your project's name.
 
-.. image:: images/Contributing-6.png
-    :alt: update.sh
+.. code-block:: shell
+
+        section = section.split("6940swerve-docs.", 1)
 
 3. Change the last two arguments in the below to the directory to your `../source/`(where you `conf.py` locates) and the location where you want to put your `.POT` files.
 
-.. image:: images/Contributing-7.png
-    :alt: update.sh
+.. code-block:: shell
 
-4. Change the two underlined parts in the below image to the directory where your `.POT` files locate and where your translation files(which can also be called `.PO` files) locate.
+        # Create POT Files
+        sphinx-build -T -b gettext docs/source docs/pot
 
-.. image:: images/Contributing-8.png
-    :alt: update.sh
+4. Change the two **docs/pot** and **docs/locales** in the below image to the directory where your `.POT` files locate and where your translation files(which can also be called `.PO` files) locate.
+
+.. code-block:: shell
+
+        sphinx-intl update-txconfig-resources -p docs/pot -d docs/locales --transifex-project-name $MAINPROJECT
 
 In `.github/workflow/publish_main.yml`
 -----------------------------------------
