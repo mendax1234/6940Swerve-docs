@@ -13,7 +13,7 @@ the better your whole team will do. That is why we are so hard-set on having sol
 to perform well. And we want you to as well.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
 
    PIDF-loops
    goal-centric
