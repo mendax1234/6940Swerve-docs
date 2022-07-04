@@ -24,7 +24,7 @@ Content
 .. grid:: 2
 
     .. grid-item-card::  Software Info - Team 1684
-        :link: /docs/software-info-old/disclaimer
+        :link: /docs/software-info-team1684/disclaimer
         :link-type: doc
 
         FRC Team 1684 software algorithm overview of swerve drive.
@@ -65,15 +65,15 @@ Content
 
 .. toctree::
    :maxdepth: 2
-   :caption: Software Info - Old
+   :caption: Software Info from Team1684
    :hidden:
 
-   docs/software-info-old/disclaimer
-   docs/software-info-old/overview
-   docs/software-info-old/swerve-in-teleop/index
-   docs/software-info-old/swerve-in-auton/index
-   docs/software-info-old/integrating-other-PIDs/index
-   docs/software-info-old/other-miscs/index
+   docs/software-info-team1684/disclaimer
+   docs/software-info-team1684/overview
+   docs/software-info-team1684/swerve-in-teleop/index
+   docs/software-info-team1684/swerve-in-auton/index
+   docs/software-info-team1684/integrating-other-PIDs/index
+   docs/software-info-team1684/other-miscs/index
 
 .. toctree::
    :maxdepth: 2
