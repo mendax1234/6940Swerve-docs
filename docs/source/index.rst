@@ -35,13 +35,19 @@ Content
 
         New but easy software algorithm overview of our swerve drive.
 
-.. grid::2
+.. grid:: 2
 
     .. grid-item-card:: Contributing
         :link: /docs/contributing/index
         :link-type: doc
 
         Contributing to 6940swerve-docs
+
+    .. grid-item-card:: Epilogue
+        :link: /docs/epilogue/epilogue
+        :link-type: doc
+
+        Epilogue
 
 .. toctree::
    :maxdepth: 2
@@ -82,3 +88,10 @@ Content
     :hidden:
 
     docs/contributing/index
+
+.. toctree:: 
+    :maxdepth: 2
+    :caption: Epilogue
+    :hidden:
+
+    docs/epilogue/epilogue
