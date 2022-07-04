@@ -43,11 +43,21 @@ Content
 
         Contributing to 6940swerve-docs
 
+    .. grid-item-card:: Acknowledgements
+        :link: /docs/acknowledgements/acknowledgements
+        :link-type: doc
+
+        Acknowledgements
+
+.. grid:: 2
+
     .. grid-item-card:: Epilogue
         :link: /docs/epilogue/epilogue
         :link-type: doc
 
         Epilogue
+
+
 
 .. toctree::
    :maxdepth: 2
@@ -88,6 +98,13 @@ Content
     :hidden:
 
     docs/contributing/index
+
+.. toctree:: 
+    :maxdepth: 2
+    :caption: Acknowledgements
+    :hidden:
+
+    docs/acknowledgements/acknowledgements
 
 .. toctree:: 
     :maxdepth: 2
