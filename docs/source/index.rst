@@ -29,11 +29,11 @@ Content
 
         FRC Team 1684 software algorithm overview of swerve drive.
 
-    .. grid-item-card:: Software Info - New
-        :link: /docs/software-info-new/index
+    .. grid-item-card:: Software Info - Team 6940
+        :link: /docs/software-info-team6940/index
         :link-type: doc
 
-        New but easy software algorithm overview of our swerve drive.
+        FRC Team 6940 software algorithm overview of swerve drive.
 
 .. grid:: 2
 
@@ -90,7 +90,7 @@ Content
    :caption: Software Info - New
    :hidden:
 
-   docs/software-info-new/index
+   docs/software-info-team6940/index
 
 .. toctree:: 
     :maxdepth: 2
