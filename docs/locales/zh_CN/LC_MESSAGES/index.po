@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 05:32+0000\n"
+"POT-Creation-Date: 2022-07-04 16:25+0000\n"
 "PO-Revision-Date: 2022-07-01 03:24+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -21,31 +21,27 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../source/index.rst:42
+#: ../source/index.rst:62
 msgid "About"
 msgstr "关于"
 
-#: ../source/index.rst:49
+#: ../source/index.rst:69
 msgid "Hardware Info"
 msgstr "硬件信息"
 
-#: ../source/index.rst:56
-msgid "Software Info - Old"
-msgstr "软件信息-“旧”"
-
-#: ../source/index.rst:68
+#: ../source/index.rst:88
 msgid "Software Info - New"
 msgstr "软件信息-“新”"
 
-#: ../source/index.rst:75
+#: ../source/index.rst:95
 msgid "Contributing"
 msgstr "贡献"
 
-#: ../source/index.rst:2 460be9dc3cfc4a2d8c66cb51b6ad444f
+#: ../source/index.rst:2 59012e67e14b44fbbf7e4fb6b5e643df
 msgid "6940 Swerve Documentation"
 msgstr "6940 Swerve文档"
 
-#: ../source/index.rst:4 2797daab0fad4cfcac2366f0bf68b234
+#: ../source/index.rst:4 36a63115b341456d89c59dff925e7e8b
 msgid ""
 "Welcome to the FRC Team 6940's Swerve Documentation! This site contains "
 "everything you want to know about 6940's code in 2022 Rapid React and our "
@@ -54,18 +50,18 @@ msgstr ""
 "欢迎来到FRC Team 6940的Swerve文档！这个网站包括了所有你想知道的关于6940 Swerve的代码和6940在2022赛季Rapid "
 "React中的代码！"
 
-#: ../source/index.rst:12 bd98009d274546d5b483983b901a20b6
+#: ../source/index.rst:16 cd73c020bc02486db741efc70022f5a1
 msgid "About Swerve Drive in FRC"
 msgstr "关于FRC中的Swerve底盘"
 
-#: ../source/index.rst:18 3ea381f8369e4e4bbdae4a7024f307d3
+#: ../source/index.rst:22 94a545cded1948a3985835e1ad0d9e88
 msgid "An overview of the hardware components of our swerve drive."
 msgstr "一个关于我们Swerve底盘硬件组成的总览"
 
-#: ../source/index.rst:26 d75638d86f5644e882f469676f44f21f
+#: ../source/index.rst:30 f55b432212524dc185c9e36311a6f8d6
 msgid "FRC Team 1684 software algorithm overview of swerve drive."
 msgstr "FRC Team 1684的swerve底盘软件算法总览"
 
-#: ../source/index.rst:32 cf9369a8300649f0a29dfbf76b6c7d67
+#: ../source/index.rst:36 1f2a56673796479ebee3d4fec013fa31
 msgid "New but easy software algorithm overview of our swerve drive."
 msgstr "“新”但是简单的Swerve底盘软件算法总览"

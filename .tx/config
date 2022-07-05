@@ -14,6 +14,18 @@ source_file = docs/pot/docs/about/about.pot
 source_lang = en
 type = PO
 
+[6940swerve-docs.docs--acknowledgements--acknowledgements]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/acknowledgements/acknowledgements.po
+source_file = docs/pot/docs/acknowledgements/acknowledgements.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.docs--contributing--build-instructions]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/build-instructions.po
+source_file = docs/pot/docs/contributing/build-instructions.pot
+source_lang = en
+type = PO
+
 [6940swerve-docs.docs--contributing--contributing-guidelines]
 file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/contributing-guidelines.po
 source_file = docs/pot/docs/contributing/contributing-guidelines.pot
@@ -32,6 +44,12 @@ source_file = docs/pot/docs/contributing/index.pot
 source_lang = en
 type = PO
 
+[6940swerve-docs.docs--contributing--style-guide]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/style-guide.po
+source_file = docs/pot/docs/contributing/style-guide.pot
+source_lang = en
+type = PO
+
 [6940swerve-docs.docs--contributing--translation]
 file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/translation.po
 source_file = docs/pot/docs/contributing/translation.pot
@@ -41,6 +59,12 @@ type = PO
 [6940swerve-docs.docs--contributing--write-articles]
 file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/write-articles.po
 source_file = docs/pot/docs/contributing/write-articles.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.docs--epilogue--epilogue]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/epilogue/epilogue.po
+source_file = docs/pot/docs/epilogue/epilogue.pot
 source_lang = en
 type = PO
 
@@ -56,86 +80,86 @@ source_file = docs/pot/docs/software-info-new/index.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--disclaimer]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/disclaimer.po
-source_file = docs/pot/docs/software-info-old/disclaimer.pot
+[6940swerve-docs.docs--software-info-team1684--disclaimer]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/disclaimer.po
+source_file = docs/pot/docs/software-info-team1684/disclaimer.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--overview]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/overview.po
-source_file = docs/pot/docs/software-info-old/overview.pot
+[6940swerve-docs.docs--software-info-team1684--overview]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/overview.po
+source_file = docs/pot/docs/software-info-team1684/overview.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--integrating-other-PIDs--PIDF-loops]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/integrating-other-PIDs/PIDF-loops.po
-source_file = docs/pot/docs/software-info-old/integrating-other-PIDs/PIDF-loops.pot
+[6940swerve-docs.docs--software-info-team1684--integrating-other-PIDs--PIDF-loops]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/integrating-other-PIDs/PIDF-loops.po
+source_file = docs/pot/docs/software-info-team1684/integrating-other-PIDs/PIDF-loops.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--integrating-other-PIDs--drive-straight]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/integrating-other-PIDs/drive-straight.po
-source_file = docs/pot/docs/software-info-old/integrating-other-PIDs/drive-straight.pot
+[6940swerve-docs.docs--software-info-team1684--integrating-other-PIDs--drive-straight]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/integrating-other-PIDs/drive-straight.po
+source_file = docs/pot/docs/software-info-team1684/integrating-other-PIDs/drive-straight.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--integrating-other-PIDs--gamepiece-centric]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/integrating-other-PIDs/gamepiece-centric.po
-source_file = docs/pot/docs/software-info-old/integrating-other-PIDs/gamepiece-centric.pot
+[6940swerve-docs.docs--software-info-team1684--integrating-other-PIDs--gamepiece-centric]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.po
+source_file = docs/pot/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--integrating-other-PIDs--goal-centric]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/integrating-other-PIDs/goal-centric.po
-source_file = docs/pot/docs/software-info-old/integrating-other-PIDs/goal-centric.pot
+[6940swerve-docs.docs--software-info-team1684--integrating-other-PIDs--goal-centric]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/integrating-other-PIDs/goal-centric.po
+source_file = docs/pot/docs/software-info-team1684/integrating-other-PIDs/goal-centric.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--integrating-other-PIDs--index]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/integrating-other-PIDs/index.po
-source_file = docs/pot/docs/software-info-old/integrating-other-PIDs/index.pot
+[6940swerve-docs.docs--software-info-team1684--integrating-other-PIDs--index]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/integrating-other-PIDs/index.po
+source_file = docs/pot/docs/software-info-team1684/integrating-other-PIDs/index.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--other-miscs--index]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/other-miscs/index.po
-source_file = docs/pot/docs/software-info-old/other-miscs/index.pot
+[6940swerve-docs.docs--software-info-team1684--other-miscs--index]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/other-miscs/index.po
+source_file = docs/pot/docs/software-info-team1684/other-miscs/index.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--swerve-in-auton--how-it-should-work]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-auton/how-it-should-work.po
-source_file = docs/pot/docs/software-info-old/swerve-in-auton/how-it-should-work.pot
+[6940swerve-docs.docs--software-info-team1684--swerve-in-auton--how-it-should-work]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-auton/how-it-should-work.po
+source_file = docs/pot/docs/software-info-team1684/swerve-in-auton/how-it-should-work.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--swerve-in-auton--index]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-auton/index.po
-source_file = docs/pot/docs/software-info-old/swerve-in-auton/index.pot
+[6940swerve-docs.docs--software-info-team1684--swerve-in-auton--index]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-auton/index.po
+source_file = docs/pot/docs/software-info-team1684/swerve-in-auton/index.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--swerve-in-auton--the-math]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-auton/the-math.po
-source_file = docs/pot/docs/software-info-old/swerve-in-auton/the-math.pot
+[6940swerve-docs.docs--software-info-team1684--swerve-in-auton--the-math]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-auton/the-math.po
+source_file = docs/pot/docs/software-info-team1684/swerve-in-auton/the-math.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--swerve-in-teleop--how-it-should-work]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/how-it-should-work.po
-source_file = docs/pot/docs/software-info-old/swerve-in-teleop/how-it-should-work.pot
+[6940swerve-docs.docs--software-info-team1684--swerve-in-teleop--how-it-should-work]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-teleop/how-it-should-work.po
+source_file = docs/pot/docs/software-info-team1684/swerve-in-teleop/how-it-should-work.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--swerve-in-teleop--index]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/index.po
-source_file = docs/pot/docs/software-info-old/swerve-in-teleop/index.pot
+[6940swerve-docs.docs--software-info-team1684--swerve-in-teleop--index]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-teleop/index.po
+source_file = docs/pot/docs/software-info-team1684/swerve-in-teleop/index.pot
 source_lang = en
 type = PO
 
-[6940swerve-docs.docs--software-info-old--swerve-in-teleop--the-math]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-old/swerve-in-teleop/the-math.po
-source_file = docs/pot/docs/software-info-old/swerve-in-teleop/the-math.pot
+[6940swerve-docs.docs--software-info-team1684--swerve-in-teleop--the-math]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-teleop/the-math.po
+source_file = docs/pot/docs/software-info-team1684/swerve-in-teleop/the-math.pot
 source_lang = en
 type = PO
