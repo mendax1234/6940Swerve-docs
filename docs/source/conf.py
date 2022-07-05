@@ -10,6 +10,7 @@ author = 'Daniel Webber (mendax1234)'
 
 extensions = [
     'sphinx_tabs.tabs',
+    'sphinxcontrib.ghcontributors',
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',

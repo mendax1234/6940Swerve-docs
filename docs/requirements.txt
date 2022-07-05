@@ -5,3 +5,4 @@ readthedocs-sphinx-search
 sphinx-tabs
 sphinx-panels
 sphinx_design
+sphinxcontrib-ghcontributors

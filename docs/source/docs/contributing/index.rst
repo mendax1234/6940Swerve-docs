@@ -9,5 +9,6 @@ Contributing to 6940swerve-docs
     translation
     how-it-works
     write-articles
+    top-contributors
 
 
