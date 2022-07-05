@@ -1,6 +1,6 @@
 sphinx
 lutra
-furo
+furo==2021.11.23
 readthedocs-sphinx-search
 sphinx-tabs
 sphinx-panels
