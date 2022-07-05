@@ -3,16 +3,32 @@
 # This file is distributed under the same license as the 6940 Swerve package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Daniel Webber, 2022
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-04 16:25+0000\n"
+"POT-Creation-Date: 2022-07-05 20:19+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
+"Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:2
+#: 92e1761f70404f9881063864fc6ec82c
+msgid ""
+"Maintaining Your Heading (aka Not Spinning… aka Driving “Straight”) While in"
+" Field Centric"
+msgstr "在基于场地的模式下保持Swerve的“头部”不动（又名“不旋转”或“直着开”）"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:5
+#: e1f0697d1fcd47988179c5c0fd8072da
+msgid "Introduction"
+msgstr "介绍"

@@ -3,16 +3,40 @@
 # This file is distributed under the same license as the 6940 Swerve package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Daniel Webber, 2022
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-04 16:25+0000\n"
+"POT-Creation-Date: 2022-07-05 20:19+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
+"Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../source/docs/software-info-team1684/disclaimer.rst:2
+#: 1be3877d1c9b470ab1d4903bd5720aef
+msgid "Disclaimer"
+msgstr "免责声明"
+
+#: ../source/docs/software-info-team1684/disclaimer.rst:3
+#: 29b6ec3a8a3f4b06b62c7d93e6146885
+msgid ""
+"This part is from Team 1684 Chimeras . We have communicated with them and "
+"are allowed to copy this part in our documentation. We really thanks FRC "
+"Team 1684 for their wonderful whitepaper!"
+msgstr ""
+"以下部分来自Team 1684 Chimeras。我已经和他们交流过并且被允许复制这一部分到我们的文档里。我们真的非常感谢FRC Team 1684 "
+"超级棒的swerve 白皮书！"
+
+#: ../source/docs/software-info-team1684/disclaimer.rst:6
+#: 7faae88400804ea28feecad1fde99b6f
+msgid "In this part, all 'We' refer to Team 1684"
+msgstr "在这一部分，所有的“我们”都指Team 1684"
