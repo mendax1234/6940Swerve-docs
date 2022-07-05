@@ -17,6 +17,8 @@ Here are some steps to follow for translating 6940swerve-docs.
 3. You may be contacted and asked questions involving contributing languages before being granted access to the 6940swerve-docs translation project.
 4. Translate your language!
 
+.. important:: Since we have enabled **Tansifex Memory** function in our project, you had better check whether there is a suggestion for your translation at the bottom right (due to our automatic lock-file mechanism, the file you are translating now may have already been translated by other people). 
+
 
 Links
 ------
