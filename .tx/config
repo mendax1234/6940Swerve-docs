@@ -50,6 +50,12 @@ source_file = docs/pot/docs/contributing/style-guide.pot
 source_lang = en
 type = PO
 
+[6940swerve-docs.docs--contributing--top-contributors]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/top-contributors.po
+source_file = docs/pot/docs/contributing/top-contributors.pot
+source_lang = en
+type = PO
+
 [6940swerve-docs.docs--contributing--translation]
 file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/translation.po
 source_file = docs/pot/docs/contributing/translation.pot
@@ -71,12 +77,6 @@ type = PO
 [6940swerve-docs.docs--hardware-info--hardware-info]
 file_filter = docs/locales/<lang>/LC_MESSAGES/docs/hardware-info/hardware-info.po
 source_file = docs/pot/docs/hardware-info/hardware-info.pot
-source_lang = en
-type = PO
-
-[6940swerve-docs.docs--software-info-new--index]
-file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-new/index.po
-source_file = docs/pot/docs/software-info-new/index.pot
 source_lang = en
 type = PO
 
@@ -161,5 +161,11 @@ type = PO
 [6940swerve-docs.docs--software-info-team1684--swerve-in-teleop--the-math]
 file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-teleop/the-math.po
 source_file = docs/pot/docs/software-info-team1684/swerve-in-teleop/the-math.pot
+source_lang = en
+type = PO
+
+[6940swerve-docs.docs--software-info-team6940--index]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team6940/index.po
+source_file = docs/pot/docs/software-info-team6940/index.pot
 source_lang = en
 type = PO

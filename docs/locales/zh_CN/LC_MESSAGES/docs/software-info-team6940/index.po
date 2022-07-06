@@ -3,25 +3,16 @@
 # This file is distributed under the same license as the 6940 Swerve package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Daniel Webber, 2022
-# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-07-05 20:19+0000\n"
-"PO-Revision-Date: 2022-07-04 16:26+0000\n"
-"Last-Translator: Daniel Webber, 2022\n"
+"PO-Revision-Date: 2022-07-05 20:20+0000\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#: ../source/docs/software-info-team1684/swerve-in-teleop/index.rst:2
-#: 1a5bdf526e224e5795a880dc46f6155d
-msgid "Swerve in Teleop"
-msgstr "手动模式下的Swerve"
