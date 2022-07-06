@@ -10,5 +10,6 @@ Contributing to 6940swerve-docs
     how-it-works
     write-articles
     top-contributors
+    top-translators
 
 
