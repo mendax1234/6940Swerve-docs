@@ -56,6 +56,12 @@ source_file = docs/pot/docs/contributing/top-contributors.pot
 source_lang = en
 type = PO
 
+[6940swerve-docs.docs--contributing--top-translators]
+file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/top-translators.po
+source_file = docs/pot/docs/contributing/top-translators.pot
+source_lang = en
+type = PO
+
 [6940swerve-docs.docs--contributing--translation]
 file_filter = docs/locales/<lang>/LC_MESSAGES/docs/contributing/translation.po
 source_file = docs/pot/docs/contributing/translation.pot
