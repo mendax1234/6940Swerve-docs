@@ -87,7 +87,7 @@ Content
 
 .. toctree::
    :maxdepth: 2
-   :caption: Software Info - New
+   :caption: Software Info from Team6940
    :hidden:
 
    docs/software-info-team6940/index
