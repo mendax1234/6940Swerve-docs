@@ -46,9 +46,9 @@ original command (:math:`FWD` and :math:`STR`) are in the actual direction of th
 do the same for our :math:`STR` command. This effectively transforms our commands, considered relative
 to the field , into commands that are relative to the robot , using information about the robot's
 orientation to the field to align everything. If you know a bit of linear algebra, you might recognize
-this as the result of a `rotation matrix <https://en.wikipedia.org/wiki/Rotation_matrix>`_` , applied to the vector (:math:`FWD`, STR).
+this as the result of a `rotation matrix <https://en.wikipedia.org/wiki/Rotation_matrix>`_ , applied to the vector (:math:`FWD`, :math:`STR`).
 
-Our ROT (rotation) command actually doesn't come into play at all in this transformation. To explain this further, let's look at the results of the the following three situations:
+To explain this further, let's look at the results of the the following three situations:
 
 **Example 1: Robot is aligned with field**
 
