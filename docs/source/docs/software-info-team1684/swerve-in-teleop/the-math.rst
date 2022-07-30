@@ -48,10 +48,7 @@ to the field , into commands that are relative to the robot , using information 
 orientation to the field to align everything. If you know a bit of linear algebra, you might recognize
 this as the result of a `rotation matrix <https://en.wikipedia.org/wiki/Rotation_matrix>`_` , applied to the vector (:math:`FWD`, STR).
 
-Our ROT (rotation) command actually doesn't come into play at all in this transformation. To
-understand why this is, consider that
-
-To explain this further, let's look at the results of the the following three situations:
+Our ROT (rotation) command actually doesn't come into play at all in this transformation. To explain this further, let's look at the results of the the following three situations:
 
 **Example 1: Robot is aligned with field**
 
