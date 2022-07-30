@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-05 20:19+0000\n"
+"POT-Creation-Date: 2022-07-30 20:18+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -22,6 +22,36 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/overview.rst:2
-#: df65227c8d854ef89e4636fb264b9599
+#: 833fa41a66724528991367b5dfbd851f
 msgid "Overview"
 msgstr "总览"
+
+#: ../source/docs/software-info-team1684/overview.rst:3
+#: 20543245ac2b4e54b01817a97201bc42
+msgid ""
+"New in the 2020 season, WPILib has some swerve classes available. We did not"
+" use these classes. We do not know how well they work when they are properly"
+" implemented. If you decide to try using these classes, your results may "
+"vary."
+msgstr ""
+"在2020年的新赛季中，WPILib有一些swerve类可用。我们并没有使用这些类。我们不知道它们在正确实施时的效果如何。如果你决定尝试使用这些类，你的结果可能会有所不同。"
+
+#: ../source/docs/software-info-team1684/overview.rst:7
+#: 38a39b5e78be45c8ab145448785bed14
+msgid ""
+"There was a brief period of time that we attempted to use one of these "
+"classes, but we quickly opted to write our own. For the purposes of future "
+"debugging, we wanted to understand every bit of our code."
+msgstr "有一段短暂的时间，我们试图使用这些类中的一个，但我们很快选择了自己写。为了将来调试的目的，我们想了解我们代码的每一点。"
+
+#: ../source/docs/software-info-team1684/overview.rst:11
+#: ee93e97f6ad04d68acb2ae12af836ec8
+msgid ""
+"Throughout our adventures down the path of swerve, we discovered many useful"
+" resources. One of the most important things we found was this Chief Delphi "
+"post . We used SwerveTester_8.xls to understand how each wheel reacts with "
+"different inputs and to verify our teleop swerve control was working "
+"properly."
+msgstr ""
+"在我们沿着swerve的道路冒险的过程中，我们发现了许多有用的资源。我们发现的最重要的东西之一是这个Chief "
+"Delphi的帖子。我们使用SwerveTester_8.xls来了解每个车轮对不同输入的反应，并验证我们的teleop swerve控制是否正常工作。"

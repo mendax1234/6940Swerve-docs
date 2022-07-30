@@ -3,16 +3,140 @@
 # This file is distributed under the same license as the 6940 Swerve package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Daniel Webber, 2022
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-03 16:22+0000\n"
+"POT-Creation-Date: 2022-07-30 20:18+0000\n"
 "PO-Revision-Date: 2022-07-03 16:22+0000\n"
+"Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:2
+#: 7ccd11ee08ba4a89b1dcbb04df50713c
+msgid "Contributing Guidelines"
+msgstr "贡献指南"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:4
+#: f6a62cf768574a3a8ec71e1f5f9193d8
+msgid ""
+"Welcome to the contribution guidelines for the 6940swerve-docs project. If "
+"you are unfamiliar to writing in the reStructuredText format, please read up"
+" on it `here <https://thomas-"
+"cokelaer.info/tutorials/sphinx/rest_syntax.html>`__."
+msgstr ""
+"欢迎来到6940swerve-docs项目的贡献指南。如果你不熟悉用reStructuredText格式写作，请在<https://thomas-"
+"cokelaer.info/tutorials/sphinx/rest_syntax.html>`__上阅读。"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:7
+#: b222448554fd491db0f836f0b1fe9ae4
+msgid "Creating a PR"
+msgstr "创建一个PR"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:9
+#: 795b07ff2502414d88bff076790b7276
+msgid ""
+"PRs should be made to the `6940swerve-docs "
+"<https://github.com/mendax1234/6940swerve-docs>`__ repo on GitHub. They "
+"should point to the ``main`` branch and *not* ``stable``."
+msgstr ""
+"PR应该被放到GitHub上的`6940swerve-docs <https://github.com/mendax1234/6940swerve-"
+"docs>`__仓库。它们应该指向 \"master \"分支，而不是*\"stable \"分支。"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:12
+#: a565848429f44e17a6131c06bd2b5b03
+msgid "Creating New Content"
+msgstr "创建新内容"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:14
+#: 06fc435ca4e047eebdb0fac8ca61cd27
+msgid ""
+"Thanks for contributing to the `6940swerve-docs "
+"<https://github.com/mendax1234/6940swerve-docs>`__ project! There are a "
+"couple things you should know before getting started!"
+msgstr ""
+"感谢你对`6940swerve-docs <https://github.com/mendax1234/6940swerve-"
+"docs>`__项目的贡献！在开始之前，有几件事情你应该知道!"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:17
+#: 43e57650b1ca48bcbe8aaa917ea3c9de
+msgid "Where to place articles?"
+msgstr "在哪里放置文章？"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:19
+#: 108c053d00f245dfa9d480043658ec68
+msgid ""
+"The location for new articles can be a pretty opinionated subject. "
+"Standalone articles that fall well into an already subject category should "
+"be placed into mentioned subject category (documentation on something about "
+"simulation should be placed into the simulation section). However, things "
+"can get pretty complicated when an article combines or references two "
+"separate existing sections. In this situation, we advise the author to open "
+"an issue on the repository to get discussion going before opening the PR."
+msgstr ""
+"新文章的位置可以是一个相当有意见的主题。独立的文章，如果属于一个已经存在的主题类别，就应该放在提到的主题类别中（关于模拟的文件应该放在模拟部分）。然而，当一篇文章结合或引用两个独立的现有章节时，事情就会变得非常复杂。在这种情况下，我们建议作者在发布PR之前，先在资源库上开一个issue，让大家讨论一下。"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:21
+#: e24a3dbba3b249009b9fb2f06e00b174
+msgid ""
+"All new articles will undergo a review process before being merged into the "
+"repository. This review process will be done by members of the WPILib team. "
+"New Articles must be on official *FIRST* supported Software and Hardware. "
+"Documentation on unofficial libraries or sensors *will not* be accepted. "
+"This process may take some time to review, please be patient."
+msgstr ""
+"所有的新文章在合并到资源库之前都会经过一个审查过程。这个审查过程将由WPILib团队的成员完成。新文章必须是关于官方*FIRST*支持的软件和硬件。非官方的库或传感器的文档将不被接受。这个过程可能需要一些时间来审查，请耐心等待。"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:24
+#: df7331f319534f6c86ac0dd832852f8b
+msgid "Where to place sections?"
+msgstr "在哪里放置章节？"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:26
+#: 895ab11782c647599ed2976ce8d2e364
+msgid ""
+"Sections are quite tricky, as they contain a large amount of content. We "
+"advise the author to open an `issue "
+"<https://github.com/mendax1234/6940swerve-docs/issues>`__ to gather "
+"discussion before opening up a PR."
+msgstr ""
+"章节是相当棘手的，因为它们包含大量的内容。我们建议作者在创建PR之前，先创建一个`issue<https://github.com/mendax1234/6940swerve-"
+"docs/issues>`__来收集讨论。"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:29
+#: 37847355f8ad4a6a8e29dee0a9387afd
+msgid "Linking Other Articles"
+msgstr "链接其他文章"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:31
+#: a302a202466d416fa7bae815f4bcb770
+msgid ""
+"In the instance that the article references content that is described in "
+"another article, the author should make best effort to link to that article "
+"upon the first reference."
+msgstr "如果文章引用了另一篇文章中描述的内容，作者应尽最大努力在第一次引用时链接到该文章。"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:33
+#: f11720f5d3364908b6d2c246b25da2a1
+msgid "Imagine we have the following content in a drivetrain tutorial:"
+msgstr "想象一下，我们在传动系统的教程中，有以下内容。"
+
+#: ../source/docs/contributing/contributing-guidelines.rst:39
+#: d9e3d6b4692d4a4f8499d018a644dd72
+msgid ""
+"Notice how only the first instance of Simulation is linked. This is the "
+"structure the author should follow. There are times where a linked article "
+"has different topics of content. If you reference the different types of "
+"content in the article, you should link to each new reference once (except "
+"in situations where the author has deemed it appropriate otherwise)."
+msgstr ""
+"请注意，只有Simulation的第一个实例被链接。这就是作者应该遵循的结构。有的时候，一篇被链接的文章有不同的内容主题。如果你引用了文章中的不同类型的内容，你应该对每个新的参考文献进行一次链接（除非作者认为不合适）。"

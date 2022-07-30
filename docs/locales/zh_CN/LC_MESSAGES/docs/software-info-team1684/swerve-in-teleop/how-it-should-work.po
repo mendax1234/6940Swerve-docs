@@ -5,15 +5,16 @@
 # 
 # Translators:
 # Daniel Webber, 2022
+# zhang jiaming, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-05 20:19+0000\n"
+"POT-Creation-Date: 2022-07-30 20:18+0000\n"
 "PO-Revision-Date: 2022-07-04 16:26+0000\n"
-"Last-Translator: Daniel Webber, 2022\n"
+"Last-Translator: zhang jiaming, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,6 +23,34 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/how-it-should-work.rst:2
-#: c8f5165bbb5e472bbf28059a64c76424
+#: b29c83f5a2914003a30efc593ac2d9b6
 msgid "How It Should Work"
 msgstr "他应该如何工作"
+
+#: ../source/docs/software-info-team1684/swerve-in-teleop/how-it-should-work.rst:3
+#: 53daeb7332764324b22a9fee64d439c6
+msgid ""
+"You move the controller and the robot magically does what you think it "
+"should. Isn't that the goal? Of course it is! The way that we chose is the "
+"same way that our driver would operate a drone. Although, we have not worked"
+" out the levitate functionality."
+msgstr ""
+"你操纵手柄，机器人就魔法般地随你的意图而移动，这就是你的目标，不是吗？本文所采用的操纵方式与无人机的操纵方式相近。即使我们并不会让机器悬浮起来"
+
+#: ../source/docs/software-info-team1684/swerve-in-teleop/how-it-should-work.rst:7
+#: d3a1400c2edd4aa2b7f5b73ff4bb1f48
+msgid ""
+"The robot should be free to move in any direction on the single plane of the"
+" field. It should be able to do that at the same speed and torque."
+msgstr "通过swerve底盘机器人将得以在同一平面上向各个方向移动。同时，机器人将在速度与扭矩不变的情况下做到这一点"
+
+#: ../source/docs/software-info-team1684/swerve-in-teleop/how-it-should-work.rst:10
+#: 713c460304274dcf90162912cfa2497a
+msgid ""
+"Given the extra freedom that swerve gives the robot, both literally and in "
+"terms of holonomic movement (can freely move in any direction, ideally with "
+"no preferred direction), operating in a field-centric manner is immensely "
+"helpful. We consider field-centric motion essential to utilizing swerve "
+"effectively at a competition level."
+msgstr ""
+"机器人因为swerve底盘而获得了(向各个方向移动)的自由。在这种条件下，采用以场地为参照系的操控方式是极其有效的。我们认为以场地为中心的操纵方式对于在比赛中高效地旋转车体至关重要。"
