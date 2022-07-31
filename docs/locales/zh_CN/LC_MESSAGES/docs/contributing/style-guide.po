@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-31 04:34+0000\n"
+"POT-Creation-Date: 2022-07-31 06:15+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -22,29 +22,29 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/contributing/style-guide.rst:2
-#: b7cb6fe0756347a1a6abc2b5d61048b9
+#: 881dc85abb434be483b2a8b300f002ed
 msgid "Style Guide"
 msgstr "样式指南"
 
 #: ../source/docs/contributing/style-guide.rst:4
-#: e5086fd5887b41a3a22a0a18770d4eee
+#: 887f08d95e6e44b3bd59b9339751320a
 msgid ""
 "This document contains the various RST/Sphinx specific guidelines for the "
 "6940swerve-docs project."
 msgstr "本文件包含了6940swerve-docs项目的各种RST/Sphinx具体准则。"
 
 #: ../source/docs/contributing/style-guide.rst:7
-#: ea2af408d1134d078b9466164bdd4d4f
+#: 3457d53836b74905b3d59d88d680e84b
 msgid "Filenames"
 msgstr "文件名"
 
 #: ../source/docs/contributing/style-guide.rst:9
-#: a6552a40320e4c4b868d2983a1a431e8
+#: cb0e808909534251ae4464310a95e201
 msgid "Use only lowercase alphanumeric characters and ``-`` (minus) symbol."
-msgstr "仅使用小写字母数字字符和``-``（减号）符号。"
+msgstr "仅使用小写字母数字字符和 ``-``（减号）符号。"
 
 #: ../source/docs/contributing/style-guide.rst:11
-#: 1408f6eefb9d4e74916f5c37e1d63219
+#: 58c7f24b25e2468abed222067d2142b4
 msgid ""
 "For documents that will have an identical software/hardware name, append "
 "\"Hardware\" or \"Software\" to the end of the document name. IE, "
@@ -54,12 +54,12 @@ msgstr ""
 "hardware.rst`` 。"
 
 #: ../source/docs/contributing/style-guide.rst:13
-#: 1437f7b64cd1429db217c0f853271237
+#: 5e9bd927ccdb4934b583ce01cc8655da
 msgid "Suffix filenames with the ``.rst`` extension."
-msgstr "文件名后缀为 \".rst\" 。"
+msgstr "文件名后缀为 ``.rst`` 。"
 
 #: ../source/docs/contributing/style-guide.rst:15
-#: 8043966010814348adf1d47712503c02
+#: 6ac48cf1d0d649a6bea4fb729e52deb9
 msgid ""
 "If you are having issues editing files with the ``.rst`` extension, the "
 "recommended text editor is `Notepad++ <https://notepad-plus-plus.org/>`__. "
@@ -68,125 +68,126 @@ msgid ""
 "notepad>`__, and the space indentation is set to ``3``."
 msgstr ""
 "如果你在编辑以 ``.rst`` 为扩展名的文件时遇到问题，推荐的文本编辑器是 `Notepad++ <https://notepad-plus-"
-"plus.org/>`__。请确保 `tabs被替换为空格 "
+"plus.org/>`__ 。请确保 `tabs被替换为空格 "
 "<https://stackoverflow.com/questions/455037/convert-tabs-to-spaces-in-"
-"notepad>`__，并且空格缩进被设置为 ``3`` 。"
+"notepad>`__ ，并且空格缩进被设置为 ``3`` 。"
 
 #: ../source/docs/contributing/style-guide.rst:18
-#: d9379d3e5c794eafbd6d66d8e6f6f310
+#: 1c6f3dcb73c748f2bf081095bb1e978d
 msgid "Text"
 msgstr "文本"
 
 #: ../source/docs/contributing/style-guide.rst:20
-#: f223e937858e44b081dc61c310382a2e
+#: 5e10140ddbdf4581a7258783a8bf9fed
 msgid ""
 "All text content should be on the same line, if you need readability, use "
 "the word-wrap function of your editor."
 msgstr "所有文本内容应在同一行，如果你需要可读性，可使用编辑器的换字功能。"
 
 #: ../source/docs/contributing/style-guide.rst:22
-#: 64a4d5d37e3e4c58a37cae22e81ab7eb
+#: e95d2f00a76c43c4ade82382ff6d9e51
 msgid "Use the following case for these terms:"
 msgstr "对这些术语使用以下情况。"
 
 #: ../source/docs/contributing/style-guide.rst:24
-#: 762fbf28fe844d08b9e740e8b612b2b4
+#: 5bc29dcd2b0f46ad87b95d31d1e1d3e2
 msgid "roboRIO (not RoboRIO, roboRio, or RoboRio)"
 msgstr "roboRIO(不是RoboRIO、roboRio或RoboRio)"
 
 #: ../source/docs/contributing/style-guide.rst:25
-#: 2d7bbf7f15a94c6dae368158bb2657a0
+#: 5e61556d5b9b4a6e8eff5b44073f6515
 msgid "LabVIEW (not labview or LabView)"
 msgstr "LabVIEW(不是labview或LabView)"
 
 #: ../source/docs/contributing/style-guide.rst:26
-#: f96c7f388f9045908a2ab95ab268703a
+#: e59ef561e5754349a0c7b37c789b7dea
 msgid "Visual Studio Code (VS Code) (not vscode, VScode, vs code, etc)"
 msgstr "Visual Studio Code（VS Code）（不是vscode、VScode、vs code等）。"
 
 #: ../source/docs/contributing/style-guide.rst:27
-#: d6537dddc5324fc69be6e9331313c3dc
+#: daeabc14249544b6b8352aabf47f1f60
 msgid "macOS (not Mac OS, Mac OSX, Mac OS X, Mac, Mac OS, etc.)"
 msgstr "macOS（不是Mac OS、Mac OSX、Mac OS X、Mac、Mac OS等）。"
 
 #: ../source/docs/contributing/style-guide.rst:28
-#: a31a2fafbb8d4b419e9867cae1db61a1
+#: cb823c0731be4f18ba43beb91c489437
 msgid "GitHub (not github, Github, etc)"
 msgstr "GitHub（不是github，Github，等）。"
 
 #: ../source/docs/contributing/style-guide.rst:29
-#: a6b242c186814db388231ef2347c470a
+#: fe5a89f09b4e4cfc8f4d8c2253e516a9
 msgid "PowerShell (not powershell, Powershell, etc)"
 msgstr "PowerShell（不是powershell、Powershell等）"
 
 #: ../source/docs/contributing/style-guide.rst:30
-#: 8c571e40f3234a21a84b2f28f0ae461b
+#: f8be7076458948648a7c21218f8da6b6
 msgid "Linux (not linux)"
 msgstr "Linux（不是linux）"
 
 #: ../source/docs/contributing/style-guide.rst:31
-#: 2f453ed65ef040829930f63ca5fef7f6
+#: 189ddff50ea042db81495519758fecf6
 msgid "Java (not java)"
 msgstr "Java（不是java）"
 
 #: ../source/docs/contributing/style-guide.rst:33
-#: 397841e4a6164bd0ac6c6dc0aa794db9
+#: b914d09e8737408aa0e8ba4cdfa0dc05
 msgid ""
 "Use the ASCII character set for English text. For special characters (e.g. "
 "Greek symbols) use the `standard character entity sets "
 "<https://docutils.sourceforge.io/docs/ref/rst/definitions.html#character-"
 "entity-sets>`_."
 msgstr ""
-"对英文文本使用ASCII字符集。对于特殊字符（如希腊符号），使用 "
-"`标准字符实体集<https://docutils.sourceforge.io/docs/ref/rst/definitions.html#character-"
-"entity-sets>`_。"
+"对英文文本使用ASCII字符集。对于特殊字符（如希腊符号），使用 `标准字符实体集   "
+"<https://docutils.sourceforge.io/docs/ref/rst/definitions.html#character-"
+"entity-sets>`_ 。"
 
 #: ../source/docs/contributing/style-guide.rst:35
-#: f728cf68c85941febf84c879f0c594ea
+#: 890db49eeda14d1c958527ff80e0ef6b
 msgid ""
 "Use ``.. math::`` for standalone equations and ``:math:`` for inline "
 "equations.  A useful LaTeX equation cheat sheet can be found `here "
 "<https://www.reed.edu/academic_support/pdfs/qskills/latexcheatsheet.pdf>`_."
 msgstr ""
-"独立方程使用 ``...math::`` ，内联方程使用 ``:math:`` 。 一个有用的LaTeX方程小抄可以在 "
-"`这里<https://www.reed.edu/academic_support/pdfs/qskills/latexcheatsheet.pdf>`_找到。"
+"独立方程使用 ``...math::`` ，内联方程使用 ``:math:`` 。 一个有用的LaTeX方程小抄可以在 `这里   "
+"<https://www.reed.edu/academic_support/pdfs/qskills/latexcheatsheet.pdf>`_ "
+"找到。"
 
 #: ../source/docs/contributing/style-guide.rst:37
-#: 154a1fe75e3b479aa5275454e26466ea
+#: 1122e2621b5c4c81aadee3b4d080e63a
 msgid "Use literals for filenames, function, and variable names."
 msgstr "对文件名、函数和变量名使用字面意义。"
 
 #: ../source/docs/contributing/style-guide.rst:40
-#: eb9acb31d3924403a32abfde10e4f59f
+#: 908843932ddc4a13ab0d19b0129e9443
 msgid "Whitespace"
 msgstr "白色空间"
 
 #: ../source/docs/contributing/style-guide.rst:43
-#: d9186b09213f46a39c1be661af2abe82
+#: 67d388774d6f46e3a0762497b3c53fd0
 msgid "Indentation"
 msgstr "缩进"
 
 #: ../source/docs/contributing/style-guide.rst:45
-#: d8e2037cdb324d1e80b6a81fece4bcfd
+#: b2d802aba30b4cc7b2cab7592a64ba03
 msgid ""
 "Indentation should *always* match the previous level of indentation *unless*"
 " you are creating a new content block."
 msgstr "缩进应*始终*与之前的缩进程度相一致，除非*你正在创建一个新的内容块。"
 
 #: ../source/docs/contributing/style-guide.rst:47
-#: 26c739bd1d5f483283e86342bcc9fb4a
+#: 18596004e9794e2eb00515c2db2fa6df
 msgid ""
 "Indentation of content directives as new line ``.. toctree::``  should be "
 "`3` spaces."
 msgstr "作为新行的内容指令的缩进 ``...toctree::`` 应该是 `3` 个空格。"
 
 #: ../source/docs/contributing/style-guide.rst:50
-#: 9f82d1afbdf64e93beafce39b4a5d988
+#: a275c8e2ddca4df8945d63048e4e1e4b
 msgid "Blank Lines"
 msgstr "空白线"
 
 #: ../source/docs/contributing/style-guide.rst:52
-#: 4b5faeda44fc4aafa1f14f801b75d183
+#: c93f05bf6a184f6b9699e1dfcccdad39
 msgid ""
 "There should be ``1`` blank lines separating basic text blocks and section "
 "titles. There *should* be ``1`` blank line separating text blocks *and* "
@@ -194,66 +195,66 @@ msgid ""
 msgstr "基本文本块和章节标题之间应该有 ``1`` 空行。在文本块*和*内容指令之间应该有 ``1`` 空行。"
 
 #: ../source/docs/contributing/style-guide.rst:55
-#: 5f253624fe84419c9e45bc99eee6b272
+#: 1e5bf465c254443ca16f38d4a27e1819
 msgid "Interior Whitespace"
 msgstr "室内白色空间"
 
 #: ../source/docs/contributing/style-guide.rst:57
-#: 32c901500ac64305a95657ee0c521ffa
+#: f3c3880a6ac34e7ea28d9b324d73c120
 msgid "Use one space between sentences."
 msgstr "句子之间使用一个空格。"
 
 #: ../source/docs/contributing/style-guide.rst:60
-#: cb0916c7b077469592cd46be1ad652b1
+#: bda1227d94814fe4bd1c2b7fe1120db5
 msgid "Headings"
 msgstr "标题"
 
 #: ../source/docs/contributing/style-guide.rst:62
-#: 532fa464a9a74f82be97f50304aabe83
+#: 93770672b9c5499ca913d2ffd2ef4340
 msgid ""
 "Headings should be in the following structure. Heading underlines should "
 "match the same number of characters as the heading itself."
 msgstr "标题应采用以下结构。标题的下划线应与标题本身的字符数相同。"
 
 #: ../source/docs/contributing/style-guide.rst:64
-#: 4bbcab1897134c5bb642d2b4c7f739a6
+#: 1427575a40404171bcfc76d976dd74d6
 msgid ""
 "``=`` for document titles. *Do not* use this more than *once* per article."
 msgstr "``=`` 用于文件标题。 *不要* 在每篇文章中使用超过 *一* 次。"
 
 #: ../source/docs/contributing/style-guide.rst:65
-#: 1d04f8c2d82342c086506f2bf1e120e4
+#: 22a74b8fe1fa40bf9fd239b4abd8baba
 msgid "``-`` for document sections"
 msgstr "``-`` 为文件章节"
 
 #: ../source/docs/contributing/style-guide.rst:66
-#: 8d364e5b532443b680d16ca7363b556b
+#: 9615e864ee0045338ee8e38d6e39c2be
 msgid "``^`` for document sub-sections"
 msgstr "``^`` 用于文件分节"
 
 #: ../source/docs/contributing/style-guide.rst:67
-#: 8499ed3c6fdf4239a4a27085b78aee99
+#: 5aaba58672114e178b931723ef676f5c
 msgid "``~`` for document sub-sub-sections"
 msgstr "``~``  用于文件分节的分节"
 
 #: ../source/docs/contributing/style-guide.rst:68
-#: 43938068503f447e8b68697129bf401d
+#: 18adfbf55f2d49ed9ca895a62376e1b9
 msgid ""
 "If you need to use any lower levels of structure, you're doing things wrong."
 msgstr "如果你需要使用任何更低层次的结构，你就会做错事。"
 
 #: ../source/docs/contributing/style-guide.rst:70
-#: 1b1d5cecee164e65a1b41dd17b6f176f
+#: 66a9781fefb3438b850ebf2b5e88f552
 msgid "Use title case for headings."
 msgstr "标题使用标题大小写。"
 
 #: ../source/docs/contributing/style-guide.rst:73
-#: 7486e2ae11dd4b6c9dc74556e468b576
+#: fbc1c1c79bfd42bbbf972f6cc9794c7c
 msgid "Lists"
 msgstr "列表"
 
 #: ../source/docs/contributing/style-guide.rst:75
-#: 59684d2aec5b4f139c1e202b007a6990
+#: b27e6d065ec04f4382b1dc15d0d14a0f
 msgid ""
 "Lists should have a new line in between each indent level. The highest "
 "indent should have ``0`` indentation, and subsequent sublists should have an"
@@ -261,39 +262,39 @@ msgid ""
 msgstr "列表在每个缩进级别之间都应该有一个新的行。最高的缩进应该有 ``0`` 的缩进，随后的子列表应该有一个从上一个缩进的第一个字符开始的缩进。"
 
 #: ../source/docs/contributing/style-guide.rst:89
-#: a376506b6aee478780f7ab13fafef49d
+#: c93833e2bc1946fc9078f542ce64e0a7
 msgid "Code blocks"
 msgstr "代码块"
 
 #: ../source/docs/contributing/style-guide.rst:91
-#: 9d3ca2e857154a5fa9fd479eaafbce97
+#: da91b82a60fa49d185fa018c585ce66a
 msgid "All code blocks should have a language specified."
 msgstr "所有的代码块都应该有一个指定的语言。"
 
 #: ../source/docs/contributing/style-guide.rst:93
-#: e4548730061e471b909e124e085177dc
+#: 20fd3fbeb54e484b961b44f080c7d576
 msgid ""
 "Exception: Content where formatting must be preserved and has no language. "
 "Instead use ``text``."
 msgstr "例外：必须保留格式且没有语言的内容。请使用 \"text \" 代替。"
 
 #: ../source/docs/contributing/style-guide.rst:95
-#: 0c8f879c647347aba7e4d78a2cace0d9
+#: 66a8dd0d37e74592a0f2aedb44e29ee6
 msgid ""
 "Follow the `WPILib style guide "
 "<https://github.com/wpilibsuite/styleguide/>`_ for C++ and Java example "
 "code. For example, use two spaces for indentation in C++ and Java."
 msgstr ""
-"遵循 "
-"`WPILib风格指南<https://github.com/wpilibsuite/styleguide/>`_的C++和Java示例代码。例如，在C++和Java中使用两个空格来缩进。"
+"遵循 `WPILib风格指南 <https://github.com/wpilibsuite/styleguide/>`_ "
+"的C++和Java示例代码。例如，在C++和Java中使用两个空格来缩进。"
 
 #: ../source/docs/contributing/style-guide.rst:98
-#: 2fe9b4be96f343d3a1406eb5170d5082
+#: f1bf442ea0524b62b62de38be7792f80
 msgid "RLI (Remote Literal Include)"
 msgstr "RLI（远程字面意思包含）。"
 
 #: ../source/docs/contributing/style-guide.rst:100
-#: 502b34f22c1745b38b7d75fb5b391b28
+#: f12cc6bc18414b6e9d7cfd5363dd77f8
 msgid ""
 "When possible, instead of using code blocks, an RLI should be used.  This "
 "pulls code lines directly from GitHub, most commonly using the example "
@@ -304,7 +305,7 @@ msgstr ""
 "RLI的格式是："
 
 #: ../source/docs/contributing/style-guide.rst:120
-#: 835579b307c0403c96dd7c97a430d99a
+#: 05a226dbb4d442848a435dc717836562
 msgid ""
 "Note that group-tab rather than code-tab needs to be used.  Also make sure "
 "to link to the raw version of the file on GitHub, there is a handy ``Raw`` "
@@ -313,12 +314,12 @@ msgstr ""
 "注意，需要使用group-tab而不是code-tab。 还要确保链接到GitHub上的原始版本文件，在页面的右上角有一个方便的 \"Raw \"按钮。"
 
 #: ../source/docs/contributing/style-guide.rst:123
-#: 1d11ee19933144daa6abecda65321148
+#: 65c0946a1cef4326abce2d66eb2b45fb
 msgid "Admonitions"
 msgstr "告诫"
 
 #: ../source/docs/contributing/style-guide.rst:125
-#: 8c47e39a6a0f4e4ba042a47b3fcb9338
+#: fdcbd3be1329474286e8d452db2b3bf5
 msgid ""
 "Admonitions (list `here "
 "<https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions>`__)"
@@ -327,60 +328,61 @@ msgid ""
 "inside of admonition. Generally having multiple sections of content inside "
 "of an admonition is not recommended."
 msgstr ""
-"告诫（列出 "
-"`此处<https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions>`__）的文字应与告诫本身在同一行。然而，当告诫中包含多个部分的内容时，这一规则也有例外。一般来说，不建议在告诫中包含多个部分的内容。"
+"告诫（列出 `此处    "
+"<https://docutils.sourceforge.io/docs/ref/rst/directives.html#admonitions>`__"
+" ）的文字应与告诫本身在同一行。然而，当告诫中包含多个部分的内容时，这一规则也有例外。一般来说，不建议在告诫中包含多个部分的内容。"
 
 #: ../source/docs/contributing/style-guide.rst:127
-#: 81b5b6c3ce5f49a5bfb0da24cca0b533
+#: e9484c3f88a249688bb8abb8aba1bd29
 msgid "Use"
 msgstr "使用这个"
 
 #: ../source/docs/contributing/style-guide.rst:133
-#: c0a93a70cab947be8ba751cbb27bb39e
+#: 62340c4a088847f78c1954cf758955e8
 msgid "NOT"
 msgstr "而不是使用这个"
 
 #: ../source/docs/contributing/style-guide.rst:141
-#: c6a2f41bf6c343d787edcbba324f83a2
+#: 1c878952c515477fa43d9a2e31111fad
 msgid "Links"
 msgstr "链接"
 
 #: ../source/docs/contributing/style-guide.rst:144
-#: a569c803e38a400c993ac254159a367f
+#: 1543331112a94f9dbeeca13e3c4c7e8e
 msgid "Internal Links"
 msgstr "内部链接"
 
 #: ../source/docs/contributing/style-guide.rst:146
-#: c09d5ffa3eed4d91ad6ed1462378c47f
+#: eb77695c41214adcb92acb53da94b893
 msgid ""
 "Internal Links will be auto-generated based on the ReStructuredText filename"
 " and section title."
 msgstr "内部链接将根据ReStructuredText文件名和章节标题自动生成。"
 
 #: ../source/docs/contributing/style-guide.rst:148
-#: ed553344def04f3892cbc97e7a380746
+#: 925a381fe6e3492c9783798c1ae4c40a
 msgid "For example, here are several ways to link to sections and documents."
 msgstr "例如，这里有几种链接到章节和文件的方法。"
 
 #: ../source/docs/contributing/style-guide.rst:150
-#: cb6e1db7564348119575a9d2ebf98ec1
+#: 0b71d557f04f492fa635088b9c95eadc
 msgid ""
 "Use this format to reference a document section. You must use the absolute "
 "path of the document. ``:ref:`docs/about/about:About this documentation``` "
 "renders to :ref:`docs/about/about:About this documentation`."
 msgstr ""
 "使用这种格式来引用一个文件章节。你必须使用文档的绝对路径。``:ref:`docs/about/about:About this "
-"documentation`` `渲染为:ref:`docs/about/about:About this documentation` 。"
+"documentation```渲染为 :ref:`docs/about/about:About this documentation` 。"
 
 #: ../source/docs/contributing/style-guide.rst:152
-#: 20b489d63e9a46e3804e98ec3ba8385f
+#: 715f489c37ef4b36b6ee3dd1c358bb46
 msgid ""
 "Use this format to reference a section of the same document. Note the single"
 " underscore. ```Images`_`` renders to `Images`_."
-msgstr "使用这种格式来引用同一文件的一个部分。注意单个下划线。```Images`_``渲染为 `Images`_。"
+msgstr "使用这种格式来引用同一文件的一个部分。注意单个下划线。```Images`_`` 渲染为 `Images`_ 。"
 
 #: ../source/docs/contributing/style-guide.rst:154
-#: 5624b69eda184f308f0290f6b95a6a47
+#: 90d6ca9aba2c4d7082e710457a403cf6
 msgid ""
 "Use this format to reference the top-level of a document. You can use "
 "relative paths ``:doc:`translation``` renders to :doc:`translation` Or to "
@@ -389,12 +391,12 @@ msgid ""
 "the text rendered is the main section title of the target page regardless of"
 " the target filename."
 msgstr ""
-"使用这种格式来引用一个文件的顶层。你可以使用相对路径 `:doc:`translation`` 渲染为 :doc:`translation` "
-"或者使用绝对路径，在路径的开头加一个正斜杠 ``:doc:`/docs/about/about```渲染为 "
+"使用这种格式来引用一个文件的顶层。你可以使用相对路径 ``:doc:`translation``` 渲染为  :doc:`translation` "
+"或者使用绝对路径，在路径的开头加一个正斜杠 ``:doc:`/docs/about/about```  渲染为 "
 ":doc:`/docs/about/about` 。注意，渲染的文本是目标页面的主要部分标题，与目标文件名无关。"
 
 #: ../source/docs/contributing/style-guide.rst:156
-#: d8ff4a7d364c4874addf981aacbfbc2d
+#: e37f369a37a0451aab8afd1d2d991108
 msgid ""
 "When using ``:ref:`` or ``:doc:`` you may customize the displayed text by "
 "surrounding the actual link with angle brackets ``<>`` and adding the custom"
@@ -411,12 +413,12 @@ msgstr ""
 "ultrasonics>` 。"
 
 #: ../source/docs/contributing/style-guide.rst:159
-#: 567c5644a7d440149c7027b73954e87a
+#: aa2c823973d34f73812db17e450b3b19
 msgid "External Links"
 msgstr "外部链接"
 
 #: ../source/docs/contributing/style-guide.rst:161
-#: c4d3a563e31e492785534287fffd2b4e
+#: 0e97e34b3e164ab291ffd6423f945ca1
 msgid ""
 "It is preferred to format external links as anonymous hyperlinks. The "
 "important thing to note is the **two** underscores appending the text. In "
@@ -426,26 +428,26 @@ msgstr ""
 "最好将外部链接格式化为匿名的超链接。需要注意的是 **两个** 附加在文本上的下划线。在只使用一个下划线的情况下，编译文件时可能会出现问题。"
 
 #: ../source/docs/contributing/style-guide.rst:167
-#: bcf786e6b564487da30eee121c1ec938
+#: 65cf0610a664442b85cd85eb74af2515
 msgid ""
 "However, in some cases where the same link must be referenced multiple "
 "times, the syntax below is accepted."
 msgstr "然而，在某些情况下，同一个链接必须被多次引用，下面的语法能够被接受。"
 
 #: ../source/docs/contributing/style-guide.rst:176
-#: 82862208f3a94aec8c6764b74240f6c6
+#: 31e1fb4b45c24ae18329614c203cbc31
 msgid "Images"
 msgstr "图片"
 
 #: ../source/docs/contributing/style-guide.rst:178
-#: 7a1683bd6321440c9b206da7859714ba
+#: fde38da53f2c40ce8ce56d230304f7c6
 msgid ""
 "Images should be created with ``1`` new line separating content and "
 "directive."
 msgstr "在创建图片时，应在内容和指令之间加入``1`` 新行。"
 
 #: ../source/docs/contributing/style-guide.rst:180
-#: 5f223e9d7ed749e4b39dd2f71161d6b2
+#: 186fbf68693c4f8788addd2b6061cca3
 msgid ""
 "All images (including vectors) should be less than ``500`` kilobytes in "
 "size. Please make use of a smaller resolution and more efficient compression"
@@ -453,19 +455,19 @@ msgid ""
 msgstr "所有图片（包括矢量）的大小应小于 ``500`` KB。请使用较小的分辨率和更有效的压缩算法。"
 
 #: ../source/docs/contributing/style-guide.rst:188
-#: 4265efbe915f4881a8b75d4fcc97ee33
+#: 6a2feba2b86248328780ab173009a04b
 msgid "Image Files"
 msgstr "图像文件"
 
 #: ../source/docs/contributing/style-guide.rst:190
-#: 6e559e25895644b09c993904873c29b4
+#: ddd39cf6af93489b95adae0b7ac38115
 msgid ""
 "Image files should be stored in the document directory, sub-directory of "
 "``document-name/images``"
 msgstr "图片文件应该存储在文档目录下，即 ``文档名/图片`` 的子目录下。"
 
 #: ../source/docs/contributing/style-guide.rst:192
-#: 4bd9c8ffba454967bb7d7e8522812e76
+#: e9dd6f3ba11b4b79b80b4720aa2638d1
 msgid ""
 "They should follow the naming scheme of ``short-description.png``, where the"
 " name of the image is a short description of what the image shows. This "
@@ -474,49 +476,49 @@ msgstr ""
 "它们应该遵循 ``short-description.png`` 的命名方案，其中图片的名称是对图片内容的简短描述。这应该少于 ``24`` 个字符。"
 
 #: ../source/docs/contributing/style-guide.rst:194
-#: ca63e871207044d3976c5e6c3e828246
+#: 8d7171223bcc49e3a0b4827a51751526
 msgid ""
 "They should be of the ``.png`` or ``.jpg`` image extension. ``.gif`` is "
 "unacceptable due to storage and accessibility concerns."
 msgstr "它们应该是 ``.png`` 或 ``.jpg`` 的图像扩展。``.gif`` 是不可接受的，因为存储和可访问性的问题。"
 
 #: ../source/docs/contributing/style-guide.rst:196
-#: 9a2fedd4b02640949326bb18cf5fc153
+#: f960e7740a94470faee0c1c7519a8dee
 msgid ""
 "Accessibility is important! Images should be marked with a ``:alt:`` "
 "directive."
 msgstr "可访问性是很重要的!图片应该用 ``:alt:`` 指令来标记。"
 
 #: ../source/docs/contributing/style-guide.rst:204
-#: 32c97cbcd599464f8f02cc969dc5f92f
+#: 71c5d54727bf470185b4d3ba79404c75
 msgid "Vector Images"
 msgstr "矢量图像"
 
 #: ../source/docs/contributing/style-guide.rst:206
-#: 531a2f0a4c1445f0b6fb81c4a628ffba
+#: 51130a5889d441ec935daa1be90a29b8
 msgid ""
 "SVG files are supported through the ``svg2pdfconverter`` Sphinx extension."
 msgstr "SVG文件通过 ``svg2pdfconverter`` Sphinx扩展支持。"
 
 #: ../source/docs/contributing/style-guide.rst:208
-#: 554cacec9c53431b8947b2ecc79e6ef2
+#: 6eb24fa3077441278085e51a991e7627
 msgid "Simply use them as you would with any other image."
 msgstr "只需像使用任何其他图像一样使用它们即可。"
 
 #: ../source/docs/contributing/style-guide.rst:210
-#: 94fffaf5e63a439e995e78ad0cd93016
+#: 4e14fda358ed43dab627e9cb1a54e1f0
 msgid ""
 "Ensure that any embedded images in the vector do not bloat the vector to "
 "exceed the 500KB limit."
 msgstr "确保矢量中的任何嵌入式图像不会使矢量膨胀到超过500KB的限制。"
 
 #: ../source/docs/contributing/style-guide.rst:218
-#: a970420fed6a498395b50b84d304fa4f
+#: 496d33fe63754978ba0f50539fad52f8
 msgid "Draw.io Diagrams"
 msgstr "Draw.io 图形"
 
 #: ../source/docs/contributing/style-guide.rst:220
-#: f0271bda565747a4ad310be4aeb669d4
+#: 32e3c21449f24219ac11d5ee06306154
 msgid ""
 "Draw.io (also known as `diagrams.net <https://app.diagrams.net/>`__) "
 "diagrams are supported through ``svg`` files with embedded ``.drawio`` "
@@ -527,18 +529,18 @@ msgstr ""
 "文件支持，其中嵌入了 ``.drawio`` 元数据，允许 ``svg`` 文件作为图表的源文件，并像普通的矢量图形文件一样被渲染。"
 
 #: ../source/docs/contributing/style-guide.rst:222
-#: 0a91cec3085e443fae152faef78366f3
+#: 75dd8b33a40d40c98f84bc0f18e9a055
 msgid ""
 "Simply use them like you would any other vector image, or any other image."
 msgstr "只需像使用任何其他矢量图像或任何其他图像一样使用它们。"
 
 #: ../source/docs/contributing/style-guide.rst:230
-#: 4b0cba71b67c4958b7964dbfbc500cb3
+#: db1d868104df4c72a5c7acd2b08f36b2
 msgid "Draw.io Files"
 msgstr "Draw.io 文件"
 
 #: ../source/docs/contributing/style-guide.rst:232
-#: 2123ff26dca34d26b0da05e256284593
+#: c19eec53b1704dc483230f5d5da3644f
 msgid ""
 "Draw.io files follow almost the same naming scheme as normal images. To keep"
 " track of files that have the embedded ``.drawio`` metadata, append a "
@@ -547,12 +549,12 @@ msgid ""
 "Additionally, diagrams should be stored in the document directory in a sub-"
 "folder named ``diagrams``."
 msgstr ""
-"Draw.io文件几乎遵循与普通图片相同的命名方案。为了跟踪那些嵌入了 ``.drawio `` 元数据的文件，在文件名的末尾、扩展名之前加上 "
+"Draw.io文件几乎遵循与普通图片相同的命名方案。为了跟踪那些嵌入了 ``.drawio`` 元数据的文件，在文件名的末尾、扩展名之前加上 "
 "``.drawio`` ，这意味着文件名应该是 ``document-title-1.drawio.svg`` "
 "，以此类推。此外，图表应该存储在文档目录下一个名为 ``diagrams`` 的子文件夹中。"
 
 #: ../source/docs/contributing/style-guide.rst:234
-#: 0126274b347f46848ad4993e1a8f95f1
+#: 5b1893ab6beb4d81b32487f2512c126f
 msgid ""
 "For the specifics of saving a diagram as a ``.svg`` with metadata, take a "
 "look at :ref:`docs/contributing/frc-docs/drawio-saving-instructions:Draw.io "
@@ -562,7 +564,7 @@ msgstr ""
 "saving-instructions:Draw.io Saving Instructions` 。"
 
 #: ../source/docs/contributing/style-guide.rst:236
-#: db5bcd17ffa1423b91e5d88a275acdb4
+#: 55123264ada340589463095261536076
 msgid ""
 "Make sure you don't modify any file that is in a ``diagrams`` folder, or "
 "ends in ``.drawio.svg`` in any program other than draw.io, otherwise you "
@@ -572,27 +574,27 @@ msgstr ""
 "结尾的文件，否则你可能有破坏文件元数据的风险，使其无法使用。"
 
 #: ../source/docs/contributing/style-guide.rst:239
-#: fdc31f2055754341b89a5bb947d44e05
+#: bd3fa4267ce6408db0e9ce54915e3be5
 msgid "File Extensions"
 msgstr "文件扩展名"
 
 #: ../source/docs/contributing/style-guide.rst:241
-#: 258386198d9b4add89274c60a11b054c
+#: 2b2f94b5d998483a9f25749d59521af5
 msgid "File extensions should use code formatting. For example, use:"
 msgstr "文件扩展名应使用代码格式。例如，使用。"
 
 #: ../source/docs/contributing/style-guide.rst:247
-#: 6fb6c8a886624680a333ea700174018a
+#: 22684097e8bf4142b0d2338c5ce260af
 msgid "instead of:"
 msgstr "而不是："
 
 #: ../source/docs/contributing/style-guide.rst:256
-#: cb292a8b9d474211a878f94d99b94229
+#: 13e295fdeae843dda4340559e4b834de
 msgid "Table of Contents (TOC)"
 msgstr "目录（TOC）"
 
 #: ../source/docs/contributing/style-guide.rst:258
-#: 62368fd74eb941ab962f439aeaafc6ec
+#: 80f5a70e05844649b1770d4611aa70b3
 msgid ""
 "Each category should contain an ``index.rst``. This index file should "
 "contain a ``maxdepth`` of ``1``. Sub-categories are acceptable, with a "
@@ -602,24 +604,24 @@ msgstr ""
 "的文件。子类别是可以接受的，``最大深度`` 为1。"
 
 #: ../source/docs/contributing/style-guide.rst:260
-#: d2cf02999bcc4b83b415569030f24d0f
+#: 8b77129c39964a7b85024138c0b7c7af
 msgid ""
 "The category ``index.rst`` file can then be added added to the root index "
 "file located at ``source/index.rst``."
 msgstr "然后可以将类别 ``index.rst`` 文件添加到位于 ``source/index.rst`` 的根索引文件中。"
 
 #: ../source/docs/contributing/style-guide.rst:263
-#: f2230a79c65f42afaecb749f9ccf8645
+#: e02f181d019d4f1e9f87db2b33dd5b63
 msgid "Examples"
 msgstr "实例"
 
 #: ../source/docs/contributing/style-guide.rst:280
-#: de25c164578a4b2e97ed7a9b7ff3c4ea
+#: 0778f18f64c04406bbca563faca3c9db
 msgid "Important Note!"
 msgstr "重要提示!"
 
 #: ../source/docs/contributing/style-guide.rst:282
-#: 95616140ba89434fa30943205e628072
+#: 77ba0b44c3ba4a98b4944f8e8745ffd3
 msgid ""
 "This list is not exhaustive and administrators reserve the right to make "
 "changes. Changes will be reflected in this document."

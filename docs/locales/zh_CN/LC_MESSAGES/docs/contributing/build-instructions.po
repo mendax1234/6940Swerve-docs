@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-31 04:34+0000\n"
+"POT-Creation-Date: 2022-07-31 06:15+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -22,12 +22,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/contributing/build-instructions.rst:2
-#: d00ebeb59493420bbbec73d9d025156f
+#: 95df7764238145a49b932609a8979b9f
 msgid "Build Instructions"
 msgstr "构建说明"
 
 #: ../source/docs/contributing/build-instructions.rst:4
-#: 0f25e2672e4042308525c77972224da3
+#: 60965432ceb94e44bd2d102457c77d39
 msgid ""
 "This document contains information on how to build the HTML, PDF, and EPUB "
 "versions of the frc-docs site. frc-docs uses Sphinx as the documentation "
@@ -35,37 +35,37 @@ msgid ""
 "<https://git-scm.com/>`__ and console commands."
 msgstr ""
 "本文档包含关于如何构建HTML、PDF和EPUB版本的6940swerve-docs网站的信息。6940swerve-"
-"docs使用Sphinx作为文档生成器。本文档还假设你有 `Git <https://git-scm.com/>`__和控制台命令的基本知识。"
+"docs使用Sphinx作为文档生成器。本文档还假设你有 `Git <https://git-scm.com/>`__ 和控制台命令的基本知识。"
 
 #: ../source/docs/contributing/build-instructions.rst:7
-#: 2a28b1a7b38e4db98e54ca1942cafd54
+#: 6e14c7a171ce4b05b45c8557e6ac5b4d
 msgid "Prerequisites"
 msgstr "先决条件"
 
 #: ../source/docs/contributing/build-instructions.rst:9
-#: a768e40a378a493488f56be5019fb014
+#: 0a5b801499dd466c8f7bbbb2d2e151b4
 msgid ""
 "Ensure that `Git <https://git-scm.com/>`__ is installed and that the frc-"
 "docs repository is cloned by using ``git clone "
 "https://github.com/wpilibsuite/frc-docs.git``."
 msgstr ""
-"确保 `Git <https://git-scm.com/>`__已经安装，并且通过使用 ``git clone "
+"确保 `Git <https://git-scm.com/>`__ 已经安装，并且通过使用 ``git clone "
 "https://github.com/wpilibsuite/frc-docs.git`` 克隆了6940swerve-docs仓库。"
 
 #: ../source/docs/contributing/build-instructions.rst:12
-#: ce8eaf1517754c3f98dc68dcc1fac48c
+#: 2733a6da70bb44b198109c55ecd82f0d
 msgid "Windows"
 msgstr "Windows"
 
 #: ../source/docs/contributing/build-instructions.rst:14
-#: c5ae5596b5f747798e9044148f72ea3e
+#: 76f628019fbc43898c6554c3050b4c80
 msgid ""
 "MikTeX and ``rsvg-convert`` are not required for building HTML, they are "
 "only required for Windows PDF builds."
 msgstr "MikTeX和 ``rsvg-convert`` 在构建HTML时不需要，它们只在Windows PDF构建时需要。"
 
 #: ../source/docs/contributing/build-instructions.rst:16
-#: de0f6e840f5d485082f25bf6900d3fea
+#: adbd8786106942e7ae05862ab99237ef
 msgid ""
 "`Python 3.9 <https://www.python.org/downloads/>`__ (Python >= 3.10 is "
 "incompatible)"
@@ -73,36 +73,36 @@ msgstr ""
 "`Python 3.9 <https://www.python.org/downloads/>`__ (Python >= 3.10是不兼容的。）"
 
 #: ../source/docs/contributing/build-instructions.rst:17
-#: 6b17ce63c1ab47899b638b61ecf72d3f
+#: 990c0d2758a1472b8bafaa5f613d9f35
 msgid "`MiKTeX <https://miktex.org/download>`__ (Only needed for PDF builds)"
 msgstr "`MiKTeX <https://miktex.org/download>`__ (只需要用于PDF构建)"
 
 #: ../source/docs/contributing/build-instructions.rst:18
-#: d7e9bc967b604eef9b1abd4721ca9a42
+#: 3fa6ec1f19de4ba0851430aba442da3f
 msgid "`Perl <http://strawberryperl.com/>`__"
 msgstr "`Perl <http://strawberryperl.com/>`__"
 
 #: ../source/docs/contributing/build-instructions.rst:19
-#: 15e330539a244a97a7e6dd3b16bbed5f
+#: b19db6e6c99c46a889223e371c6b1e08
 msgid ""
 "`rsvg-convert <https://community.chocolatey.org/packages/rsvg-convert>`__"
 msgstr ""
 "`rsvg-convert <https://community.chocolatey.org/packages/rsvg-convert>`__"
 
 #: ../source/docs/contributing/build-instructions.rst:21
-#: 9694ce0d737d4bed8c3cb4c1aa848a0f
+#: 285effc8529545e0bf85e85ed5997391
 msgid ""
 "Ensure that Python is in your Path by selecting the **Add Python to PATH** "
 "toggle when installing Python."
 msgstr "通过在安装 Python 时选择 **Add Python to PATH** ，确保 Python 在你的路径中。"
 
 #: ../source/docs/contributing/build-instructions.rst-1
-#: 77138c0a19c84ad0b65bcca7f8a33b5b
+#: 5c0b9e7b2d244a73b7b032281f2b5adb
 msgid "Showing where to click the box to add Python to PATH."
 msgstr "显示在哪里点击方框，将Python添加到PATH。"
 
 #: ../source/docs/contributing/build-instructions.rst:26
-#: 40e24a0e76e44aaf91bde36fdcc2977e
+#: ffc6d149328b4d219abcbbd58199305e
 msgid ""
 "Once Python is installed, open up Powershell. Then navigate to the frc-docs "
 "directory. Run the following command: ``pip install -r "
@@ -112,7 +112,7 @@ msgstr ""
 "source/requirements.txt`` 。"
 
 #: ../source/docs/contributing/build-instructions.rst:28
-#: 317b386c494d4cd3bf6c677ece41ccf0
+#: 754804ad6bf34cc2b3c57857ca902357
 msgid ""
 "Install the missing MikTex packages by navigating to the frc-docs directory,"
 " then running the following command from Powershell: ``mpm --verbose "
@@ -122,39 +122,39 @@ msgstr ""
 "--require=@miktex-packages.txt`` 。"
 
 #: ../source/docs/contributing/build-instructions.rst:31
-#: 139e445856c84098a40c0d641a69073d
+#: 70b962cc58154e8cab762192e966dedb
 msgid "Linux (Ubuntu)"
 msgstr "Linux (Ubuntu)"
 
 #: ../source/docs/contributing/build-instructions.rst:42
-#: 7696f18816d34fc0bd9a31e0943e312a
+#: 08c8fcb1bece4e18bafc74e657d76938
 msgid "Building"
 msgstr "构建"
 
 #: ../source/docs/contributing/build-instructions.rst:44
-#: ad842c1ed9d84c3fb179f0ad3f2b9870
+#: 7b9abce6a7c8422881bc0489fff4f0b4
 msgid ""
 "Open up a Powershell Window or terminal and navigate to the frc-docs "
 "directory that was cloned."
 msgstr "打开Powershell窗口或终端，导航到被克隆的6940swerve-docs目录。"
 
 #: ../source/docs/contributing/build-instructions.rst:62
-#: 5e46cfe2d0eb4a4593e205cf8a8b514d
+#: cbf3080f825f483f93a00119ffc1037b
 msgid "Lint Check"
 msgstr "Lint检查"
 
 #: ../source/docs/contributing/build-instructions.rst:64
-#: fc3894595d4640dabe29113bd8b6abb6
+#: 7b220fa7f63d4125868986f704529687
 msgid ""
 "Lint Check will not check line endings on Windows due to a bug with line "
 "endings. See `this issue <https://bugs.launchpad.net/doc8/+bug/1756704>`__ "
 "for more information."
 msgstr ""
-"由于行尾的错误，Lint Check不会在Windows上检查行尾。更多信息请参见 "
-"`这个问题<https://bugs.launchpad.net/doc8/+bug/1756704>`__。"
+"由于行尾的错误，Lint Check不会在Windows上检查行尾。更多信息请参见 `这个问题 "
+"<https://bugs.launchpad.net/doc8/+bug/1756704>`__ 。"
 
 #: ../source/docs/contributing/build-instructions.rst:66
-#: e61791fe0cee4a298a9c4f2a595e1d95
+#: a087d558e13f4ce6a295af8661c0acab
 msgid ""
 "It's encouraged to check any changes you make with the linter. This **will**"
 " fail the buildbot if it does not pass. To check, run ``.\\make lint``"
@@ -163,12 +163,12 @@ msgstr ""
 "lint`` 。"
 
 #: ../source/docs/contributing/build-instructions.rst:69
-#: bfa66b70af98472e8311c9fa65d0fb01
+#: a109cfcba8b84f79aff8cac15e91cda8
 msgid "Link Check"
 msgstr "链接检查"
 
 #: ../source/docs/contributing/build-instructions.rst:71
-#: 5e748f5132cd43c190a53387a488188a
+#: 344d67b9ac794392a2985dd78d617995
 msgid ""
 "The link checker makes sure that all links in the documentation resolve. "
 "This **will** fail the buildbot if it does not pass. To check, run ``.\\make"
@@ -177,12 +177,12 @@ msgstr ""
 "链接检查器会确保文档中的所有链接都能解决。如果没有通过，则 **会** 使构建机器人失败。要检查，请运行 ``.make linkcheck`` 。"
 
 #: ../source/docs/contributing/build-instructions.rst:74
-#: af6f31f8eadb45789eea3852ecb3c4d6
+#: 844583527ad1421f87116c97d7d2bf5d
 msgid "Image Size Check"
 msgstr "图像大小检查"
 
 #: ../source/docs/contributing/build-instructions.rst:76
-#: 27d589cbceb4494fb1c65ff08d49eec2
+#: 43b51a5597da42b2aa50dbb9628edaa0
 msgid ""
 "Please run ``.\\make sizecheck`` to verify that all images are below 500KB. "
 "This check *will* fail CI if it fails. Exclusions are allowed on a case by "
@@ -194,26 +194,26 @@ msgstr ""
 " 列表。"
 
 #: ../source/docs/contributing/build-instructions.rst:79
-#: 5e4661b1596443fc8e7ed237bbc6c9a7
+#: 8b6cdfa00513477b8070c911106421fa
 msgid "Redirect Check"
 msgstr "重定向检查"
 
 #: ../source/docs/contributing/build-instructions.rst:81
-#: 72115e30f7be4088aaa7ae25b5f5d9eb
+#: 224bf6db07594920b8c084690ddcfa76
 msgid ""
 "Files that have been moved or renamed must have their new location (or "
 "replaced with 404) in the ``redirects.txt`` file in ``source``."
 msgstr "被移动或重命名的文件必须在 ``source`` 中的 ``redirects.txt`` 文件中标明其新的位置（或用404替换）。"
 
 #: ../source/docs/contributing/build-instructions.rst:83
-#: e00c07b131944bea8eefa4b221c9db82
+#: 1a9b4e6a36fa4a67b08c45a6dc1bd507
 msgid ""
 "The redirect writer will automatically add renamed/moved files to the "
 "redirects file. Run ``.\\make rediraffewritediff``."
 msgstr "重定向编写器会自动将重命名/移动的文件添加到重定向文件中。运行 ``.\\make rediraffewritediff`` 。"
 
 #: ../source/docs/contributing/build-instructions.rst:85
-#: d9afb9e48ced47669288548c9a23c721
+#: 9a471a9dec4b4ba0b571e606bcc87242
 msgid ""
 "if a file is both moved and substantially changed, the redirect writer will "
 "not add it to the ``redirects.txt`` file, and the ``redirects.txt`` file "
@@ -223,7 +223,7 @@ msgstr ""
 "文件将需要手动更新。"
 
 #: ../source/docs/contributing/build-instructions.rst:87
-#: 36073575b9dc469ba257e411957f11da
+#: 8b1cc455a5e04ff089044431aae22416
 msgid ""
 "The redirect checker makes sure that there are valid redirects for all "
 "files. This **will** fail the buildbot if it does not pass. To check, run "
@@ -235,55 +235,55 @@ msgstr ""
 "rediraffecheckdiff`` 来确认所有文件都被重定向了。此外，可能需要运行一个HTML构建，以确保所有文件都能正确重定向。"
 
 #: ../source/docs/contributing/build-instructions.rst:90
-#: 3535423221ac4aa9a39150db04c97c0f
+#: 2310a7750f704efc8c550b1a907d513f
 msgid "Building HTML"
 msgstr "构建HTML"
 
 #: ../source/docs/contributing/build-instructions.rst:92
-#: e6dd07c5eca34a3b8f2ec7171602942e
+#: 4b1704ce0fe04006ba28287ea27afd12
 msgid ""
 "Type the command ``.\\make html`` to generate HTML content. The content is "
 "located in the ``build/html`` directory at the root of the repository."
 msgstr " 输入命令 ``.make html`` 来生成HTML内容。这些内容位于版本库根部的 ``build/html`` 目录中。"
 
 #: ../source/docs/contributing/build-instructions.rst:95
-#: 40a9799b14614cff9339293d3bdbe5ad
+#: 6374dfcc187d47869bdee05f12600ec5
 msgid "Building PDF"
 msgstr "构建PDF"
 
 #: ../source/docs/contributing/build-instructions.rst:97
-#: 56f509e9a1d04765b6fef0185b70c65c
+#: e1ffc2670280480f80427bef4cf8bf51
 msgid ""
 "Please note that PDF build on Windows may result in distorted images for SVG"
 " content. This is due to a lack of librsvg2-bin support on Windows."
 msgstr "请注意，在Windows上构建PDF可能会导致SVG内容的图像失真。这是由于Windows上缺乏librsvg2-bin的支持。"
 
 #: ../source/docs/contributing/build-instructions.rst:99
-#: ace17c245ea6418194faaabf73fef860
+#: 34374bf9d0be40f18456a7b20b4df468
 msgid ""
 "Type the command ``.\\make latexpdf`` to generate PDF content. The PDF is "
 "located in the ``build/latex`` directory at the root of the repository."
 msgstr "输入命令 ``.make latexpdf`` 来生成PDF内容。该PDF位于版本库根部的 ``build/latex`` 目录下。"
 
 #: ../source/docs/contributing/build-instructions.rst:102
-#: e7325ce6c2f64d46be847b2ba3f57087
+#: ef637427a3b047debc04b3e62bc14a55
 msgid "Building EPUB"
 msgstr "构建EPUB"
 
 #: ../source/docs/contributing/build-instructions.rst:104
-#: e7b09bf9079849a587fdcc4c7b54ceb0
+#: 7f5ec8cb99844540bc099902e5d126ab
 msgid ""
 "Type the command ``.\\make epub`` to generate EPUB content. The EPUB is "
 "located in the ``build/epub`` directory at the root of the repository."
 msgstr "输入命令 ``.make epub`` 来生成EPUB内容。EPUB位于版本库根部的 ``build/epub`` 目录下。"
 
 #: ../source/docs/contributing/build-instructions.rst:107
-#: e2caff6058414d52ac855365392cccd8
+#: a4ae8fa3f3764aa48afd8441f86926ab
 msgid "Adding Python Third-Party libraries"
 msgstr "添加Python第三方库"
 
 #: ../source/docs/contributing/build-instructions.rst:109
-#: 9f4fe1b3d11e4dd4bd7470e28245d343
+#: d1e7d099207242a7a5694e462523476b
 msgid ""
 "After modifying frc-docs dependencies in any way, ``requirements.txt`` must "
 "be regenerated by running ``poetry export -f requirements.txt --output "
@@ -294,55 +294,55 @@ msgstr ""
 "repo的根目录中重新生成。"
 
 #: ../source/docs/contributing/build-instructions.rst:111
-#: c0d00ecf198542a5a55695a1a62b1cf3
+#: 6f5bd4fc068248589b1aba9e9ab59a2d
 msgid ""
 "frc-docs uses `Poetry <https://python-poetry.org/>`__ to manage its "
 "dependencies to make sure builds are reproducible."
 msgstr ""
-"6940swerve-docs使用 `Poetry <https://python-"
-"poetry.org/>`__来管理其依赖关系，以确保构建是可重复的。"
+"6940swerve-docs使用 `Poetry <https://python-poetry.org/>`__ "
+"来管理其依赖关系，以确保构建是可重复的。"
 
 #: ../source/docs/contributing/build-instructions.rst:113
-#: ebccfa5700f14dd387eee91937653b69
+#: cbac136c1ac24aa2987a2c638403a7ce
 msgid ""
 "Poetry is **not** required to build and contribute to frc-docs content. It "
 "is *only* used for dependency management."
 msgstr "Poetry是 **不** 需要建立和用于贡献6940swerve-docs内容的。它 **只** 用于依赖性管理。"
 
 #: ../source/docs/contributing/build-instructions.rst:116
-#: 1eaa2937cf55414f9c32130c16f658f2
+#: 7de8ff0f084f4c9b85fd344273926c99
 msgid "Installing Poetry"
 msgstr "安装Poetry"
 
 #: ../source/docs/contributing/build-instructions.rst:118
-#: ca9efc12f5744a588d99e823e7977ba0
+#: 407a0901fe51457eaf8902bf3aab09a0
 msgid ""
 "Ensure that Poetry is installed. Run the following command: ``pip install "
 "poetry``"
 msgstr "确保Poetry已经安装。运行以下命令：``pip install poetry`` 。"
 
 #: ../source/docs/contributing/build-instructions.rst:121
-#: bc9d7a6da78a442992d84ea77f0d1890
+#: 94dfcaf8616244518617227a458ad01a
 msgid "Adding a Dependency"
 msgstr "添加一个依赖关系"
 
 #: ../source/docs/contributing/build-instructions.rst:123
-#: 95b1f8143fed4e3bbc9ecfe4b1e77811
+#: 844fab3a958b4f1291a4c2301a92cad2
 msgid ""
 "Add the dependency to the ``[tool.poetry.dependencies]`` section of "
 "``pyproject.toml``. Make sure to specify an exact version. Then, run the "
 "following command: ``poetry lock --no-update``"
 msgstr ""
-"在 ``pyproject.toml'`` 的 ``[tool.poetry.dependencies]`` "
+"在 ``pyproject.toml`` 的 ``[tool.poetry.dependencies]`` "
 "部分添加该依赖关系。确保指定一个准确的版本。然后，运行以下命令。``poetry lock --no-update`` 。"
 
 #: ../source/docs/contributing/build-instructions.rst:126
-#: c2076fcd0d4242ea9752ed0a20ef9b12
+#: 66002127d6ff42f09462ccf669194850
 msgid "Updating a Top-Level Dependency"
 msgstr "更新顶层依赖关系"
 
 #: ../source/docs/contributing/build-instructions.rst:128
-#: 1e7601c3ac9a4662b6427ea23ebffaa8
+#: 82714922d001402dbbf7354b0dbc8551
 msgid ""
 "Update the dependency's version in the ``[tool.poetry.dependencies]`` "
 "section of ``pyproject.toml``. Then, run the following command: ``poetry "
@@ -352,11 +352,11 @@ msgstr ""
 "部分更新该依赖的版本。然后，运行以下命令。``poetry lock --no-update`` 。"
 
 #: ../source/docs/contributing/build-instructions.rst:131
-#: 1ae5d795559d4c0d9567eb38b6bd3e20
+#: 73f06459d7a64d93ac6fd278ce85b905
 msgid "Updating Hidden Dependencies"
 msgstr "更新隐藏的依赖关系"
 
 #: ../source/docs/contributing/build-instructions.rst:133
-#: abe80441ec034684a9f4e051d02ea671
+#: e5cef3310d1d4aae8974007bc45b2fbb
 msgid "Run the following command: ``poetry lock``"
 msgstr "运行以下命令： ``poetry lock`` 。"
