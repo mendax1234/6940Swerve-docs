@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-05 20:19+0000\n"
+"POT-Creation-Date: 2022-07-31 12:34+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -22,6 +22,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/how-it-should-work.rst:2
-#: de57abef125b495b9005990e9c8a986a
+#: ad72695649d84198be4cfa2125a765e7
 msgid "How It Should Work"
-msgstr "他应该如何工作"
+msgstr "它应该如何工作"
