@@ -147,8 +147,6 @@ Internal Links will be auto-generated based on the ReStructuredText filename and
 
 For example, here are several ways to link to sections and documents.
 
-Use this format to reference a document section. You must use the absolute path of the document. ``:ref:`/docs/about/about: About this documentation``` renders to :ref:`/docs/about/about: About this documentation`.
-
 Use this format to reference a section of the same document. Note the single underscore. ```Images`_`` renders to `Images`_.
 
 Use this format to reference the top-level of a document. You can use relative paths ``:doc:`translation``` renders to :doc:`translation` Or to use absolute paths, put a forward slash at the beginning of the path ``:doc:`/docs/about/about``` renders to :doc:`/docs/about/about`. Note that the text rendered is the main section title of the target page regardless of the target filename.
