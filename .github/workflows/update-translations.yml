@@ -6,7 +6,7 @@ on:
     - '.github/workflows/update-translations.yml'
     - 'scripts/update.sh'
   schedule:
-    - cron:  '0 4/17 * * *'
+    - cron:  '0 4/16 * * *'
 jobs:
   update-translations:
     runs-on: ubuntu-latest
