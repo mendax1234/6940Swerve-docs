@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-31 09:32+0000\n"
+"POT-Creation-Date: 2022-07-31 09:37+0000\n"
 "PO-Revision-Date: 2022-07-04 16:26+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -23,27 +23,48 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:2
-#: 1bf02d0833394d848fb9b6b246c04998
+#: b294403f4d2c4c318195a7ca1cc2b998
 msgid "The Maths"
 msgstr "数学部分"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:5
-#: c01707aca3a64fa4bd94035f2736e3a4
+#: ba68967850714f68ad2565239c25d234
 msgid "Controls and Inputs"
 msgstr "控制与输入处理"
 
+#: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:7
+#: 17f4434d0b6640dcae4ed12f6a6c20bd
+msgid ""
+"The driver has some intended output that they'd like the robot to do. In "
+"order to communicate this, we define three command inputs - Forward, Strafe,"
+" and Rotation, or :math:`FWD`, :math:`STR`, and :math:`ROT`. Let's define "
+"these as variables, each going from -1 to 1, with 0 indicating no control "
+"input. There are many ways to map driver inputs to these commands via "
+"joysticks, but we chose to use a method where one stick controls translation"
+" rate ( :math:`FWD` and :math:`STR`) and the other's left-right axis "
+"controls rotation rate (ROT), as shown on the controller. These joysticks "
+"are implemented using standard libraries in WPILib, and input is filtered "
+"and transformed to provide a better experience to the drivers. In addition "
+"to the driver's inputs, we can have inputs incorporated."
+msgstr ""
+"在操纵时，driver希望机器人可以按照他们的想法行动，而为了将driver的想法与实际程序联系起来，我们定义了三个输入变量，:math:`FWD`, "
+":math:`STR`, 与 "
+":math:`ROT`，它们的取值范围是-1到1。其中，0代表没有输入数据的情况。有许多方法来将driver的输入映射到该范围中。而在本案例中，我们决定用一个摇杆来控制移动速率（即"
+" :math:`FWD`与 "
+":math:`STR`），另一个摇杆来控制旋转速率（即ROT）。如图所示。这些摇杆采用WPILib的标准库实现，输入经过筛选和变换以便于driver使用。除了driver的输入变量，我们也可以把别的输入变量纳入考虑。"
+
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:20
-#: 7abedd142e7d4d8a89d107faae5e212c
+#: eb41d93b968f4fd6a2a6b6db929d2b38
 msgid "In addition to the driver's inputs, we can have inputs incorporated."
 msgstr "除了driver的输入变量，我们也可以把别的输入变量纳入考虑。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:23
-#: 9f390df19f604d28a60291a0292b7caa
+#: eb1928914c1a431eab6df45ea179facd
 msgid "Field Centric Transformation"
 msgstr "以场地为参照系的数据变换"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:25
-#: 1f8bf604f0b3409895011422c59b381a
+#: 6ac147a134854e5a9f2b8883ce1e2ab4
 msgid ""
 "Once we know the intended movement that the robot should be making, we "
 "should apply our field-centric math. This is what's known as a "
@@ -56,7 +77,7 @@ msgstr ""
 ":math:`ROT`的值。我们就要对这些数据进行一些数学变换。简单来说，我们要将以场地为参照系的数据，基于机器人与场地的夹角（由陀螺仪测得），变换为以机器人为参照系的数据，进而使机器人以场地为参照系移动。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:31
-#: 2148d93a67fa4489991ca5498038f4bb
+#: 24a7401fc657424d9dfa724b5c404ca7
 msgid ""
 "We define :math:`FWD` and :math:`STR` as the desired forward/back and strafe"
 " commands from the joystick, relative to the field. These can both range "
@@ -68,7 +89,7 @@ msgstr ""
 ":math:`STR为我们所预期的、来自摇杆的平移指令。它们的取值在1到-1之间，我们假设它们都被正确地过滤。同时两者（作为向量）的和向量的模不应大于1，但晚些时候我们会发现这并不重要。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:36
-#: db30f0ae8bd74d17891d2a91beb36e29
+#: 611c798dbe824fc49bb4ac31db502247
 msgid ""
 "We'll call the angle of the chassis relative to the field θ, and assume that"
 " it's 0 when the front of the robot is aligned with the field, away from the"
@@ -80,7 +101,7 @@ msgstr ""
 " :math:`FWD`与 :math:`STR`作如下变换："
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:41
-#: cd6f7f93c8d24ab188e4efac9ebfc73d
+#: 78d3c8cc7cc34214b6b35f7e3626b624
 msgid ""
 "FWDnew = FWD * cosθ + STR * sinθ\n"
 "\n"
@@ -89,7 +110,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:42
-#: d72c52a3faca46eabb7a4ac31e098955
+#: 65878164a4db4cc588dea656fc94a4a0
 msgid ""
 "STRnew = STR * cosθ − FWD * sinθ\n"
 "\n"
@@ -98,7 +119,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:44
-#: 0586d457fcdc44af852f995f15ee519c
+#: 85f9a3d5443e4e989948467f7092de35
 msgid ""
 "First, we calculate our new :math:`FWD`, which can be thought of as simply "
 "figuring out how much of each original command (:math:`FWD` and :math:`STR`)"
@@ -118,19 +139,19 @@ msgstr ""
 "<https://en.wikipedia.org/wiki/Rotation_matrix>`_。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:51
-#: 9b0655e6d6a0498d9e3bd84d86ba1740
+#: a94770e468e24009a06da532006252a9
 msgid ""
 "To explain this further, let's look at the results of the the following "
 "three situations:"
 msgstr "为了进一步深化对这两个式子的理解，让我们来看看下面的几个例子。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:53
-#: 4f10d077119a4b9492c8e3f25430a53e
+#: 420b2147033f498595d489d718f09728
 msgid "**Example 1: Robot is aligned with field**"
 msgstr "**例子1：机器人与场地对齐**"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:55
-#: 0b8ba8e128274c689555bec37fc75c86
+#: ad31aa48bcf545a8a455e757c83cb8f1
 msgid ""
 "The key here is to think about what the value of θ is, and how the value of "
 "our sines and cosines changes as a result. Here, since we're aligned with "
@@ -140,7 +161,7 @@ msgstr ""
 "这里的关键是思考θ的值是多少，以及我们的正弦和余弦的值如何随之而变化。在这里，由于我们是与场地对齐的，:math:`θ=0°`。让我们来看看我们的正弦和余函数图像。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:63
-#: 20984b3dfe4d447b9b8e9e0e93a83528
+#: 6bcff128c7134c80b603c8cb5a41dd19
 msgid ""
 ":math:`cos0°` is 1, and :math:`sin0°` is 0. If we think about a right "
 "triangle, with one of its angles being 0° and a hypotenuse of 1, the "
@@ -152,7 +173,7 @@ msgstr ""
 "同时邻边就有斜边的长度，也就是1。让我们看看我们的式子的处理结果。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:67
-#: 10d31712de034de9b7c4bfc3129094e2
+#: 7a8e9da24f704209881598840488ae9f
 msgid ""
 "FWD_{new} = FWD * cos(0°) + STR * sin(0°) = FWD * 1 + STR * 0 = FWD\n"
 "\n"
@@ -161,7 +182,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:68
-#: 818bce15d719493a95f0fa64048a5cb7
+#: f346c463241c40fd8564188c870a0eba
 msgid ""
 "STR_{new} = STR * cos(0°) − FWD * sin(0°) = STR * 1 − FWD * 0 = STR\n"
 "\n"
@@ -170,7 +191,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:70
-#: f05275ab1b6c4d4b87cc46fcc1a9235d
+#: 6d852b3c12714a27a50cd8df48451df7
 msgid ""
 "Our math tells us that we haven't changed anything by doing this! "
 "Physically, this makes sense; if the robot is aligned with the field, what "
@@ -180,12 +201,12 @@ msgstr ""
 "我们的式子告诉我们，我们并不需要改变任何东西! 事实上，这是有道理的；如果机器人与场地对齐，它的前方与场地的前方是一样的；我们根本不需要修改我们的指令。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:74
-#: d3b171dd3296469f8fd1732017469f93
+#: 9a64721a31244fc69e2bae1145144d3b
 msgid "**Example 2: Robot is at 90 degrees to field**"
 msgstr "**例子2：机器人与场地呈90度**"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:76
-#: 54745c428ea64f949c6c1b4bba2ebe58
+#: 38a8a21f7bf947fabd5bb0026e097348
 msgid ""
 "Let's say that we're now at a right angle to the field; our robot is "
 "sideways, so our angle :math:`θ=90°`. Again, let's check our trigonometry. "
@@ -196,7 +217,7 @@ msgstr ""
 "= 0, :math:`sin90°` = 1. 再让我们看看式子的处理结果。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:80
-#: 734ce73c4e7d49e0af68db3f0e10f8e4
+#: 1172463879d0415eb562ddc958cd7ea3
 msgid ""
 "FWD_{new} = FWD * cos(90°) + STR * sin(90°) = FWD * 0 + STR * 1 = STR\n"
 "\n"
@@ -205,7 +226,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:81
-#: 493c58cfe8124fd2a476b91c4f9f1315
+#: 3d607973c8c94d40a7ff4ea8139e4739
 msgid ""
 "STR_{new} = STR * cos(90°) − FWD * sin(90°) = STR * 0 − FWD * 1 = −FWD\n"
 "\n"
@@ -214,7 +235,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:83
-#: 99e5804319344156b77d0b1c45505c0d
+#: 5355d8c7fc664bffb810978636ee496c
 msgid ""
 "Our commands have switched (with a small change of sign)! Again, physically,"
 " this makes some sense. The robot is sideways; in order to go forward, it "
@@ -224,12 +245,12 @@ msgstr ""
 "我们的指令被变换了（并且符号有一个小的变化）！事实上，这也是有道理的。机器人是侧向的；为了向前走，它必须做它认为的横向移动，而为了横向移动，它必须走它认为的前进。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:87
-#: af1ec8bdaf8e41628a2a57360d5c3f8a
+#: 18b0eea7a70a4fb28afdab2d7921e124
 msgid "**Example 3: Robot is at 30 degrees to field**"
 msgstr "**例子3：机器人与场地呈30度**"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:89
-#: a3c253ab50e34850a78ff14fcfde11f0
+#: 8d33fa259bd946cf962fa3150eb9bfc4
 msgid ""
 "We're now at some angle that doesn't produce as nice a result. The robot is "
 "aligned differently from the field, so to go straight forward or straight "
@@ -242,7 +263,7 @@ msgstr ""
 " :math:`cos30°` = 0.866, :math:`sin30°` = 0.5. 顺着式子走，那么："
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:93
-#: 45c2aa12c065455588613006e613303c
+#: e81eabc1c3a7443bb4f4de5c636e84ef
 msgid ""
 "FWD_{new} = FWD * cos(30°) + STR * sin(30°) = FWD * 0.866 + STR * 0.5\n"
 "\n"
@@ -251,7 +272,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:94
-#: a23c50e9a97e470eaa089e5d90f3c25d
+#: 3f7153370e444989b6d0cfaecb948e4a
 msgid ""
 "STR_{new} = STR * cos(30°) − FWD * sin(30°) = STR * 0.866 − FWD * 0.5\n"
 "\n"
@@ -260,7 +281,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:96
-#: 92de0c74f70a404bae55f0df7b319988
+#: 24b39373d8dc4288a81acc4193e7e6f7
 msgid ""
 "Both :math:`FWD` and :math:`STR` contribute to each of the transformed "
 "values. This pattern will carry through for any non-right angle, and as long"
@@ -271,12 +292,12 @@ msgstr ""
 ":math:`STR`都对每个转换值有贡献。这种计算方式，将贯穿于任何非直角的运算，而只要我们正确地计算我们的角度（顺时针为正），就可以得到正确的运算结果了！"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:101
-#: 2fa6cb6bbcdb4c5c918e241cdbc069da
+#: f821e3d7abc943f5b82a2caea01ee2e6
 msgid "Inverse Kinematics (Wheel Speeds and Azimuths)"
 msgstr "逆向运动学（计算轮子转速与朝向）"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:103
-#: ce19a157d26e4bf5bc496a13e5f9e82f
+#: bfb029cf259e4fbcb589418cb838b443
 msgid ""
 "Now that we have our :math:`FWD` and :math:`STR` commands transformed, we "
 "need to figure out what each wheel should be doing to execute them. What "
@@ -295,7 +316,7 @@ msgstr ""
 "--根据我们的执行器在做的事情来确定我们所处的状态（即姿态）。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:111
-#: ff3f65e0d2fb44728a0498bf6aab584d
+#: aac9b6fe6c004aac8844b0f5a6114a92
 msgid ""
 "First, we should account for the wheel layout. We're going to assume our "
 "wheel pods are on the vertices of a rectangle. To put it another way, all "
@@ -307,7 +328,7 @@ msgstr ""
 "首先，我们应该考虑到车轮的布局。我们将假设我们的车轮位于一个矩形的顶点上。换句话说，所有四个轮轴都能处在某个圆上。这代表了大多数swerve驱动的底盘的样子（我们的就是方形）。如果swerve模块不在一个矩形上（例如，如果机器人不是矩形），我们将在计算时考虑到这一点。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:116
-#: 1c4cd585f3ba447f8724ae26c90e4fef
+#: 376f4f25b6564482a9ecb58bb525b6c8
 msgid ""
 "First, let's define the length and width of our wheelbase as L and W, and "
 "let's define an additional value :math:`R`, as :math:`R = \\sqrt{L^2 + W^2}`"
@@ -319,12 +340,12 @@ msgstr ""
 "W^2}`, 代表接触所有四个轮轴的圆的直径。这些值的单位并不重要，因为我们在计算车轮的时候只需要它们的比值。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:127
-#: df35ef92ecca4c82a2dde42d36e07cb7
+#: 0350172833784a9abe6c920a79b62755
 msgid "Intuition"
 msgstr "理想模型"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:128
-#: 6aa5375fab0140b48a08e5b3020b5875
+#: 2607e4818b5b4be6a52c5eca5ba10f03
 msgid ""
 "To understand how we can turn our overall commands (what we want the robot "
 "as a whole to do) into what each wheel needs to do, we should build some "
@@ -335,7 +356,7 @@ msgstr ""
 "为了知道如何将我们的对于机器人整体的指令（我们希望机器人作为一个整体做什么）转化为每个轮子的指令，我们应该建立一些理想模型。即使我们不这样做，我们也完全可以借用数学知识并将其编程到位，但这确实有助于了解代码的工作原理。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:133
-#: 3cea4beff7044b69910a44065c40f0f2
+#: 77732a603e8e46dea3d4f115560af381
 msgid ""
 "As we derive our inverse kinematics, we make some underlying assumptions, "
 "including that the robot's chassis acts as a rigid body - within its own "
@@ -351,7 +372,7 @@ msgstr ""
 "当我们推导反运动学时，我们建立了一个理想模型，我们将机器人的底盘视作一个刚体——在其自身的参照系内，一个点不能靠近或远离另一个点。想象一下，桌子上有一个金属立方体。你可以向前、向后移动它，也可以旋转它，但它是刚体，它的形状是不变的。从物理学的角度来看，我们可以推导出一个重要的结论。对于机器人的每一条边，它上面的所有点都必须具有相同的向前或向后的速度。如果它们有不同的速度，那么这个侧面的长度就会发生变化。真希望这种情况不会发生在赛场上，如果我们的代码写得足够好，就不应该发生这种情况。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:146
-#: 4bf927a7f9e74f4db9524589ec4b8197
+#: 546aaf54c2b54e12aef51f48cea5d9d1
 msgid ""
 "We can back this assumption out by doing some vector math . ChiefDelphi user"
 " Ether's `Derivation of Inverse Kinematics for Swerve "
@@ -368,14 +389,14 @@ msgstr ""
 "swerve/107383>`_文件详细解释了这一点。要做到这一点，我们可以将我们所需的横向运动和前后运动指令合并为一个平移矢量，而我们的旋转指令可以与我们的机器人几何形状相结合，形成一个旋转分量。通过添加这些矢量，我们可以得到我们所需的车轮运动矢量，其形式为朝向和转速。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:153
-#: 6d5da5aa1bb5433d9477ba4d75e83567
+#: ab1a13d96c804ad5900db21f270ce096
 msgid ""
 "From here, we'll define some variables to save us some work. Standard "
 "convention has them as A, B, C, and D."
 msgstr "在此，我们定义一些变量来节省我们的工作量。一般我们把它们定义作A、B、C与D。具体定义式如下："
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:156
-#: 4ae7aec8c44448ac84254678aae05019
+#: decbc649e42045ba817ea0b77279f784
 msgid ""
 "A = STR - ROT * L/R\n"
 "\n"
@@ -384,7 +405,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:157
-#: dd5ba1e9867249dfb7dfa652a79a859a
+#: 1c899450667d479b9c3ce82a1a581311
 msgid ""
 "B = STR + ROT * L/R\n"
 "\n"
@@ -393,7 +414,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:158
-#: cf2c9f5bc981498085d4c2f43e9e899a
+#: 439bd99b44054b97bf18d6b79b9c50ce
 msgid ""
 "C = FWD - ROT * W/R\n"
 "\n"
@@ -402,7 +423,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:159
-#: 467847a6d1e84153945450289e6e00b8
+#: 2a52a79f8d3441beafcb187893eb37f4
 msgid ""
 "D = FWD - ROT * W/R\n"
 "\n"
@@ -411,14 +432,14 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:161
-#: 9772c70f62d54a10950f9ac67cfed7c2
+#: 6f37f445000e41f390a6a4c1aeda6436
 msgid ""
 "We'll use these to calculate our resultant wheel speeds and wheel angles (or"
 " azimuth angles), or ws and wa respectively."
 msgstr "我们运用这些数值来计算我们各个轮子的转速与朝向（即wheel speed 与wheel angles，下式中简写为Ws与Wa）"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:164
-#: eddebe0d52df4f80babbf6a8d5088e95
+#: 0ca434b466bf4a53a6e12ea83c31d47e
 msgid ""
 "ws_{FR} = \\sqrt{B^2 + C^2}\n"
 "\n"
@@ -427,7 +448,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:165
-#: ba8f336f3b5149ca8b103130635fbe8a
+#: 3b6509b68d86455ea7afcfd8d2660200
 msgid ""
 "wa_{FR} = atan2(B,C)\n"
 "\n"
@@ -436,7 +457,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:166
-#: ba8d1c08ee04468780054c8839612419
+#: dc68ea19d648465a92f1a9ff24b5d529
 msgid ""
 "ws_{FL} = \\sqrt{B^2 + D^2}\n"
 "\n"
@@ -445,7 +466,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:167
-#: 05910a17271a42f983acef8c55d1bfdc
+#: 11eb20c2efb442fa83d9809da780b0a1
 msgid ""
 "wa_{FL} = atan2(B,D)\n"
 "\n"
@@ -454,7 +475,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:168
-#: 5e0cd7e4f7db4d4796d339ecf9a7ba19
+#: b23c4ab86fbb405d981988d8c508f22b
 msgid ""
 "ws_{RR} = \\sqrt{A^2 + C^2}\n"
 "\n"
@@ -463,7 +484,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:169
-#: 58e678e1b8754110a838a7091a23a9cd
+#: 860666bdb02b45a488a23a6266043a93
 msgid ""
 "wa_{RR} = atan2(A,C)\n"
 "\n"
@@ -472,7 +493,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:170
-#: 509cf4e98b02406980765cc93c869209
+#: d56352fd364b4a85b8096287f9d4cb20
 msgid ""
 "ws_{RL} = \\sqrt{A^2 + D^2}\n"
 "\n"
@@ -481,7 +502,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:171
-#: ed316d7bdd9f4fccabb40236a6c25308
+#: d70aeb18ed6244f7b921f519815c6605
 msgid ""
 "wa_{RL} = atan2(A,D)\n"
 "\n"
@@ -490,7 +511,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:173
-#: db0281da9768470eb443c051ad240c5e
+#: 7e614e6dee7e44de87b5be8da59be28e
 msgid ""
 "The atan2 function is defined in many programming languages, and provides "
 "quadrant-aware calculations for the arctangent function, meaning the angle "
@@ -500,7 +521,7 @@ msgstr ""
 " π/2。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:175
-#: e0f97a09add34b5caa06b5082818d41f
+#: 019c7f74ad414b2788253617c26d62b4
 msgid ""
 "What we see here is that we have common factors between our wheels. For both"
 " front wheels, we have a common horizontal factor B, and for both rear "
@@ -514,7 +535,7 @@ msgstr ""
 "在此，我们可以看到，不同的车轮之间有共同的因子。对于两个前轮，我们有一个共同的水平因子B，对于两个后轮，有一个共同因子A。对于两个右轮和左轮，同样地，有共同的前后移动分量C和D。如果你知道一点向量知识，你会意识到我们实际上做了一个从平面直角坐标到极坐标的转换。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:182
-#: 1380c6375a7e49b6a723b56bbd4519cc
+#: bd281c45dcb5424195bc5a0643e1271e
 msgid ""
 "Where FR, FL, RR, and RL refer to front right, front left, rear right, and "
 "rear left wheels. Our azimuth angles should range from -π to π, with "
@@ -528,7 +549,7 @@ msgstr ""
 "π到π，正数为顺时针方向，零为直行。这些可以根据需要转换为度数——只要乘以180/π。我们的轮速的绝对值应该在0到1之间。为此，我们只需检查我们的ws值的最大值是否大于1，如果是，就将这些值按比例放缩，使ws的最大值为1。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:197
-#: b6ebfa53de10433795792377156c8109
+#: f190493f6dd742dc98fed04b294583e5
 msgid ""
 "Now we have all ws values ranging from 0 to 1. The wheel speed assumed to be"
 " in the direction the wheel is facing ( wa ), and thus does not go negative,"
@@ -536,7 +557,7 @@ msgid ""
 msgstr "现在，我们算出了所有的ws值，范围从0到1。ws的值不应为负数，因为这意味着轮子的朝向（即wa）值应当再转180°"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:200
-#: 8beb1bc9110e4dd6a88dfe6f989a0566
+#: 3a2baa90620c4f33bcba09b631645071
 msgid ""
 "Our algorithm to this point brings up a problem. If our control input "
 "quickly changes from, for example, moving entirely forward to moving "
@@ -549,7 +570,7 @@ msgstr ""
 "鉴于我们正在使用可以全功率前进或后退的电机，这是一件低效的事情。 理想情况下，我们只需将电机反转并继续移动。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:206
-#: 86dd0317062742f384b0a11187c1e0aa
+#: 72bf4ed86f05449e9676976a2e4b2609
 msgid ""
 "In order to solve this problem, we implement what we call inversion "
 "awareness . If we assume we know the wheel's current azimuth angle, and "
@@ -562,12 +583,12 @@ msgstr ""
 "\"反转\"我们的模块。如果需要，我们只需反转速度输出，并重新调整方位角的方向，然后继续移动。我们将在稍后实现这一点。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:212
-#: 0120dad343fe4bb7bdd9307f75ccbbfe
+#: 684cb6769ea9453bb44c29fa6744349d
 msgid "Power to the ground (Speed and Azimuth drivers)"
 msgstr "落实控制算法（改变轮子的速度并旋转朝向）"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:213
-#: 997005033283435c9584d7f282d78917
+#: 58b0037b0e1d49f1aa66902dfd75608d
 msgid ""
 "Finally, we're at the point where we can get things moving. We have the "
 "parameters we want, a set of wheel speeds and angles, generated from our "
@@ -584,12 +605,12 @@ msgstr ""
 "在提供一个抽象的控制界面的同时，处理琐碎的低级通信和控制的代码层。在我们的案例中，我们将方位角和车轮速度归纳为一个模块，我们可以用它来设置车轮的目标状态。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:222
-#: 9d55e08691b944a0a1058a0cccbdef37
+#: 02acb488327341e085254c8f084064bc
 msgid "Azimuth"
 msgstr "改变朝向"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:223
-#: 93ee8a4159694d6199607a1f35846bb0
+#: 8e95d93117404d9e9db8b969e05cb673
 msgid ""
 "Azimuth control is accomplished using a proportional feedback controller "
 "sensing the angle of the wheel with an absolute encoder. Depending on the "
@@ -608,7 +629,7 @@ msgstr ""
 "\"的物理位置。这意味着，当我们的目的是是直行时（Wa=0°，轮子是朝前的），我们的编码器的读数可以不为0。因此，我们将在每个模块的基础上有一些偏移值，我们将把它纳入我们的计算。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:232
-#: ce170310f6b24be8ae1d01ec7a78d800
+#: 26b6851aacb84b8d9e781d07104e73ea
 msgid ""
 "For our feedback controller, we need to calculate the error between our "
 "setpoint and position. Because we're working with angles and have a range of"
@@ -620,12 +641,12 @@ msgstr ""
 "对于我们的控制器，我们需要计算我们的目标点和当前位置之间的偏差，即Error值。因为我们是用角度计算的，而且范围是0-360°，所以我们需要使用取余函数来确保我们的误差得到正确计算。我们也会用它来计算我们的偏移量。假设我们有这个轮子想要的角度（wa），我们可以据此计算出我们的偏差值。"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:244
-#: b054e5702b06496ab444a9ccfd91c326
+#: 0813f4411faa47d38ea6c4a2e8aa6b4c
 msgid "Inversion Awareness"
 msgstr "智能反转"
 
 #: ../source/docs/software-info-team1684/swerve-in-teleop/the-math.rst:245
-#: c10250888a304bc19d5cbfa40937ce7c
+#: 722b90e7275e4fc0b4b176fab5b7b1b3
 msgid ""
 "Using the Talon FX's SetInverted method makes implementing inversion control"
 " very straightforward. We simply “flip” our azimuth error to the other side."

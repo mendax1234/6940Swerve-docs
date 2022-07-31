@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-31 09:32+0000\n"
+"POT-Creation-Date: 2022-07-31 09:37+0000\n"
 "PO-Revision-Date: 2022-07-03 16:22+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -22,12 +22,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/contributing/how-it-works.rst:2
-#: 45c3e6a5e9c54bf380964e8d1eef7eea
+#: b53da56776e740499dfbd00e91ca82f7
 msgid "More about how our translation flow works"
 msgstr "更多关于我们的翻译流程如何运作"
 
 #: ../source/docs/contributing/how-it-works.rst:4
-#: 49929010f49146f58c2c4b20f3a87817
+#: ca4f4dc74d614df99aec82685480a71b
 msgid ""
 "Thanks `frc-docs-translation <https://github.com/wpilibsuite/frc-docs-"
 "translations>`_ for providing us with such good resources for reference. And"
@@ -37,31 +37,31 @@ msgstr ""
 "translations>`_ 为我们提供了这么好的资源供我们参考。而我们所有的翻译工作都是自动的!"
 
 #: ../source/docs/contributing/how-it-works.rst:7
-#: 432b75603ff1417887351d3fa707971e
+#: edc256abf6774b658e05bd95346cc799
 msgid "Introduction"
 msgstr "简介"
 
 #: ../source/docs/contributing/how-it-works.rst:9
-#: a09f721fba62499fa7a267e0099a8fa0
+#: a28f7998f6224aa79f0b372191a5a808
 msgid ""
 "There great work is done by Github Action with several automatic scripts."
 msgstr "这个伟大的工作是由Github Action与几个自动脚本完成的。"
 
 #: ../source/docs/contributing/how-it-works.rst:12
-#: cf66440f33164f5eb0b08bfb43426751
+#: 9d3e1a9ffc9142458ece2ad8e1077781
 msgid "How to adapt this workflow to your own project"
 msgstr "如何将这个工作流程应用于你自己的项目"
 
 #: ../source/docs/contributing/how-it-works.rst:14
-#: 04530d07178744aea68d1d6ec902208b
+#: 1fc8c9047e3c485a81f816cd22e7ceab
 msgid ""
 "Copy and past the `scripts/`, `.github/workflow/` and `requirements.txt` "
 "folders to your project's root directory."
 msgstr ""
-"复制并粘贴 `scripts/` 、 `.github/workflow/` 和 ` requirements.txt` 文件夹到你项目的根目录。"
+"复制并粘贴 `scripts/` 、 `.github/workflow/` 和 `requirements.txt` 文件夹到你项目的根目录。"
 
 #: ../source/docs/contributing/how-it-works.rst:15
-#: d5f22d7280884b14a2bd045475d7977e
+#: 70954563c70b4b7694d0eb3eeac1e006
 msgid ""
 "Change the corresponding parts in `scripts/lock-translations.py`, "
 "`scripts/update.sh`, `.github/workflow/publish_main.yml`, "
@@ -72,46 +72,46 @@ msgstr ""
 "translations.yml` 中的相应部分。"
 
 #: ../source/docs/contributing/how-it-works.rst:18
-#: 6e2bddc4689a40de93907958a5f28dc1
+#: e7e3006c75864e45b8dedaf56a2cef8e
 msgid "In `scripts/lock-translations.py`"
 msgstr "在 `scripts/lock-translations.py` 中"
 
 #: ../source/docs/contributing/how-it-works.rst:20
-#: 4f049aea044144a29d4fe5df27c686db
+#: 0ea1fd6a773a437bb07fdcf5c056e519
 msgid "Change `PROJECT_FILTER_PARAM` and `PROJECT_DELETE_PARAM`"
 msgstr "更改 `PROJECT_FILTER_PARAM` 和 `PROJECT_DELETE_PARAM` 。"
 
 #: ../source/docs/contributing/how-it-works.rst:29
-#: 636a7d33bcd64203b17206c194d8e13f
+#: a717db5bf37c40c9a941b2bad6dd530c
 msgid ""
 "`Your organization on Transifex` can be found in the URL of your Transifex "
 "project. And remember that all the letters are lowercase."
 msgstr "`你在Transifex的组织` 可以在你的Transifex项目的URL中找到。并记住所有的字母都是小写的。"
 
 #: ../source/docs/contributing/how-it-works.rst:31
-#: fc89b941bf2a44e284346361236bb281
+#: 8dd1ace8f1794b2aba63a486f09fd5c5
 msgid "Change content in the quotes to your project's name."
 msgstr "将引号中的内容改为你的项目名称。"
 
 #: ../source/docs/contributing/how-it-works.rst:40
-#: 9f098fcde5994bb799eaa55282a14a39
+#: 339e12b57d7f436fb0533a004527c849
 msgid "In `scripts/update.sh`"
 msgstr "在  `scripts/update.sh` 中"
 
 #: ../source/docs/contributing/how-it-works.rst:42
-#: 4928badf6d6447fc850fb9c5cee503c4
+#: e2ee9f528e85442b88ee2fb5492ccf70
 msgid ""
 "Change the `LANG_TO_PULL` and `LANG_MAP` to the language you want to be "
 "translated into."
 msgstr "将 ``LANG_TO_PULL`` 和 ``LANG_MAP`` 改为你想要翻译的语言。"
 
 #: ../source/docs/contributing/how-it-works.rst:51
-#: 931a2f2c2fd64527bf732a012b2707ba
+#: 7dbd8a69831346b1a113c244a270f9d5
 msgid "Change the `MAINPROJECT` name to your project's name."
 msgstr "将 `MAINPROJECT` 名称改为你的项目名称。"
 
 #: ../source/docs/contributing/how-it-works.rst:57
-#: 5a3bb763edea41f3abe8fd486c42a542
+#: 821a34bd382a4c478ea22729e2715440
 msgid ""
 "Change the last two arguments in the below to the directory to your "
 "`../source/`(where you `conf.py` locates) and the location where you want to"
@@ -119,7 +119,7 @@ msgid ""
 msgstr "将下面的最后两个参数改为你的 `.../source/` 目录（你的 `conf.py` 所在的位置）和你想放 `.POT` 文件的位置。"
 
 #: ../source/docs/contributing/how-it-works.rst:64
-#: 5179f7778f7149828e5989eb55805695
+#: a4bce999490249cfb6c485e15623f950
 msgid ""
 "Change the two **docs/pot** and **docs/locales** in the below image to the "
 "directory where your `.POT` files locate and where your translation "
@@ -129,32 +129,32 @@ msgstr ""
 "`.PO` 文件）所在的目录。"
 
 #: ../source/docs/contributing/how-it-works.rst:71
-#: dd801c3841134bbd864b5a3e10aab2bb
+#: 2c0cd6e0a2924e13b69631fcb0e315ce
 msgid "In `.github/workflow/publish_main.yml`"
 msgstr "在  `.github/workflow/publish_main.yml` 中"
 
 #: ../source/docs/contributing/how-it-works.rst:73
-#: 4efa4ce653f54c55a85f3bcc001c9864
+#: be8576c9ffb94dc6949916e4525752ba
 msgid "You know which parts should be changed and l won't go into it here."
 msgstr "你知道哪些部分应该改变，我在这里就不多说了。"
 
 #: ../source/docs/contributing/how-it-works.rst:76
-#: c53d09c2484445a38c26cee41f19dc30
+#: db9bf671852f4089945eb3b6b9a5eae1
 msgid "In `.github/workflow/update-translations.yml`"
 msgstr "在 `.github/workflow/update-translations.yml` 中"
 
 #: ../source/docs/contributing/how-it-works.rst:78
-#: 02ac300061e542fcb7707b78637313bb
+#: 0e96e0eb4f5545039ea2b8c2af513308
 msgid "Change the `github.repository` to your own repo."
 msgstr "将 `github.repository` 改为你自己的repo。"
 
 #: ../source/docs/contributing/how-it-works.rst:79
-#: 02f8f3ade15b47d5912930309af09e39
+#: 944887de1c14409aa123d4823d07f06b
 msgid "If you don't have a Submodule, just annotate the related three lines."
 msgstr "如果你没有一个子模块，只需注解相关的三行代码。"
 
 #: ../source/docs/contributing/how-it-works.rst:80
-#: 634a883d1d5c43389482eea491184cf3
+#: 1344c29362404cfb96e310c28464adcd
 msgid ""
 "Create a repository secret in your repository's settings , name it as "
 "`TX_TOKEN` and paste your Transifex api token in the secret."
@@ -163,6 +163,6 @@ msgstr ""
 "api令牌。"
 
 #: ../source/docs/contributing/how-it-works.rst:82
-#: 00940a7fe7844e108041e82a682968e7
+#: 1f8d643dfbb847bbb590bbda3bdc3acd
 msgid "**Now you can test whether your workflow works well!**"
 msgstr "**现在你可以测试你的工作流程是否运行良好！**。"
