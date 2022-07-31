@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-30 20:18+0000\n"
+"POT-Creation-Date: 2022-07-31 04:34+0000\n"
 "PO-Revision-Date: 2022-07-03 16:22+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -22,12 +22,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/contributing/translation.rst:2
-#: db0da9f480c44f6481e218535493569d
+#: a365a69431524af381873289d5ce6200
 msgid "Translation"
 msgstr "翻译"
 
 #: ../source/docs/contributing/translation.rst:4
-#: 219de4f810364597a73d9bafa692bd6e
+#: 88be7ed8c74849ce92dd9818437cac83
 msgid ""
 "6940swerve-docs supports translations using the web based `Transifex "
 "<https://www.transifex.com/>`_ utility. 6940swerve-docs has been partly "
@@ -36,62 +36,62 @@ msgid ""
 " to contirbute to the translations. Even once a translation is complete, it "
 "needs to be updated to keep up with changes in 6940swerve-docs."
 msgstr ""
-"6940swerve-docs支持使用基于网络的`Transifex "
+"6940swerve-docs支持使用基于网络的 `Transifex "
 "<https://www.transifex.com/>`_工具进行翻译。6940swerve-docs已被部分翻译成中文--"
 "中国（zh_CN）。如果翻译人员能同时熟练掌握英语和其中一种指定的语言，我们将非常感谢他们对翻译的贡献。即使翻译完成后，也需要更新以跟上6940swerve-"
 "docs的变化。"
 
 #: ../source/docs/contributing/translation.rst:11
-#: 617043a811244a1da071e0c82648f77e
+#: 41f087e75c3b40648a3729dc506ad5b4
 msgid "Workflow"
 msgstr "工作流程"
 
 #: ../source/docs/contributing/translation.rst:13
-#: 0a984da6c1ee4c5a9e5e867a96a4c7b1
+#: 1768eb6e4b974126bd7e80506fd7d338
 msgid "Here are some steps to follow for translating 6940swerve-docs."
 msgstr "以下是翻译6940swerve-docs的一些步骤。"
 
 #: ../source/docs/contributing/translation.rst:15
-#: d3999decef4541b0b1e1841dbb2172c3
+#: 4942be1f77e841b29a2f189c77c6cd9c
 msgid ""
 "Sign up for `Transifex <https://www.transifex.com/>`_ and ask to join the "
 "`6940swerve-docs <https://www.transifex.com/frc-team-6940-1/6940swerve-"
 "docs>`_ project, and request access to the language you'd like to contribute"
 " to."
 msgstr ""
-"注册`Transifex <https://www.transifex.com/>`_并要求加入`6940swerve-docs "
+"注册 `Transifex <https://www.transifex.com/>`_并请求加入 `6940swerve-docs "
 "<https://www.transifex.com/frc-team-6940-1/6940swerve-"
 "docs>`_项目，并申请访问你想贡献的语言。"
 
 #: ../source/docs/contributing/translation.rst:16
-#: de700f9d977d41e38f012ac2046d2732
+#: 3362ce4c48184b89a963211e2bd42d4f
 msgid ""
 "Join GitHub `discussions <https://github.com/mendax1234/6940Swerve-"
 "docs/discussions>`_! This is a direct means of communication with me. You "
 "can use this to ask me questions in a fast and streamlined fashion."
 msgstr ""
-"加入GitHub `discussions <https://github.com/mendax1234/6940Swerve-"
+"加入GitHub  `discussions <https://github.com/mendax1234/6940Swerve-"
 "docs/discussions>`_!这是与我直接沟通的手段。你可以用它以快速和精简的方式向我提问。"
 
 #: ../source/docs/contributing/translation.rst:17
-#: a59335c1a2204ad5aa4feada763ffa01
+#: 149c3475677343fbbdb85ff59a271662
 msgid ""
 "You may be contacted and asked questions involving contributing languages "
 "before being granted access to the 6940swerve-docs translation project."
 msgstr "在获准进入6940swerve-docs翻译项目之前，我可能会与您联系并询问涉及贡献语言的问题。"
 
 #: ../source/docs/contributing/translation.rst:18
-#: 0b1ee9629e0c4870af0acc3d9e99d11f
+#: dd4a7546031c4150a45161812c97b3f4
 msgid "Translate your language!"
 msgstr "翻译你的语言!"
 
 #: ../source/docs/contributing/translation.rst:24
-#: a6fb8a10e86249568e8a13c00c62d692
+#: 345934a4d05c4475810ef25d8548d591
 msgid "Links"
 msgstr "链接"
 
 #: ../source/docs/contributing/translation.rst:26
-#: f1be4034d5804432a22338f657a7bca4
+#: 3a56290548ea4fd08e6c9f47ed3779f1
 msgid ""
 "Links must be preserved in their original syntax. To translate a link, you "
 "can replace the TRANSLATE ME text (this will be replaced with the English "
@@ -99,45 +99,45 @@ msgid ""
 msgstr "链接必须保留其原始语法。要翻译一个链接，你可以用适当的翻译来替换TRANSLATE ME文本（这将被替换为英文标题）。"
 
 #: ../source/docs/contributing/translation.rst:28
-#: 86164ebe8d3545f2ad823b642a7230a7
+#: 2187f6ba8442499a9ee00dc7c77426b4
 msgid "An example of the original text may be"
 msgstr "原文中的一个例子可能是"
 
 #: ../source/docs/contributing/translation.rst:34
-#: c74d3c87e00e41c3b3f85cdf2fe4d2d7
+#: 26c4602c8fa948c393293ef166de61f1
 msgid ""
 "where the ``Wiring the FRC Control System Document`` then gets translated."
-msgstr "其中，\"FRC控制系统的布线文件 \"随后被翻译。"
+msgstr "其中，\"FRC控制系统的布线文件 \" 随后被翻译。"
 
 #: ../source/docs/contributing/translation.rst:40
-#: 27f26ac7c7a044bb9aa333450370e67e
+#: fa864126204b432c9679c8eaac980b2b
 msgid "Another example is below"
 msgstr "另一个例子如下"
 
 #: ../source/docs/contributing/translation.rst:47
-#: 7b7c5a6a2aef47de855182084dc7d79d
+#: 6ff49ae5001e45ca90ca1adfd8dcc181
 msgid "Publishing Translations"
 msgstr "出版翻译"
 
 #: ../source/docs/contributing/translation.rst:49
-#: db12488de5184fbcbf2b7e074d340fdc
+#: 8de6119780a042baac30aa5a063f9aec
 msgid ""
 "Translations are pulled from Transifex and published automatically each day."
 msgstr "译文从Transifex中提取，每天自动发布。"
 
 #: ../source/docs/contributing/translation.rst:52
-#: 85ff4565904c4d69a3443d32688ad3b0
+#: 2e2773325009430f966b0d4649f49f88
 msgid "Accuracy"
 msgstr "准确度"
 
 #: ../source/docs/contributing/translation.rst:54
-#: fe8ce37c21fb4a59bce06114848263d3
+#: 2ac36a45c21947bb9b4fa38f761b92ea
 msgid ""
 "Translations should be accurate to the original text. If improvements to the"
 " English text can be made, open a PR or issue on the `6940swerve-docs "
 "<https://github.com/mendax1234/6940Swerve-docs>`_ repository. These can then"
 " get translated on merge."
 msgstr ""
-"翻译应与原文准确一致。如果可以对英文文本进行改进，请在`6940swerve-docs "
+"翻译应与原文准确一致。如果可以对英文文本进行改进，请在 `6940swerve-docs "
 "<https://github.com/mendax1234/6940Swerve-"
 "docs>`_资源库上开一个PR或Issue。然后，这些可以在合并时得到翻译。"

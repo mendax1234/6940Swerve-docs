@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-01 06:19+0000\n"
+"POT-Creation-Date: 2022-07-31 04:34+0000\n"
 "PO-Revision-Date: 2022-07-01 03:24+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -21,37 +21,37 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../source/docs/about/about.rst:2 beb245009fc94c678163726bcd35bc3b
+#: ../source/docs/about/about.rst:2 3a324b8419aa40f2ac486a855a69e9db
 msgid "About this documentation"
 msgstr "关于这个文档"
 
-#: ../source/docs/about/about.rst:5 51ba5772a06244188320e40be9abe578
+#: ../source/docs/about/about.rst:5 13aa5daee3ca4edea0ecf71c203e4a36
 msgid "Swerve IS HARD"
 msgstr "Swerve很难"
 
-#: ../source/docs/about/about.rst:7 72acd56e28da4e9d8af88e443b88accf
+#: ../source/docs/about/about.rst:7 0647f4f22baf4aaeac1ccf1344b83837
 msgid ""
 "We're not joking. SWERVE IS HARD! Please do not attempt to do swerve if your"
 " team does not have:"
 msgstr "我们并没有在开玩笑。Swerve真的很难。请不要尝试使用Swerve如果你的队伍不具备以下几点："
 
-#: ../source/docs/about/about.rst:9 1031b8387f0545a4894d0372cdc1227b
+#: ../source/docs/about/about.rst:9 157192f95958435a973675945b6da8f4
 msgid "lots of mechanical knowledge"
 msgstr "大量的机械知识"
 
-#: ../source/docs/about/about.rst:10 bd992fa953274db28b82152efcf73bd7
+#: ../source/docs/about/about.rst:10 edc9065a621746f7a4d7e2a60162ff8b
 msgid "lots of programming experience"
 msgstr "大量的编程经验"
 
-#: ../source/docs/about/about.rst:11 bff9105487634e5890baa9f429a7c215
+#: ../source/docs/about/about.rst:11 fc0467a99ee94893b4011aca792d9e07
 msgid "substantial funding for a crazy expensive drivetrain"
 msgstr "用以支持这个相当贵的底盘的大量资金"
 
-#: ../source/docs/about/about.rst:12 da1fad8a02df40109ea14dc3c8f3c2d1
+#: ../source/docs/about/about.rst:12 f51b6ca15a4f49b485d1afe02355b737
 msgid "ridiculous persistence and dedication"
 msgstr "大量的坚持和投入"
 
-#: ../source/docs/about/about.rst:14 75adb3a1990f4c17a9ef1a6807765062
+#: ../source/docs/about/about.rst:14 9d21a723a77243db87eec53d0012ccfb
 msgid ""
 "We DON'T want to deter you from achieving your dream machine. We DO want to "
 "limit the number of broken-down robots on the field. As FRC Team 1684's "
@@ -62,14 +62,14 @@ msgid ""
 "cool or sound epic. But, does it work!? Most of the time, the simpler the "
 "better."
 msgstr ""
-"我们并没有阻止你去做出一个理想的机器。我们仅仅想减少在比赛场上坏掉的机器的数量。 正如FRC Team 1684 "
-"的驾驶教练所说，“在你的能力范围之内设计并搭建机器。”如果你的队伍并没有满足上述列出的所有要求，请再三考虑你们是否要做Swerve。一个不好的Swerve（无论是在程序还是机械方面）不仅不会提升你们队伍的实力，反而会帮倒忙。的确，用Swerve的机器确实看起来很酷并且听起来很厉害。但是，他们的机器究竟能否正常运行起来！？很多时候，越是简单的机器，效果往往越好。"
+"我们不希望阻止你实现你的梦想机器。我们确实希望限制场上破损机器人的数量。正如FRC  Team 1684的驾驶教练Jon "
+"Uren所说，\"量力而行\"。如果你的团队不符合上述所有要求，请重新考虑尝试做swerve。拙劣的swerve（在编程和机械意义上）将给你的团队带来重大损失。当然，那个机器人可能看起来很酷或听起来很厉害。但是，它有用吗？大多数情况下，越简单越好。"
 
-#: ../source/docs/about/about.rst:22 afc196032da645ab967d24cc9592cf35
+#: ../source/docs/about/about.rst:22 b1ca9efd90144193b704b8fbcf48bb58
 msgid "We're Not THE EXPERTS… Just Experienced People"
-msgstr "我们并不是Swerve的专家……我们只是有经验的人罢了"
+msgstr "我们不是专家...只是有经验的人"
 
-#: ../source/docs/about/about.rst:24 7abafc0cf997456ba5b25919f4eeabf6
+#: ../source/docs/about/about.rst:24 53cab8a6b22b4a3a9135452f322e820c
 msgid ""
 "If your team decides to go down this path, please pay close attention to the"
 " advice in this documentation. We have lived through the joys and sorrows of"
@@ -80,15 +80,13 @@ msgid ""
 "designs so our robot can be its absolute best. We urge you all to do the "
 "same."
 msgstr ""
-"如果你的队伍决定要走swerve这条路，请一定要注意这个文档中的建议。我们经历了做出swerve的快乐和遇到问题的痛苦和无奈。请再次注意我们并没有声称自己是Swerve方面的专家。无论如何，"
-" "
-"我们都只是有经验的人罢了。我们只是想向大家分享我们从2022赛季的第一天开始所学到的关于swerve的所有知识。就像任何一个普通FRCer一样，我们也仍然在错误中摸索着前进。我们会不断完善我们的设计以致我们的机器可以做到最好。我们也强烈希望你们所有人也能这样做。"
+"如果你的团队决定走这条路，请密切关注本文档中的建议。我们经历了swerve的喜怒哀乐。请注意，我们并不声称自己是swerve的专家。不管怎么说，我们只是有经验的人。我们只是想分享我们从2022年赛季第一天起学到的一切。像所有人一样，我们仍在从错误中学习。我们将继续迭代我们的设计，使我们的机器人能够达到绝对的最佳状态。我们敦促大家也这样做。"
 
-#: ../source/docs/about/about.rst:32 2d13d9ee27b94b6384bf0b54ec7541a9
+#: ../source/docs/about/about.rst:32 e74229824ea0456b9c61dd2e8ae059ab
 msgid "Don't Be Afraid To Ask For Help!"
-msgstr "不要害怕提问！"
+msgstr "不要害怕寻求帮助!"
 
-#: ../source/docs/about/about.rst:34 cc9c9c00dda34d6cb516b000d8968d0b
+#: ../source/docs/about/about.rst:34 124898cdb59242c3b440bbae1899fcad
 msgid ""
 "We all know that time on the robot is limited. Programmers always wish for "
 "more time on the finished robot. Time is the most valuable build season "
@@ -103,18 +101,18 @@ msgid ""
 msgstr ""
 "我们都知道搭建机器人的时间是有限的。程序员往往希望花更多的时间在最终的机器上。在搭建期，时间是最有价值的。在某个部件没有按正常情况工作时，知道什么时候寻求帮助，是你程序策略的一部分。“帮助”可以是寻找样例代码，在论坛上询问是否有人遇到了相同的问题，或者向其他队伍求助，询问他们是否能帮你查看代码。请记住，当FRC程序员无法确定哪一个部分没有正常工作时，他们可能和你一样处于一个半疯狂的状态。非程序组的人可能没有时间去帮你。所以在搭建期向另一支队伍求助很重要！"
 
-#: ../source/docs/about/about.rst:43 107c5a691293450286ef980a1640db2e
+#: ../source/docs/about/about.rst:43 65a2b16dc49d4d9d80024e975d2530db
 msgid ""
 "Some day, you may be the one being asked for assistance. It is an honor to "
 "be worthy of being asked to help. Give whatever assistance that you can, but"
 " your responsibility will still be getting your own robot ready to go."
-msgstr "有一天，你也会成为帮助别人的那位。帮助别人是一荣耀。尽你所能去帮助别人，但是你的职责仍然是让你自己的机器人能正常运转。"
+msgstr "有一天，你也会成为帮助别人的那位。帮助别人是一种荣耀。尽你所能去帮助别人，但是你的职责仍然是让你自己的机器人能正常运转。"
 
-#: ../source/docs/about/about.rst:48 43f4cb8853504c04936f60e33d73145d
+#: ../source/docs/about/about.rst:48 282c6b2053724b0ba70d5bbaf5d2eee6
 msgid "This Is A Living Document"
 msgstr "这是一个不断更新的文档"
 
-#: ../source/docs/about/about.rst:50 d53fcb9fc239472f954e7f46ca2ee5e4
+#: ../source/docs/about/about.rst:50 ce820b07411845dd868beec39f4beff9
 msgid ""
 "We intend to revise this document as we acquire new swerve knowledge. "
 "Additionally, we will modify this document as needed to help add "
@@ -127,7 +125,7 @@ msgstr ""
 "一旦我们获得了新的关于Swerve的知识，我们打算重新修订这份文档。除此之外，我们会根据需要完善这份文档，增加FAQ部分等等。我们也会在Github上开源整个文档的代码，你可以在页面的右上角看到。你可以在Github里创建一个issue或者通过"
 " `邮箱 <daniel.wb.zhu@outlook.com>`_ 联系我们如果你想成为这个文档的一个开发者。"
 
-#: ../source/docs/about/about.rst:55 0da790ebb4204dc599a528b771efb17c
+#: ../source/docs/about/about.rst:55 c14436c8878a49c28e39e2bd7048b57e
 msgid ""
 "We want your feedback! Please let us know how we can improve this "
 "documentation!"

@@ -3,16 +3,30 @@
 # This file is distributed under the same license as the 6940 Swerve package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Daniel Webber, 2022
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-06 20:18+0000\n"
+"POT-Creation-Date: 2022-07-31 04:34+0000\n"
 "PO-Revision-Date: 2022-07-06 20:19+0000\n"
+"Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../source/docs/contributing/top-translators.rst:2
+#: d32c05fe06904f2f95f00d99a4e7cce9
+msgid "Top Translators"
+msgstr "杰出翻译者"
+
+#: ../source/docs/contributing/top-translators.rst:5
+#: 8e695ea79d304392ae843ba5f452271c
+msgid "Chinese"
+msgstr "中文"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-30 20:18+0000\n"
+"POT-Creation-Date: 2022-07-31 04:34+0000\n"
 "PO-Revision-Date: 2022-07-03 16:22+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -22,52 +22,54 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/contributing/write-articles.rst:2
-#: ae8f70c5b415415485f002cc733650a0
+#: 6b2d79feaf144d3a9116c9dda3055789
 msgid "Write articles"
 msgstr "写文章"
 
 #: ../source/docs/contributing/write-articles.rst:4
-#: ab7e3b80137f43cf906a1f979b3b8578
+#: 824b8d9e656d41bd89fbe792827f41be
 msgid ""
 "**Things you need to know before writing articles for 6940swerve-docs**"
 msgstr "**在为6940swerve-docs写文章之前，你需要知道的事情**。"
 
 #: ../source/docs/contributing/write-articles.rst:6
-#: 7b11b7c99d4d47ec844b1748b94f2c3b
+#: 7c0f7b2e3bd14d2caadd96ee105a8ce0
 msgid "Basic reStructuredText syntax."
 msgstr "基本的reStructuredText语法。"
 
 #: ../source/docs/contributing/write-articles.rst:7
-#: 8ff6b5149c62463a82ecc7b414f41650
+#: cfff35639a9b4d2c9e0b00889b36061d
 msgid "Novel ideas for improving the articles."
 msgstr "改进文章的新颖想法。"
 
 #: ../source/docs/contributing/write-articles.rst:9
-#: 55399451ba504913a4825ced149408b1
+#: e577db6e5f284cafb198eb8e02a0cd45
 msgid "**If you meet the above requirements, keep reading!**"
 msgstr "**如果你符合上述要求，请继续阅读！**"
 
 #: ../source/docs/contributing/write-articles.rst:11
-#: 4e58d74c9f224a429e7a10effc2b4a4f
+#: 01c5f4cc49ae4d6fb2ab74f456ae4308
 msgid ""
 "You need to clone the `repo <https://github.com/mendax1234/6940Swerve-"
 "docs>`_ from Github."
-msgstr "你需要从Github上克隆`repo <https://github.com/mendax1234/6940Swerve-docs>`_。"
+msgstr ""
+"你需要从Github上克隆 `repo <https://github.com/mendax1234/6940Swerve-docs>`_。"
 
 #: ../source/docs/contributing/write-articles.rst:12
-#: bc119d5cc69744f0a3218b2df26a2c70
+#: af918dd8dd424df1ab2bd93541c8cace
 msgid "Enter the `docs/source/docs` directory and start writing articles."
-msgstr "进入`docs/source/docs`目录，开始写文章。"
+msgstr "进入 `docs/source/docs` 目录，开始写文章。"
 
 #: ../source/docs/contributing/write-articles.rst:13
-#: 875b78982bbf4df7b32edb7f7ff9a4fa
+#: a5f7167e04db4d90a9fdb14e959935b5
 msgid ""
 "Once you are done, create a pull request to the `repo "
 "<https://github.com/mendax1234/6940Swerve-docs>`_."
-msgstr "完成后，向`repo <https://github.com/mendax1234/6940Swerve-docs>`_创建一个拉取请求。"
+msgstr ""
+"完成后，向 `repo <https://github.com/mendax1234/6940Swerve-docs>`_创建一个拉取请求。"
 
 #: ../source/docs/contributing/write-articles.rst:14
-#: 01708825358d4e508b3ffb614f8f1008
+#: 01b1c8cd69084c4f8f9d1da06bad2077
 msgid ""
 "Once the pull request is merged, you can start translating the articles or "
 "wait for other people to translate it."
