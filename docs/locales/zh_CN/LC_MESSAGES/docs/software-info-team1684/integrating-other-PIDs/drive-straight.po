@@ -5,15 +5,16 @@
 # 
 # Translators:
 # Daniel Webber, 2022
+# zhang jiaming, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-31 09:32+0000\n"
+"POT-Creation-Date: 2022-10-05 04:34+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
-"Last-Translator: Daniel Webber, 2022\n"
+"Last-Translator: zhang jiaming, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,13 +23,108 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:2
-#: 1c53a4f9196c4e9ba77ecb99687ba49e
+#: 42f6cf4af6184184a94083d775073727
 msgid ""
 "Maintaining Your Heading (aka Not Spinning… aka Driving “Straight”) While in"
 " Field Centric"
 msgstr "保持你的方向（又称不旋转......又称驾驶 \"直线\"），同时以场地为中心"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:5
-#: 036ad5ce24c140c69429baa580da09bc
+#: e66ac9ccc464415f8212079e12e7a304
 msgid "Introduction"
 msgstr "介绍"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:7
+#: 354ad99333724b1faf1e0070b2eb3bb9
+msgid ""
+"Driving “straight” isn't as easy as you thought, is it? When we say "
+"“straight”, we mean moving without unintentionally turning. We've all been "
+"there: “why is the robot steering left/right even though I'm telling it to "
+"drive straight!?!” This is something we struggled with for a while too. "
+"Unfortunately, there will always be physical variances between individual "
+"wheels or two sides of a drivetrain. There will always be a need for a drive"
+" “straight” PID ."
+msgstr ""
+" \"走直线\"并不像你想象的那么容易，是吗？当我们说 \"直行 "
+"\"时，我们的意思是机器在移动时不会无意地转向。我们都经历过这种情况。\"为什么我告诉它要直线行驶，它却向左/向右转向！？\" "
+"这也是困扰了我们很久的事情。不幸的是，单个车轮或传动系统的两边之间总是存在物理差异。这也是为什么我们总是需要一个驱动 \"直行 \"的PID。"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:13
+#: 6d4fafcec09a4f799dcc3eb89fb2385a
+msgid ""
+"When it comes to swerve, driving “straight” is more complicated. Instead of "
+"the robot driving forward/backward at a specific heading/angle , we want the"
+" robot to move in any direction without spinning. The robot should always "
+"stay facing the same way, unless we tell it to rotate. When it rotates, that"
+" angle will be our new heading to maintain."
+msgstr ""
+"而当我们采用矢量底盘时，“直走”变得更加复杂。我们希望机器人不只是前后行走，我们希望它能够在任意一个方向上都毫无偏移地直走。机器人应该总是面向同一个方向，除非我们让它旋转。当它旋转后，它的新的朝向也应当被正确地保持。"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:18
+#: 31dc7075be65461c9366b13620bb7f93
+msgid ""
+"Now things get even more interesting. How do we do this when we have other "
+"PID loops (i.e. goal centric , game piece centric ) occurring "
+"simultaneously? The robot should switch between goal centric, game piece "
+"centric, and field centric seamlessly."
+msgstr ""
+"现在事情就变得有趣起来了。既然我们已经有了其他的PID进程（即：以玩家朝向为原点，以得分框为原点），我们该如何保证机器在以得分框为原点，以场地为原点和以玩家朝向为原点之间无缝切换呢？"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:22
+#: b206e419aa0441d5b536515091f62f94
+msgid ""
+"Not spinning isn't as easy as you thought, is it? Don't worry, we're going "
+"to help as much as we can."
+msgstr "保持不转可没有你想得那么简单，不是吗？不用担心，我们将尽我们所能帮助你理解这一过程。"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:25
+#: 0d44f38c9713475ab44138c0c2a0ee32
+msgid "How It's Done"
+msgstr "实现"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:27
+#: 67b664f602ee4fda8d4631d4ff1787d5
+msgid ""
+"You need to have a variable that stores your target heading . Typically, we "
+"refer to ours as storedYaw . This variable must be updated every time you "
+"have a new angle you want to face."
+msgstr "你需要有一个变量来存储你的目标航向。我们一般把这个变量命名为storedYaw。每当你有一个新的角度要面对时，这个变量必须被更新。"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:30
+#: a41aa343ede648c1b45fb14ad9a4cba8
+msgid ""
+"In addition, you need to have a variable that stores your current heading . "
+"Typically, we refer to ours as yaw . This variable must be updated every "
+"cycle with data from your gyro ."
+msgstr "不仅如此，你还需要一个变量来储存你目前的方向。一般我们将其命名为yaw。这个变量必须在每个循环中用你的陀螺仪进行更新"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:33
+#: dec2c790c8cc41d394a6bf57773c0ee6
+msgid "Then, you have a simple rotation PID which might look like this:"
+msgstr "之后你还需要一个简单的控制转向的PID，它大概是像这个样子的。"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:43
+#: b5ac78d310344b1ba30e6d4dafdefa58
+msgid "You would call this function in Teleop like so:"
+msgstr "你一般会在手动阶段这么调用你的函数"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:56
+#: 6b93ba00e3da4739a3d791e5677fe515
+msgid ""
+"Essentially, we want to keep facing the same angle whenever we aren't "
+"rotating. When we don't want to spin, we want to maintain our heading while "
+"we move. However, we don't want to PID our angle if we aren't trying to move"
+" (due to safety concerns)."
+msgstr ""
+"从本质上讲，只要我们不旋转，我们就希望机器一直面向同一个方向。当我们不想旋转时，我们想在移动时保持我们的方向。然而，如果我们没有移动，我们就不想用PID控制我们的角度（出于安全考虑）。"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/drive-straight.rst:60
+#: 80c6f9b8a33343faa877e68ed19d90c0
+msgid ""
+"To integrate this with other driving PID loops , make sure that maintaining "
+"your heading is your “default” scenario. Goal centric and game piece centric"
+" will modify your yawCorrection and storedYaw (or equivalent variables) as "
+"needed."
+msgstr ""
+"为了与其他PID循环相结合，请确保保持你的朝向是你的 \"默认 "
+"\"状态。达成以“得分框为原点”和以“场地为原点”就只需要修改你的yawCorrection和storeYaw（或同等的变量）。"
