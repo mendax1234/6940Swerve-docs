@@ -6,6 +6,7 @@
 # Translators:
 # Daniel Webber, 2022
 # zhang jiaming, 2022
+# Transifex Bot <>, 2022
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-05 20:09+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
-"Last-Translator: zhang jiaming, 2022\n"
+"Last-Translator: Transifex Bot <>, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +23,74 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:2
+#: fa4bf30f29d54ca3ba6549ba08486f09
+msgid "Game Piece Centric (Starring the Pixy)"
+msgstr "瞄准得分物（用Pixy摄像头瞄准）"
+
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:5
 #: 1a2a4b22e586430284b4411f3d19bc70
 msgid "Introduction"
 msgstr "介绍"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:7
+#: cf759b47bbf049298824d3555d9a1ca7
+msgid ""
+"In game piece centric, the rotate input from the joystick is overridden by "
+"the Pixy. The driver is free to move the robot in any direction while the "
+"Pixy keeps the robot pointed at a ball. This makes picking up balls on the "
+"far side of the field a little easier. Since we have a Pixy on the front "
+"intake and the rear intake, the driver has to select which one to use for "
+"this mode."
+msgstr ""
+"当我们瞄准得分物时，操纵杆的旋转输入被Pixy覆盖。驾驶员可以自由地将机器人向任何方向移动，而Pixy则保持机器人对准一个球。这使得在场地远处捡球变得更加容易。由于我们在前面的进气口和后面的进气口都有一个Pixy，所以驾驶员必须选择在这种模式下使用哪一个。"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:12
+#: ceee8529567a44e8ab6a149ca512c75e
+msgid ""
+"Here is a `video <https://youtu.be/VP4emc-K57k?t=42>`_ of our 2020 robot "
+"demonstrating game piece centric control."
+msgstr "这个 `视频 <https://youtu.be/VP4emc-K57k?t=42>`_   展现了我们在2020赛题中如何运用这一技能"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:15
+#: 9194c901bf82409bac074f7718f2cf0c
+msgid "How It's Done"
+msgstr "实现"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:17
+#: ae9dcd4a03564b7480a58a35270341d9
+msgid ""
+"There are two signals that we receive from the Pixy. There is a digital "
+"signal that tells us if a target is within range. In this case a target is a"
+" yellow ball (Power Cell). There is an analog signal that gives us the "
+"location of the ball on one axis of the camera's view. In this case the x or"
+" left to right axis."
+msgstr ""
+"我们从Pixy获得两个信号。一个数字信号告诉我们视野范围内是否有目标——在这个案例中目标指的是黄色的球（2020赛季得分物）。另一个模拟信号告诉我们视野中的球在某个轴上的位置——在这个案例中是x轴。"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:21
+#: 4e4d228a86304e74841db57ca9f64c16
+msgid ""
+"The Pixy's analog signal is from 0 to 3.3 volts with 0 being the leftmost "
+"view of the camera. We determined the center of the camera's view to be what"
+" we wanted to lock in on. We created a positioning loop that took over the "
+"rotational control and calculated the error between the target and the "
+"center of the camera. The error was used to calculate our desired yaw until "
+"the digital signal showed no more target."
+msgstr ""
+"Pixy的模拟信号输出0到3.3伏的电压。其中0伏代表摄像头视野内的最左端。在这个案例中，我们希望得分物处在视野的最中央。为此，我们创建一个定位进程来接管driver的旋转输入并计算目标与摄像头视野中央的偏移量。我们用偏移量来计算我们需要的旋转速度，直到数字信号告诉我们视野内没有更多目标了"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:52
+#: b3f4fea24dcb450c9fa0471324ef25c3
+msgid ""
+"We use the Pixy in a different manner in auton. We use it to determine our "
+"position relative to the target ball to allow for automatic adjustment in "
+"the case of minor set up variances."
+msgstr ""
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:63
+#: 9bfe9f936bf34e34b25b388dc66dd84f
+msgid ""
+"In this case, we'll use the Pixy to center ourselves on the game piece if "
+"we're more than 3 degrees off from it in either direction."
+msgstr ""

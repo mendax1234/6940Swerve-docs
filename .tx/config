@@ -1,3 +1,178 @@
 [main]
-host = https://www.transifex.com
+host     = https://www.transifex.com
 lang_map = zh_CN: zh_CN
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--about--about]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/about/about.po
+source_file  = docs/pot/docs/about/about.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--acknowledgements--acknowledgements]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/acknowledgements/acknowledgements.po
+source_file  = docs/pot/docs/acknowledgements/acknowledgements.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--contributing--build-instructions]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/contributing/build-instructions.po
+source_file  = docs/pot/docs/contributing/build-instructions.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--contributing--contributing-guidelines]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/contributing/contributing-guidelines.po
+source_file  = docs/pot/docs/contributing/contributing-guidelines.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--contributing--how-it-works]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/contributing/how-it-works.po
+source_file  = docs/pot/docs/contributing/how-it-works.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--contributing--index]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/contributing/index.po
+source_file  = docs/pot/docs/contributing/index.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--contributing--style-guide]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/contributing/style-guide.po
+source_file  = docs/pot/docs/contributing/style-guide.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--contributing--top-contributors]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/contributing/top-contributors.po
+source_file  = docs/pot/docs/contributing/top-contributors.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--contributing--top-translators]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/contributing/top-translators.po
+source_file  = docs/pot/docs/contributing/top-translators.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--contributing--translation]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/contributing/translation.po
+source_file  = docs/pot/docs/contributing/translation.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--contributing--write-articles]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/contributing/write-articles.po
+source_file  = docs/pot/docs/contributing/write-articles.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--epilogue--epilogue]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/epilogue/epilogue.po
+source_file  = docs/pot/docs/epilogue/epilogue.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--hardware-info--hardware-info]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/hardware-info/hardware-info.po
+source_file  = docs/pot/docs/hardware-info/hardware-info.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--disclaimer]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/disclaimer.po
+source_file  = docs/pot/docs/software-info-team1684/disclaimer.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--integrating-other-PIDs--PIDF-loops]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/integrating-other-PIDs/PIDF-loops.po
+source_file  = docs/pot/docs/software-info-team1684/integrating-other-PIDs/PIDF-loops.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--integrating-other-PIDs--drive-straight]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/integrating-other-PIDs/drive-straight.po
+source_file  = docs/pot/docs/software-info-team1684/integrating-other-PIDs/drive-straight.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--integrating-other-PIDs--gamepiece-centric]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.po
+source_file  = docs/pot/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--integrating-other-PIDs--goal-centric]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/integrating-other-PIDs/goal-centric.po
+source_file  = docs/pot/docs/software-info-team1684/integrating-other-PIDs/goal-centric.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--integrating-other-PIDs--index]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/integrating-other-PIDs/index.po
+source_file  = docs/pot/docs/software-info-team1684/integrating-other-PIDs/index.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--other-miscs--index]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/other-miscs/index.po
+source_file  = docs/pot/docs/software-info-team1684/other-miscs/index.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--overview]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/overview.po
+source_file  = docs/pot/docs/software-info-team1684/overview.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--swerve-in-auton--how-it-should-work]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-auton/how-it-should-work.po
+source_file  = docs/pot/docs/software-info-team1684/swerve-in-auton/how-it-should-work.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--swerve-in-auton--index]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-auton/index.po
+source_file  = docs/pot/docs/software-info-team1684/swerve-in-auton/index.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--swerve-in-auton--the-math]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-auton/the-math.po
+source_file  = docs/pot/docs/software-info-team1684/swerve-in-auton/the-math.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--swerve-in-teleop--how-it-should-work]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-teleop/how-it-should-work.po
+source_file  = docs/pot/docs/software-info-team1684/swerve-in-teleop/how-it-should-work.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--swerve-in-teleop--index]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-teleop/index.po
+source_file  = docs/pot/docs/software-info-team1684/swerve-in-teleop/index.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team1684--swerve-in-teleop--the-math]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team1684/swerve-in-teleop/the-math.po
+source_file  = docs/pot/docs/software-info-team1684/swerve-in-teleop/the-math.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:docs--software-info-team6940--index]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/docs/software-info-team6940/index.po
+source_file  = docs/pot/docs/software-info-team6940/index.pot
+type         = PO
+minimum_perc = 0
+
+[o:frc-team-6940-1:p:6940swerve-docs:r:index]
+file_filter  = docs/locales/<lang>/LC_MESSAGES/index.po
+source_file  = docs/pot/index.pot
+type         = PO
+minimum_perc = 0
+
