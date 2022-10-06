@@ -21,7 +21,7 @@ rm .tx/config
 sphinx-intl create-txconfig
 echo "lang_map = ${LANG_MAP}" >> .tx/config
 # sphinx-intl update-txconfig-resources -p docs/pot -d docs/locales --transifex-project-name $MAINPROJECT
-sphinx-intl update-txconfig-resources -p locale/pot -d locale --transifex-project-name $MAINPROJECT --transifex-organization-name $ORGANIZATION
+sphinx-intl update-txconfig-resources -p docs/pot -d docs/locales --transifex-project-name $MAINPROJECT --transifex-organization-name $ORGANIZATION
 
 
 # Push and pull from Transifex. It is important to push then pull!
