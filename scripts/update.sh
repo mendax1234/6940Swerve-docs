@@ -29,6 +29,6 @@ sphinx-intl update-txconfig-resources -p docs/pot -d docs/locales --transifex-pr
 if [ "$CI" = true ]
 then
     # tx push --source --no-interactive --skip
-    tx push --source #--skip
+    tx push --source --skip
 fi
 tx pull -l $LANG_TO_PULL --mode onlyreviewed --use-git-timestamps
