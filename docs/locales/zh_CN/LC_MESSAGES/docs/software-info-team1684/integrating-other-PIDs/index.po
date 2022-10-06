@@ -5,16 +5,15 @@
 # 
 # Translators:
 # Daniel Webber, 2022
-# Transifex Bot <>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-05 20:09+0000\n"
+"POT-Creation-Date: 2022-10-06 08:46+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
-"Last-Translator: Transifex Bot <>, 2022\n"
+"Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,32 +22,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/index.rst:2
-#: 74a9062e32d149cdb0f8b5f060ed7f4e
+#: b038bc86b97945c79bae4e99ab57b306
 msgid "Integrating Other PIDs into Swerve"
 msgstr "把其他PID集成到Swerve上"
-
-#: ../source/docs/software-info-team1684/integrating-other-PIDs/index.rst:3
-#: 9bdcbc3b0e8b44bca7cdfea52cda451c
-msgid ""
-"Swerve is really cool on its own, but you know what's even better? MORE "
-"FLEXIBLE CONTROLS! “But isn't field-centric good enough?” some may ask. In "
-"return we ask, ”Do you want to be the very best that no one ever was?”"
-msgstr ""
-
-#: ../source/docs/software-info-team1684/integrating-other-PIDs/index.rst:7
-#: a93d86f29581419088994d73bbf0ebe6
-msgid ""
-"Let's get down to business. Swerve enables such freedom of motion, it's a "
-"waste to not utilize it for your advantage as much as possible. If done "
-"successfully, your robot will perform at a new level."
-msgstr ""
-
-#: ../source/docs/software-info-team1684/integrating-other-PIDs/index.rst:10
-#: 43c0fea0eb88420685d9a94b8b9b7628
-msgid ""
-"Not convinced yet? Think about it this way. The more control the driver has,"
-" the more natural driving will feel. The more comfortable the driver is, the"
-" better they will play. The better they play, the better your whole team "
-"will do. That is why we are so hard-set on having solid controls. We want to"
-" perform well. And we want you to as well."
-msgstr ""
