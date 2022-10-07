@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-09 20:17+0000\n"
+"POT-Creation-Date: 2022-10-07 03:53+0000\n"
 "PO-Revision-Date: 2022-07-05 20:20+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -22,6 +22,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team6940/index.rst:2
-#: 1baca3024ed7441bb87917bbdcc4c649
+#: cf795c1b96514ffa974c50defdb35275
 msgid "Software Info From Team 6940"
 msgstr "来自Team 6940的软件信息"
+
+#: ../source/docs/software-info-team6940/index.rst:4
+#: bd95951b2617423ea22477702a741758
+msgid "In Season 2022, Team 6940 has achieved many breakthroughs in program."
+msgstr "在2022赛季当中，Team 6940在程序方面取得了巨大突破。"
