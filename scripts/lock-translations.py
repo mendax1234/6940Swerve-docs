@@ -161,6 +161,9 @@ def main():
     for resource in local_resources:
         print("local resources:", resource)
 
+    for resource in unused_resources:
+        print("unused resources:", resource)
+
     if len(unused_resources) == 0:
         print("All resources are locked or in use!")
     else:
