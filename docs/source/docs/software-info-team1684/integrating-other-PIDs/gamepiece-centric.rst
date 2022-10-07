@@ -9,7 +9,7 @@ to move the robot in any direction while the Pixy keeps the robot pointed at a b
 picking up balls on the far side of the field a little easier. Since we have a Pixy on the front intake
 and the rear intake, the driver has to select which one to use for this mode.
 
-Here is a `video <https://youtu.be/VP4emc-K57k?t=42>`_ of our 2020 robot demonstrating game piece centric control. Test
+Here is a `video <https://youtu.be/VP4emc-K57k?t=42>`_ of our 2020 robot demonstrating game piece centric control.
 
 How It's Done
 ----------------
