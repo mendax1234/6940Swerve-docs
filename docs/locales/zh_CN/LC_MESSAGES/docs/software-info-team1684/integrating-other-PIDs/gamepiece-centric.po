@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 04:13+0000\n"
+"POT-Creation-Date: 2022-10-07 04:20+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
 "Last-Translator: zhang jiaming, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -23,17 +23,17 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:2
-#: eef7cba0102a48f49f255b5567dabb58
+#: 9d6c85b5f59847c59c275aacd26756a7
 msgid "Game Piece Centric (Starring the Pixy)"
 msgstr "瞄准得分物（用Pixy摄像头瞄准）"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:5
-#: 37f864f031854c78b289b07e0077dd53
+#: ccb24ddcbcb245759294b7ab13541795
 msgid "Introduction"
 msgstr "介绍"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:7
-#: 20d020a11eda45b69c37a9dff7ae66c2
+#: ba2f9bca36b243148d717bf769f8489e
 msgid ""
 "In game piece centric, the rotate input from the joystick is overridden by "
 "the Pixy. The driver is free to move the robot in any direction while the "
@@ -45,12 +45,12 @@ msgstr ""
 "当我们瞄准得分物时，操纵杆的旋转输入被Pixy覆盖。驾驶员可以自由地将机器人向任何方向移动，而Pixy则保持机器人对准一个球。这使得在场地远处捡球变得更加容易。由于我们在前面的进气口和后面的进气口都有一个Pixy，所以驾驶员必须选择在这种模式下使用哪一个。"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:15
-#: 282c035dd54c49bba7f3791c892f023e
+#: f42654d762374f8eb6f816c20203ebcd
 msgid "How It's Done"
 msgstr "实现"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:17
-#: 8456f53f0be246a49f76f74cf50bbde8
+#: 52d8b27100fe49609acc8fa1547e63f3
 msgid ""
 "There are two signals that we receive from the Pixy. There is a digital "
 "signal that tells us if a target is within range. In this case a target is a"
@@ -61,7 +61,7 @@ msgstr ""
 "我们从Pixy获得两个信号。一个数字信号告诉我们视野范围内是否有目标——在这个案例中目标指的是黄色的球（2020赛季得分物）。另一个模拟信号告诉我们视野中的球在某个轴上的位置——在这个案例中是x轴。"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:21
-#: f8f6b7796ca946029d5ebdd72e6bf426
+#: aa9ac32af5dd4296818d13e6107bedfc
 msgid ""
 "The Pixy's analog signal is from 0 to 3.3 volts with 0 being the leftmost "
 "view of the camera. We determined the center of the camera's view to be what"
