@@ -155,9 +155,11 @@ def main():
 
     unused_resources = get_unused_resources(remote_resources, local_resources)
 
-    print("Unused resources:" + unused_resources)
-    print("remote resources:" + remote_resources)
-    print("local resources:" + local_resources)
+    for resource in remote_resources:
+        print("remote resources:", resource)
+
+    for resource in local_resources:
+        print("local resources:", resource)
 
     if len(unused_resources) == 0:
         print("All resources are locked or in use!")
