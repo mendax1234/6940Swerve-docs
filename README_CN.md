@@ -1,6 +1,7 @@
 [英文](README.md) | **中文**
 
 [![Documentation Status](https://readthedocs.org/projects/6940swerve-docs-zh-cn/badge/?version=latest)](https://6940swerve-docs.readthedocs.io/zh_CN/latest/?badge=latest)
+![Update Translations](https://github.com/mendax1234/6940Swerve-docs/workflows/Update%20Translations/badge.svg)
 
 # 6940 Swerve 文档
 
