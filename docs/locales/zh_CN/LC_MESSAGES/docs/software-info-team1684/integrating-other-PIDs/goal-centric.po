@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-15 04:50+0000\n"
+"POT-Creation-Date: 2022-10-15 05:21+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
 "Last-Translator: zhang jiaming, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -23,52 +23,39 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:2
-#: 339b24e946a0439cb99c8a5beac9f5d5
+#: b0da59249e8c4c1da1af6139b3044385
 msgid "Goal Centric (Starring the Limelight)"
 msgstr "瞄准得分框（使用limelight）"
 
-#: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:4
-#: 14a0e83d46514e5a9d68f9ce37a9fdc9
-msgid ""
-"In this section, we shall discuss integrating the `Limelight "
-"<https://docs.limelightvision.io/en/latest/getting_started.html>`_` with "
-"swerve. We are assuming that you have some knowledge about the Limelight . "
-"If you are using another form of vision processing, the concepts we will "
-"discuss should still be relevant."
-msgstr ""
-"在这个部分，我们将讨论如何将 `Limelight "
-"<https://docs.limelightvision.io/en/latest/getting_started.html>`_`  "
-"整合到swerve底盘中。我们假设你已经具备了一些关于Limelight的基本知识。如果你使用了别的视觉解析软件，我们接下来讨论的概念也应该是类似的"
-
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:9
-#: 9cb893aaa2434a8880106564dddced9f
+#: 7aaf683661fb487c9ccc70aa513fd7b5
 msgid "Vision Targeting"
 msgstr "视觉瞄准"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:12
-#: 4d622e38079e491b9967966f7357052e
+#: b52957e0561448f191ce708bd11e3009
 msgid "Essentials"
 msgstr "基本知识"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst-1
-#: 495162a8c61f4e93ab5e74558b2ac32c
+#: 97be406013494a1e939463ddebc222d4
 msgid "tx & ty1"
 msgstr "tx和ty 1"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:20
-#: 4732133bd52d41d79553fe9ec99b06c1
+#: fc0151f1c0fb4ef5a495fb8e36bb138e
 msgid ""
 "In the simplest targeting implementations, all you need is `tx`. More "
 "complex targeting implementations will also utilize `ty`."
 msgstr "在最简单的瞄准过程中。你只需要用`tx` 。更复杂的目标瞄准则还会涉及ty"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst-1
-#: ce0dcfee8a914c4cae1747d5b4c9d2fc
+#: 37039b74dae04e2786bae8072412d756
 msgid "tx & ty2"
 msgstr "tx 和 ty 2"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:26
-#: 7a7316471d584e1988c0c00baa1f3cc0
+#: 796eb84b5a09404a8f9679df500098de
 msgid ""
 "In the left diagram, we show how the Limelight reports tx values. The black "
 "dotted line shows us the y-axis, where tx = 0. We can see that tx tells us "
@@ -79,7 +66,7 @@ msgstr ""
 "是如何返回tx值的。黑色虚线即为“y轴”。当目标落在这条线上时tx值为0。我们可以从图上看到tx告诉我们目标向左侧（此时tx取负数）或右侧（此时tx取正数）偏移了多少。"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:30
-#: f0c50b147f5e46bb991a264b62ecb9e2
+#: 6eee64bf15b54d47a5836d793fc2af6f
 msgid ""
 "In the right diagram, we show how the Limelight reports ty values. The black"
 " dotted line shows us the x-axis, where ty = 0. We can see that ty tells us "
@@ -90,12 +77,12 @@ msgstr ""
 "是如何返回tx值的。黑色虚线即为“x轴”。当目标落在这条线上时ty值为0。我们可以从图上看到ty告诉我们目标向上方（此时tx取正数）或下方（此时tx取负数）偏移了多少。"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:35
-#: ecb2ca810c894e4aaf57abd6e866271b
+#: 5fa4adc624824493bc4c827e3d6e1922
 msgid "Easy Mode"
 msgstr "简单模式"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:37
-#: dffb1e157d9c4bfb9be70d8c93a569fb
+#: c923c656fc53416a84f06123abd23c22
 msgid ""
 "The simplest vision targeting PID you can do only uses `tx` . Basically, you"
 " just want to turn towards the goal. This is done by applying a calculated "
@@ -106,6 +93,6 @@ msgstr ""
 "的值相反的修正值来达成这一功能。你的PID函数可能是这样的："
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:102
-#: 4d376e559ae74439a8cb4c5d7a8ebb8c
+#: 01232ee8a55a47deb9f3a80467999a48
 msgid "Expert Mode"
 msgstr "专家模式"
