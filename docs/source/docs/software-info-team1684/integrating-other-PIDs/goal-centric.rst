@@ -1,7 +1,7 @@
 Goal Centric (Starring the Limelight)
 =======================================
 
-In this section, we shall discuss integrating the `Limelight <https://docs.limelightvision.io/en/latest/getting_started.html>`_` with swerve. We are assuming that you
+In this section, we shall discuss integrating the `Limelight <https://docs.limelightvision.io/en/latest/getting_started.html>`_ with swerve. We are assuming that you
 have some knowledge about the Limelight . If you are using another form of vision processing, the
 concepts we will discuss should still be relevant.
 
