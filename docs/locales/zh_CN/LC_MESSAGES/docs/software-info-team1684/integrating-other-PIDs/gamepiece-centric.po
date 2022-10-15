@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-08 20:09+0000\n"
+"POT-Creation-Date: 2022-10-15 04:50+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
 "Last-Translator: zhang jiaming, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -23,17 +23,17 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:2
-#: b414874b6b724d89814cdb09d7b22ce4
+#: 642bd17768cb45678c8f290fd1ab157c
 msgid "Game Piece Centric (Starring the Pixy)"
 msgstr "瞄准得分物（用Pixy摄像头瞄准）"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:5
-#: 2c9b4ff9a78142379c879c104633db82
+#: f1d400800efe416baba898ac9fa4a5ff
 msgid "Introduction"
 msgstr "介绍"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:7
-#: 5c914bdf6765480a977a2f080fb9e4fa
+#: 93851b3cee4a4ebfaf821b775c437ec1
 msgid ""
 "In game piece centric, the rotate input from the joystick is overridden by "
 "the Pixy. The driver is free to move the robot in any direction while the "
@@ -45,7 +45,7 @@ msgstr ""
 "当我们瞄准得分物时，操纵杆的旋转输入被Pixy覆盖。驾驶员可以自由地将机器人向任何方向移动，而Pixy则保持机器人对准一个球。这使得在场地远处捡球变得更加容易。由于我们在前面的进气口和后面的进气口都有一个Pixy，所以驾驶员必须选择在这种模式下使用哪一个。"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:12
-#: 68e43a163978478cab765490a2576aa5
+#: 48188c60bf7f4a74ad85c1d73084d6f2
 msgid ""
 "Here is a `video <https://youtu.be/VP4emc-K57k?t=42>`_ of our 2020 robot "
 "demonstrating game piece centric control."
@@ -55,12 +55,12 @@ msgstr ""
 "   展现了我们在2020赛题中如何运用这一技能"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:15
-#: 91b8913c23594e73969004ede5794785
+#: 303113a6791c4189b4fccd80144a6e1d
 msgid "How It's Done"
 msgstr "实现"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:17
-#: bb1302b11a9145239e7b798f8ffb77b0
+#: fc4d76f100154f93bbf3262d4937c3b5
 msgid ""
 "There are two signals that we receive from the Pixy. There is a digital "
 "signal that tells us if a target is within range. In this case a target is a"
@@ -71,7 +71,7 @@ msgstr ""
 "我们从Pixy获得两个信号。一个数字信号告诉我们视野范围内是否有目标——在这个案例中目标指的是黄色的球（2020赛季得分物）。另一个模拟信号告诉我们视野中的球在某个轴上的位置——在这个案例中是x轴。"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:21
-#: 16511c83c6054638ae9fbefb3dbe8595
+#: 2a1e728e096c45b5ac412724ef6d74e6
 msgid ""
 "The Pixy's analog signal is from 0 to 3.3 volts with 0 being the leftmost "
 "view of the camera. We determined the center of the camera's view to be what"
@@ -81,3 +81,18 @@ msgid ""
 "the digital signal showed no more target."
 msgstr ""
 "Pixy的模拟信号输出0到3.3伏的电压。其中0伏代表摄像头视野内的最左端。在这个案例中，我们希望得分物处在视野的最中央。为此，我们创建一个定位进程来接管driver的旋转输入并计算目标与摄像头视野中央的偏移量。我们用偏移量来计算我们需要的旋转速度，直到数字信号告诉我们视野内没有更多目标了"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:52
+#: 3228bb6353fb415fa1b7f1512033accd
+msgid ""
+"We use the Pixy in a different manner in auton. We use it to determine our "
+"position relative to the target ball to allow for automatic adjustment in "
+"the case of minor set up variances."
+msgstr "我们在自动阶段中会以不同的方式使用Pixy。我们会用它来确定我们相对于目标球的位置，以便在有误差的情况下进行自动调整。"
+
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/gamepiece-centric.rst:63
+#: 4fcdbae896754c608d4b511597c2ece5
+msgid ""
+"In this case, we'll use the Pixy to center ourselves on the game piece if "
+"we're more than 3 degrees off from it in either direction."
+msgstr "在这个案例中，我们用Pixy来让我们的机器面向得分物。如果它偏离了目标3度以上，那么它就会进行自动校正。"
