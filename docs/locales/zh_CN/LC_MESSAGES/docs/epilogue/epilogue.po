@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 05:02+0000\n"
+"POT-Creation-Date: 2022-10-16 20:10+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -21,6 +21,10 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../source/docs/epilogue/epilogue.rst:2 09f8d230e618491ca51eb5406874912e
+#: ../source/docs/epilogue/epilogue.rst:2 986ad3c73e2b4b919f63faa35959b642
 msgid "Epilogue"
 msgstr "结语"
+
+#: ../source/docs/epilogue/epilogue.rst:4 fd5a1206bd184ac98ebe418019d4468c
+msgid "End? Maybe, l am not sure. 😂"
+msgstr "结束了？也许吧，我不确定。😂"
