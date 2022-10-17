@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# zhang jiaming, 2022
 # Daniel Webber, 2022
+# zhang jiaming, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-06 06:50+0000\n"
+"POT-Creation-Date: 2022-10-17 05:22+0000\n"
 "PO-Revision-Date: 2022-07-04 16:26+0000\n"
-"Last-Translator: Daniel Webber, 2022\n"
+"Last-Translator: zhang jiaming, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,12 +23,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:2
-#: e3e8165f5a8b42408f63e070a0c7f584
+#: 3ff5478cbf444a2d8c21e770c2c00619
 msgid "The Math Behind the Magic"
 msgstr "神奇的移动背后的数学原理"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:3
-#: f41c36740a19402e93097fbe05888b42
+#: 974bcf5cf96f4fbb999a2914d582debb
 msgid ""
 "One of the core differences when operating in autonomous mode is that the "
 "robot can't receive information about where it is from the driver, in the "
@@ -47,7 +47,7 @@ msgstr ""
 "，即死记硬背法。甚至，我们可能会需要采用基于时间的控制方法"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:10
-#: 71d1fe22e0dd4775b8b0dc4a295d9207
+#: fce8150e6c404ab1a385e38eea64121c
 msgid ""
 "In order to perform our odometry, we decided to use our wheel encoders "
 "combined with a gyroscope. By performing the reverse of what we do in "
@@ -64,12 +64,12 @@ msgstr ""
 "为了执行我们的odometry，我们决定将我们的车轮编码器与陀螺仪相结合。执行与我们在手动控制中所做的反向运动学计算，设定一个预定的输出姿态，并找出每个单独的这轮应该如何运动来实现该姿态。同时，一个姿态只是一组描述机器人在某一瞬间的位置或运动的独特特征。而通过获取每个瞬间各个车轮的速度和方向的信息，并使用我们在第2.1节中描述的运动学进行组合，我们可以得到机器人在两个方向上的整体速度，进而通过对时间积分（只需将此时的速度与控制器的时间步长相乘），得到我们的位置，这一个过程被称为“正向运动学”，即FK"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:20
-#: 14195915469241bc823332981cfb15b5
+#: bca1a92555c74f01945c03b067d66ac1
 msgid "Forward Kinematics (FK)"
 msgstr "正向运动学（FK）"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:55
-#: 124ad6114473441498819c17ae7bf1d8
+#: 8cffb192ec6f4c47ac0b05f7aa463b73
 msgid ""
 "B_{FL} = sin(wa_{FL}) * ws_{FL}\n"
 "\n"
@@ -78,7 +78,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:56
-#: 8932e32512e24d0d879a8aa331c3e512
+#: 225ae67229ee46a3951cef906ed38be0
 msgid ""
 "D_{FL} = cos(wa_{FL}) * ws_{FL}\n"
 "\n"
@@ -87,7 +87,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:57
-#: c90c9f54e5c34820aeb5d117eb42723c
+#: 7778b0a0826b4a628b46b730a4845d1d
 msgid ""
 "B_{FR} = sin(wa_{FR}) * ws_{FR}\n"
 "\n"
@@ -96,7 +96,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:58
-#: 75a6782645f5497dbe1406dad41c97a4
+#: fa9186c30d324b32bbb8c61993fd2c22
 msgid ""
 "C_{FR} = cos(wa_{FR}) * ws_{FR}\n"
 "\n"
@@ -105,7 +105,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:59
-#: 3e4fe5beff3d4ad7b16729df61c8ba4d
+#: 48f74ee11705477c8727d09a726337d4
 msgid ""
 "A_{RL} = sin(wa_{RL}) * ws_{RL}\n"
 "\n"
@@ -114,7 +114,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:60
-#: 2a155254c18f475a9c2560f5b6e384ab
+#: 6322c9e84e464ce6ba8a5cf2369abde2
 msgid ""
 "D_{RL} = cos(wa_{RL}) * ws_{RL}\n"
 "\n"
@@ -123,7 +123,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:61
-#: b59d9fa8b8e946aa8a1634c6eed83643
+#: 7196f2978b604173856416fa033b6760
 msgid ""
 "A_{RR} = sin(wa_{RR}) * ws_{RR}\n"
 "\n"
@@ -132,7 +132,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:62
-#: a8e4172f20074c66b2875379f6856495
+#: 018d518d9371419a9490457ebc53efe9
 msgid ""
 "C_{RR} = cos(wa_{RR}) * ws_{RR}\n"
 "\n"

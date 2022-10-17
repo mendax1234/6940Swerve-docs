@@ -5,15 +5,16 @@
 # 
 # Translators:
 # Daniel Webber, 2022
+# zhang jiaming, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-06 08:46+0000\n"
+"POT-Creation-Date: 2022-10-17 05:22+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
-"Last-Translator: Daniel Webber, 2022\n"
+"Last-Translator: zhang jiaming, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,6 +23,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/how-it-should-work.rst:2
-#: 173f24f3043e4c48b255598e08374244
+#: 1c7c3158b54147d486fd59e7319c33d7
 msgid "How It Should Work"
 msgstr "它应该如何工作"

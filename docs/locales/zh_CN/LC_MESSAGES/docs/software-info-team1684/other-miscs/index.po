@@ -5,15 +5,16 @@
 # 
 # Translators:
 # Daniel Webber, 2022
+# zhang jiaming, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-06 06:50+0000\n"
+"POT-Creation-Date: 2022-10-17 05:22+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
-"Last-Translator: Daniel Webber, 2022\n"
+"Last-Translator: zhang jiaming, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,6 +23,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/other-miscs/index.rst:2
-#: 141d6270d37343deacc91cccbf683dfa
+#: b121fb3a00de47cbb8c9b2328d427370
 msgid "Other Misc. Tips & Tricks"
 msgstr "其他杂项，技巧和窍门"
