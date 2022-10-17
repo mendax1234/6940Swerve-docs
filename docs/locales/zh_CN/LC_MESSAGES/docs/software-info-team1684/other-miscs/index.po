@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-17 05:22+0000\n"
+"POT-Creation-Date: 2022-10-17 09:58+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
 "Last-Translator: zhang jiaming, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -23,6 +23,358 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/other-miscs/index.rst:2
-#: b121fb3a00de47cbb8c9b2328d427370
+#: 2a38befa24cd4f8a8057972e99a74292
 msgid "Other Misc. Tips & Tricks"
 msgstr "其他杂项，技巧和窍门"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:5
+#: 24b56a1d5c374f3295325958cb2d8d7a
+msgid "“Zero” Azimuth Position & Pre-Match Module Testing"
+msgstr "\"零 \"方位角位置和赛前模块测试"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:7
+#: c5feea0799d64a41bd6934270c8cadc1
+msgid ""
+"In order to make sure that your robot is functioning properly, you have to "
+"check to make sure that things remain in alignment. That includes making "
+"sure that the wheel rotation encoders stay true. There are a couple of "
+"things that mechanically could go wrong and misalign the wheels, the encoder"
+" could come loose, the gear driving the encoder could become damaged and a "
+"number of other things. To prevent these things from affecting our gameplay,"
+" we created a way to check our azimuth."
+msgstr ""
+"为了确保你的机器人运行正常，你必须检查以确保所有的东西保持一致。这包括确保车轮旋转编码器保持数值正确。有几件东西在机械上可能出错，使车轮错位，编码器可能松动，驱动编码器的齿轮可能损坏，以及其他一些事情。为了防止这些事情影响我们的比赛，我们创造了一种方法来检查我们的方位角。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:14
+#: 64f0f1d7b7304a9e8b9c1e4d0b92bd3e
+msgid ""
+"We made a few attempts to make physical measurement tools to simplify "
+"checking if the wheels were properly aligned. After several complex "
+"procedures, we developed a simple way to confirm that the wheels are "
+"parallel to the frame. We tip the robot on the side and put a level on each "
+"wheel after we told the wheels to point to the front."
+msgstr ""
+"我们做了一些尝试，制作物理测量工具，以简化检查车轮是否正确对齐的工作。经过几个复杂的程序，我们开发了一个简单的方法来确认车轮是否与框架平行。我们将机器人倾斜在一边，在告诉车轮指向前方后，在每个车轮上放一个水平仪。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:19
+#: 77f5b2dd469e47fcaa1ed64c1b18f50d
+msgid ""
+"We added a button in Test Mode that would tell all the wheels to face zero "
+"degrees relative to the robot. We also added a button to slowly rotate the "
+"wheels. That procedure gives us several points of feedback. We can observe "
+"the speed at which the wheels rotate relative to each other. We can listen "
+"for sounds that indicate mechanical changes. We can watch for smooth motion."
+" It also allows us to move the wheels from the front-facing position then "
+"push the button to face front again."
+msgstr ""
+"我们在测试模式中添加了一个按钮，让所有的车轮相对于机器人朝向零度。我们还添加了一个按钮来缓慢地旋转车轮。这个程序给了我们几个反馈点。我们可以观察车轮相对旋转的速度。我们可以倾听表示机械变化的声音。我们可以观察运动是否平稳。它还允许我们将轮子从正面的位置移开，然后按下按钮，再次面向正面。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:25
+#: 1af7bddc5eb2489f85905d1160162349
+msgid ""
+"Another part of the prematch test is running the modules in Teleop Mode with"
+" the wheels off the floor. That allows us to check for any mechanical "
+"changes to the drive motor functionality in addition to the spin function."
+msgstr "赛前测试的另一个部分是在手动下运行模块并把车子抬离地面。这使我们能够检查除了旋转功能之外，驱动马达功能的任何机械变化。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:30
+#: e275e21a052645c4a74a71913c54e5bc
+msgid "Protect Your Reset Buttons!"
+msgstr "保护好你的重置按钮！"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:32
+#: cca2f8c474454f0eb061206bb84b6e2b
+msgid ""
+"Reset Buttons: a necessary evil. They should only be pressed when you want "
+"them to be pressed, right?! Well, it's not something people think about as "
+"often as they should. Trust us, we fell into this trap too."
+msgstr ""
+"重置按钮：一种必要的邪恶。它们应该只在你希望它们被按下的时候被按下，对吗？嗯，这不是人们应该经常考虑的问题。相信我们，我们也掉进了这个陷阱。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:36
+#: 2f89ad619c5a49f4a1adc897fc494f14
+msgid ""
+"When we got our 2020 robot on the ground, our driver found a cool trick that"
+" made his forward direction become his backward direction. Our electronics "
+"panel is on the bottom of this robot in a very, very, very compact space. "
+"Our two gyros have somewhat open reset buttons that can easily be touched by"
+" anything. When our driver went over the shield generator, the reset button "
+"would be pressed and field centric is out the window. Every time it reset, "
+"he gave the programming team a nice little grin and said “front isn't front "
+"anymore.” We couldn't understand why the gyros were not working and would "
+"power cycle and reset. Finally we turned the robot upside down and found "
+"that a cable was leaning directly on the reset button of our NavBoard."
+msgstr ""
+"当我们的2020机器人落地后，我们的司机发现了一个很酷的技巧，使他的前进方向变成了他的后退方向。我们的电子面板在这个机器人的底部，在一个非常、非常、非常紧凑的空间。我们的两个陀螺仪的复位按钮有些开放，很容易被任何东西触及。当我们的司机走过护盾发生器时，复位按钮会被按下，以场为中心就出了问题。每次复位时，他都会给编程组一个漂亮的小笑脸，说"
+" \"前面不再是前面了\"。我们无法理解为什么陀螺仪不工作，会出现电源循环和复位。最后我们把机器人倒过来，发现一根电缆直接靠在导航板的复位按钮上。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:46
+#: f694f9258d854083b79527b2b75544b2
+msgid "Document Your CANbus Network Topology"
+msgstr "记录你的CAN线连接结构"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:48
+#: 2c086e4ccc6a45d8a50492247bdd4a16
+msgid ""
+"Despite the CANbus allowing devices to be connected in almost any order, it "
+"is still very important to know the network layout. Save yourself a lot of "
+"pain and suffering debugging your electronics! Here are some tips we have to"
+" do this effectively:"
+msgstr ""
+"尽管CAN总线允许设备以几乎任何顺序连接，但了解网络布局仍然非常重要。为自己省去了调试电子器件时的许多痛苦和折磨! "
+"下面是我们的一些提示，可以有效地做到这一点。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:52
+#: 918c1617506944729293db4dc56ca9bc
+msgid "Note the type, ID, and name for each device."
+msgstr "注意每个设备的类型、ID和名称。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:53
+#: 95ff238fe04c4c24b807fb572118902b
+msgid ""
+"Trace the connections starting from the RoboRio to the PDP (or whatever the "
+"“end” of your CANbus is)."
+msgstr "追踪从RoboRio到PDP（或任何你的CAN总线的 \"末端\"）的连接。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:54
+#: 4ab76b5d67d741bea8bb0c6a1d8715ea
+msgid ""
+"Record how each device is connected in the network in the same order you are"
+" tracing them."
+msgstr "记录每个设备在电路中的连接方式，与你追踪它们的顺序相同。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:56
+#: a0df80c9d1cd4fbdb51dd48ad708d3bf
+msgid "Below is a simple example:"
+msgstr "下面是一个示例"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst-1
+#: 9cadb095ac4d4442b4905b234b331daf
+msgid "miscs-1"
+msgstr "杂项-1"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst-1
+#: 67c3fbdedd094fe791ff612d332162a4
+msgid "miscs-2"
+msgstr "杂项-2"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:64
+#: bc34c2b0b0b14e2b904c2b2cbd115557
+msgid ""
+"By methodically writing down this information, it will be infinitely easier "
+"and faster to: a. Program these electronics on the robot. b. Diagnose "
+"problematic devices & replace them. c. Fix broken wires & connections. "
+"Please, do this simple thing. We didn't until we were forced to. That was a "
+"huge mistake . The day before our first competition in 2020, one of our "
+"motor controllers died. We spent at least 10 hours chasing the problem. We "
+"didn't start down the right path until we knew exactly what the CAN network "
+"looked like. Seriously, this helps make debugging significantly faster! "
+"Don't let your entire electronics board falling out of your robot stop you "
+"from making it to your next match. We didn't; at least, not in 2020."
+msgstr ""
+"通过有条不紊地写下这些信息，在以下方面将变得无限简单和快速：a.为机器人上的这些电子装置编程；b.诊断有问题的装置并更换；c.修复断裂的电线和连接。请做这件简单的事情。我们没有这样做，直到我们被迫这样做。那是一个巨大的错误。在2020年我们第一次比赛的前一天，我们的一个电机控制器挂掉了。我们花了至少10个小时来解决这个问题。在我们确切地知道CAN网络是什么样子的时候，我们才开始走正确的道路。认真地说，这有助于使调试工作大大加快!"
+" 不要让你的整个电子板从你的机器人中掉出来阻止你参加下一场比赛。我们没有；至少，在2020年没有。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:76
+#: 4be87f4c2fd74ca3859780453740ae46
+msgid "Know Your Electronics"
+msgstr "了解你的电子元件"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:78
+#: 35c55a6762904ac38e56c778c23f5e9b
+msgid ""
+"Options, options, options… Electronics are all the bits and pieces of "
+"hardware that we interface with through programming. We are always searching"
+" for that one sensor that will be even better than the previous one. Maybe "
+"you found a new thingy that does the “ooh yeah” (aka what you really need)! "
+"Now you have to reliably control it. Typically, we end up using less than 10"
+" percent of the functions available of some of our electronics. That could "
+"be a motor controller, a gyro, a lidar, a proximity sensor, or a vision "
+"processor. You have to determine the capabilities and limitations of the "
+"electronics. It starts with the mandatory electronics: the Roborio , the PDP"
+" , and the VRM . In addition to the minimal operations, they all have "
+"programming in them that may be helpful. The error messages that they output"
+" could help you reduce any lag time. The diagnostic capabilities may allow "
+"you to prevent brownouts."
+msgstr ""
+"设置、设置、设置......电子器件是我们通过编程与之对接的一大堆零零碎碎的东西。我们总是在寻找那个将比以前更好的传感器。也许你找到了一个新的东西，它能做到"
+" "
+"\"哦耶\"（也就是你真正需要的东西）！但现在你必须可靠地控制它。现在你必须可靠地控制它。通常情况下，我们最终只使用了不到10%的一些电子产品的可用功能。这可能是一个电机控制器，一个陀螺仪，一个激光雷达，一个接近传感器，或一个视觉处理器。你必须确定电子产品的能力和限制。它从强制性的电子装置开始：Roborio"
+" ，PDP ，和VRM。除了最基本的操作外，它们都有可能有帮助的编程。它们所输出的错误信息可以帮助你减少任何滞后时间。诊断能力可能让你防止断电。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:89
+#: 939739367fc34acfbf7465cc0b03aca4
+msgid ""
+"You should also have a variety of sensors on the robot. During the 2019 "
+"build season, we discovered that a reflective line sensor could be also used"
+" to detect hatches. The sensor would reflect the proper amount of light to "
+"signal the edge was within 24 inches. With that sensor at the correct angle,"
+" we could tell if we were in possession of a hatch. Feel free to explore "
+"alternate uses. We have used a variety of digital sensors to indicate the "
+"location of different things over the years. We also use analog sensors to "
+"give us useful feedback. Lidar and vision processing can give us distance. "
+"An accelerometer and gyroscope can tell you if you have run into something. "
+"A pressure sensor can tell you how much air is in the pneumatics. An encoder"
+" can tell you a position or a speed. Knowing the capabilities of your "
+"electronics is the only way to maximize performance."
+msgstr ""
+"你还应该在机器人上配备各种传感器。在2019年的建造季节，我们发现一个反射线传感器也可以用来检测舱口。该传感器会反射适当的光量，以示边缘在24英寸以内。有了这个传感器的正确角度，我们就可以知道我们是否到达一个舱口。请自由探索其他用途。多年来，我们使用了各种数字传感器来指示不同事物的位置。我们也使用模拟传感器来给我们提供有用的反馈。激光雷达和视觉处理可以给我们提供距离。加速器和陀螺仪可以告诉你是否碰到了什么东西。一个压力传感器可以告诉你气动装置中的空气量是多少。编码器可以告诉你一个位置或一个速度。了解你的电子装置的能力是使性能最大化的唯一途径。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:99
+#: d5f6eb57d039426f8eebc08239b3e960
+msgid ""
+"Knowing the limitations of the electronics is a must for reliable "
+"programming performance . A simple example of this is knowing that most CTRE"
+" devices have clearable error codes. Sometimes the “sticky faults” will "
+"prevent the system from working at full speed because the expected data is "
+"not arriving quickly enough. Testing is often necessary to acquire the "
+"limitations of a sensor, encoder, or subprocessor. You will always need to "
+"know the point at which any feedback device is no longer reliable. It could "
+"be a speed, a distance, or an angle."
+msgstr ""
+"了解电子产品的局限性也是可靠的编程所必须的。这方面的一个简单例子是知道大多数CTRE设备有可清除的错误代码。有时 \"粘性故障 "
+"\"会阻止系统全速工作，因为预期的数据没有足够快地到达。为了获得一个传感器、编码器或子处理器的局限性，测试往往是必要的。你总是需要知道任何反馈设备在哪一点上不再可靠。它可能是一个速度，一个距离，或一个角度。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:107
+#: 11b35b31fc4a40d9b0ac010a59d3e67b
+msgid "Invest in Good Controllers… And You Should Interpolate"
+msgstr "投资于好的控制器——或者说手柄......"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:109
+#: 54408c6b501544c1a92dd54a2b6bb296
+msgid ""
+"Let's get real. Swerve feels AMAZING to drive. But, that's only if you have "
+"an AMAZING controller. “What do we mean by AMAZING,” you ask? It boils down "
+"to “non-sticky” joysticks. Minimal dead zones. Want to make the robot do "
+"“victory spins” whilst driving at 45°? Your joysticks need to have a full "
+"range of motion."
+msgstr ""
+"说真的，Swerve开起来真是太AMAZING辣！但当且仅当你有一个和swerve一样AMAZING的控制器\"我们所说的AMAZING是什么意思，\"你问？它可以归结为"
+" \"不粘连 \"的操纵杆。相当最小的死区。想让机器人在以45°行驶时做 \"胜利旋转 \"吗？你的操纵杆需要有一个完整的运动范围。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst-1
+#: 6c9ad4af2c1840ef9ca0399c5c72e8b4
+msgid "miscs-3"
+msgstr "杂项-3"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:117
+#: a920bbf6c5f64cedb2a39f757d1abf67
+msgid ""
+"This is an example of ideal radial dead zones. Realistically, no controllers"
+" are perfect. But, AMAZING controllers are very close. If you want to have "
+"even more natural feeling controls, then you should implement radial dead "
+"zone interpolation. Check out this website to learn more. "
+"`<http://blog.hypersect.com/interpreting-analog-sticks/>`_"
+msgstr ""
+"这是一个理想的死区的例子。事实上，没有控制器是完美的。但是，AMAZING的控制器是非常接近的。如果你想拥有更自然的控制感觉，那么你应该实现径向死区插值。请看这个网站来了解更多。"
+"  `<http://blog.hypersect.com/interpreting-analog-sticks/>`_"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:124
+#: 3966b7a0f3ff4f5bb31c43c57048d072
+msgid ""
+"If you want to test and/or configure your controller, you can do so right in"
+" Windows 10. Check out this walkthrough for more information: "
+"`<https://www.howtogeek.com/241421/how-to-calibrate-your-gaming-controller-"
+"in-windows-10/>`_"
+msgstr ""
+"如果你想测试和/或配置你的控制器，你可以在Windows "
+"10中这样做。请查看此链接以了解更多信息：`<https://www.howtogeek.com/241421/how-to-calibrate-"
+"your-gaming-controller-in-windows-10/>`_"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:129
+#: 50854731d96a432e8a92255f9db43ce3
+msgid ""
+"Makes sense right? To fully experience the epicness of swerve, you need to "
+"have quality inputs. Swerve simply can't be at its best if it's being driven"
+" with a poor controller."
+msgstr "有道理吧？为了充分体验swerve的史诗性，你需要有高质量的输入。如果用一个差劲的控制器来驾驶，swerve根本不可能达到它的最佳状态。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:133
+#: 602dbe3208a745baa70589681c782882
+msgid "Seriously, Implement Brownout Protection!"
+msgstr "严肃地说，实施断电保护!"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:135
+#: f47793b1ace8462592646b443eaa9e22
+msgid ""
+"Brownout protection is very important with swerve, not only in auton but "
+"throughout the entire match. If we were to brownout, we could lose both our "
+"gyros. Once the voltage comes into the range of 6.3 to 6.8 volts our "
+"NavBoard would lose power as the 6 volt rail of the RoboRio turns off. In "
+"the range 4.5 to 6.3 volts, all but the joystick communications to the "
+"RoboRio are lost. The PigeonIMU can be powered by a Talon, therefore is more"
+" tolerable to brownout voltage conditions. The PigeonIMU, when powered by a "
+"Talon, will not lose it's telemetry until the voltage drops below 4.5 volts,"
+" at which time RoboRio shuts down. If the RoboRio shuts down, there will be "
+"no CANbus communication until it reboots again."
+msgstr ""
+"断电保护对swerve非常重要，不仅是在自动驾驶中，而且在整个比赛中。如果我们发生断电，我们可能会失去两个陀螺仪。一旦电压进入6.3至6.8伏的范围，我们的陀螺仪将失去动力，因为RoboRio的6伏轨道关闭。在4.5到6.3伏的范围内，除了操纵杆与RoboRio的通信外，其他都会丢失。PigeonIMU可以由Talon供电，因此对断电的电压条件更容易容忍。当由Talon供电时，PigeonIMU不会失去遥测功能，直到电压下降到4.5伏以下，这时RoboRio就会关闭。如果RoboRio关闭，将没有CANbus通信，直到它再次重启。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst-1
+#: 1b91c52682994f4bbeeccc69c02eb040
+msgid "miscs-4"
+msgstr "杂项-4"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:147
+#: c1b8a0583b444f0a9e2e40bc5df6f773
+msgid ""
+"There are two ways to best minimize your chances of brownouts. The first way"
+" (that is multi-purpose) is ramprate. It prevents the motors from drawing "
+"maximum amperage immediately, by forcing a ‘ramp-up' of the motor controller"
+" output voltage, averting brownouts. The other purpose of ramprate is to "
+"keep from braking traction, by stopping the wheels from accelerating too "
+"rapidly. The second way to prevent brownouts is using current limiting. We "
+"used Falcon500 with the integrated Talon motor controller. Once we found the"
+" correct level to set the limiting at, it worked flawlessly. We used this "
+"method for most of our motors, from shooter to our climber to our drive "
+"train. On our shooter, current limiting worked extremely well because we "
+"could get it up to speed quickly without drawing too much amperage and "
+"browning out."
+msgstr ""
+"有两种方法可以最大限度地减少断电的机会。第一种方法（是多用途的）是ramprate。它通过迫使电机控制器输出电压 \"上升 "
+"\"来降低电机瞬时输出的电流，从而避免了断电。ramprate的另一个目的是，通过阻止车轮过快加速，防止制动牵引。防止断电的第二个方法是使用电流限制。我们使用Falcon500和集成的Talon电机控制器。一旦我们找到正确的水平来设置限制，它就能完美地工作。我们将这种方法用于我们的大部分电机，从shooter到我们的攀爬机到我们的驱动系统。在我们的shooter上，电流限制工作得非常好，因为我们可以让它迅速达到速度，而不需要消耗太多的电流并断电。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:158
+#: f86bab36d03a4401a61a9b8de705e652
+msgid "Handling Gyro Fault Conditions"
+msgstr "处理陀螺仪的故障情况"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:160
+#: 9c25985388634f91bffb6ecea5fc0ac1
+msgid ""
+"We have two gyros on our robot. In the event that one can't be used, we are "
+"still able to navigate. It's a backup. We average both yaw readings "
+"together. If either one of the gyros goes down, the system will use the "
+"reading from the other gyro. If both gyros go down, the system will switch "
+"to robot centric mode until at least one gyro is regained."
+msgstr ""
+"我们的机器人上有两个陀螺仪。在一个无法使用的情况下，我们仍然能够进行导航。这是个备份。我们将两个偏航读数平均在一起。如果其中一个陀螺仪发生故障，系统将使用另一个陀螺仪的读数。如果两个陀螺仪都坏了，系统将切换到以机器人为中心的模式，直到至少有一个陀螺仪被恢复。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst-1
+#: 077e7f3ef1ef4cc8af681322a357e340
+msgid "miscs-5"
+msgstr "杂项-5"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:168
+#: aad34da7df634a14b5ef025f16ae6026
+msgid ""
+"We did program in a gyro reset function to account for this possibility, but"
+" it has not and should not be needed in competition. This emergency gyro "
+"reset function is used to restore the robot's heading to 0 degrees for "
+"“field centric” operation. There is a reason why this shouldn't be relied on"
+" during a match. If both gyros fail, you more than likely have bigger "
+"problems on your hands. Gyros don't fail “randomly” all the time. There is "
+"always a cause behind it. Resetting the gyros is not going to fix electronic"
+" robot barf. Or perhaps a bug in the code. It is dangerous to rely on sensor"
+" reset functions instead of resolving the true issue. Please don't hear us "
+"wrong. Having emergency reset functions is important; however, they should "
+"only ever be used in a true emergency."
+msgstr ""
+"我们确实在程序中加入了陀螺仪复位功能，以考虑到这种可能性，但在比赛中还没有也不应该需要这种功能。这个紧急陀螺仪复位功能是用来将机器人的航向恢复到0度，以便进行"
+" \"以场地为中心 \"的操作。在比赛中不应该依赖这个功能是有原因的。如果两个陀螺仪都失灵，你很可能会遇到更大的问题。陀螺仪并不总是 \"随机 "
+"\"失效。它背后总是有一个原因。重置陀螺仪并不能解决电子机器人的问题。也可能是代码中的一个错误。依靠传感器复位功能而不是解决真正的问题是很危险的。请不要听我们说错。拥有紧急复位功能是很重要的；但是，它们应该只在真正的紧急情况下使用。"
+
+#: ../source/docs/software-info-team1684/other-miscs/index.rst:177
+#: 5c1975073d504c99bb3b21adab70c4ce
+msgid "**THE END… or is it…?** **(It might be... who knows...)**"
+msgstr "**THE END… or is it…?** **(It might be... who knows...)**"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-17 05:22+0000\n"
+"POT-Creation-Date: 2022-10-17 09:58+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
 "Last-Translator: zhang jiaming, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -23,6 +23,23 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/how-it-should-work.rst:2
-#: 1c7c3158b54147d486fd59e7319c33d7
+#: 0bf400fc1d7349d384406a09c719d34d
 msgid "How It Should Work"
 msgstr "它应该如何工作"
+
+#: ../source/docs/software-info-team1684/swerve-in-auton/how-it-should-work.rst:3
+#: 8ce0c107467645d490d144181c80e52a
+msgid ""
+"We want to tell the robot to go to a coordinate on the field and face a "
+"specific direction when it gets there. Sometimes we want the rotation to "
+"happen at different places along the route. Sometimes we want it to rotate "
+"first or last. Sometimes we even want the robot to travel around an "
+"obstacle. The robot should switch modes as desired along the overall route "
+"to achieve the game objectives. We used a case generator to give us each "
+"motion in the desired order and change states primarily by sensors. The end "
+"result should be a robot that travels at the maximum controllable speed "
+"while achieving the desired positions with maximum accuracy."
+msgstr ""
+"我们希望让机器人走到场地上的一个位置并面向一个特定的方向。有时，我们希望旋转在路径上的不同的地方发生。有时，我们又希望机器在一开始或者在最后就旋转。有时，我们甚至希望机器在障碍间穿梭。机器应当按照我们的需求在路径间切换其模式来获得得分物。我们用一个case"
+" "
+"generator来给我们提供每个动作的理想顺序，并主要通过传感器来改变状态。最终的结果应该是一个机器人以最大的可控速度行驶，同时以最大的精度到达所需的位置。"
