@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-17 10:27+0000\n"
+"POT-Creation-Date: 2022-10-17 11:04+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -22,12 +22,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/acknowledgements/acknowledgements.rst:2
-#: 5fd228c9af1340f5b58ad65132cd5372
+#: ba1094c456734ee3a8e65edf288d8a54
 msgid "Acknowledgements"
 msgstr "鸣谢"
 
 #: ../source/docs/acknowledgements/acknowledgements.rst:4
-#: 98b7d46aac53465a9090ce536c0897a3
+#: 72340b1737fb4a1d8687462fd6037c29
 msgid ""
 "First and foremost, I'd like to express my heartfelt gratitude to my "
 "parents, particularly my father, who have been tremendously supportive of my"
@@ -35,7 +35,7 @@ msgid ""
 msgstr "首先，我想对我的父母，特别是我的父亲表示衷心的感谢，他们对我的FRC生涯给予了极大的支持！"
 
 #: ../source/docs/acknowledgements/acknowledgements.rst:6
-#: 75c30459e48544778323a2805012d668
+#: 13bd0f37e4854a04b76035a9bf91af11
 msgid ""
 "Secondly, I'd like to express my gratitude to my team mentors, william "
 "Guowei and Jingyang Song, who have been extremely helpful to me over the "
@@ -43,18 +43,18 @@ msgid ""
 "impossible to list all of their names, but I want to thank them for their "
 "assistance to me and their significant contribution to our team."
 msgstr ""
-"其次，我想对我的团队的郭威老师和宋金阳老师表示感谢，他们在过去两年中对的我帮助很大。此外，我要感谢我的队友；我很难列出他们所有人的名字，但我要感谢他们对我的帮助和对我们团队的重大贡献。"
+"其次，我想对6940的两位导师，郭威老师和宋金阳老师表示感谢，他们在过去两年中对的我帮助很大。此外，我要感谢我的队友；我很难列出他们所有人的名字，但我要感谢他们对我的帮助和对我们团队的重大贡献。"
 
 #: ../source/docs/acknowledgements/acknowledgements.rst:8
-#: ded9629e2f1349ea8f24a208c9a1f45c
+#: 35dba3c696d74b31baca85e3a1000fb8
 msgid ""
 "In closing, I would like to express my sincere gratitude to everyone who has"
 " helped me on Chief Delphi. I appreciate your gracious professionalism and "
 "your encouraging words!"
-msgstr "最后，我想对在Chief Delphi上帮助过我的每个人表示衷心的感谢。感谢你们亲切的专业精神和富有鼓励性的话语！。"
+msgstr "最后，我想对在Chief Delphi上帮助过我的每个人表示衷心的感谢。感谢你们亲切的专业精神和富有鼓励性的话语！"
 
 #: ../source/docs/acknowledgements/acknowledgements.rst:10
-#: cf39e29daee3488c959bda4c31c55ae0
+#: 6460bcb9e0dc4b168fe9b668f46073dc
 msgid ""
 "Without them, I may not be able to complete the code testing of our amazing "
 "robot in Season 2022. My FRC career would not be as successful without them."

@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Daniel Webber, 2022
 # zhang jiaming, 2022
+# Daniel Webber, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-17 09:58+0000\n"
+"POT-Creation-Date: 2022-10-17 11:33+0000\n"
 "PO-Revision-Date: 2022-07-04 16:26+0000\n"
-"Last-Translator: zhang jiaming, 2022\n"
+"Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -23,12 +23,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:2
-#: 2ed1ef1123dd454781b9ce6d715d87c7
+#: 3932b30716764a719d529916947512b6
 msgid "The Math Behind the Magic"
 msgstr "神奇的移动背后的数学原理"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:3
-#: 16a66de6307543c2aca15d3392a9b650
+#: 503256f540b447819b4fb0b88575cab0
 msgid ""
 "One of the core differences when operating in autonomous mode is that the "
 "robot can't receive information about where it is from the driver, in the "
@@ -47,7 +47,7 @@ msgstr ""
 "，即死记硬背法。甚至，我们可能会需要采用基于时间的控制方法"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:10
-#: 559dda52f264433daed8cc3b81a7848c
+#: 53f9da0f5fe3452f99a5bbbba277cfa1
 msgid ""
 "In order to perform our odometry, we decided to use our wheel encoders "
 "combined with a gyroscope. By performing the reverse of what we do in "
@@ -64,12 +64,12 @@ msgstr ""
 "为了执行我们的odometry，我们决定将我们的车轮编码器与陀螺仪相结合。执行与我们在手动控制中所做的反向运动学计算，设定一个预定的输出姿态，并找出每个单独的这轮应该如何运动来实现该姿态。同时，一个姿态只是一组描述机器人在某一瞬间的位置或运动的独特特征。而通过获取每个瞬间各个车轮的速度和方向的信息，并使用我们在第2.1节中描述的运动学进行组合，我们可以得到机器人在两个方向上的整体速度，进而通过对时间积分（只需将此时的速度与控制器的时间步长相乘），得到我们的位置，这一个过程被称为“正向运动学”，即FK"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:20
-#: 4b1cc2ef3906427896ca31c2243deffd
+#: a19a5e17d9d049b2a5e13ad266ebca84
 msgid "Forward Kinematics (FK)"
 msgstr "正向运动学（FK）"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:21
-#: 24b89574d14349d088e2e91bb83a0708
+#: f38c514cbea94ff99ef5fc8d2b78aa29
 msgid ""
 "Of course, going from wheel encoders to overall velocity is not entirely "
 "straightforward. The problem comes when we look at our information and "
@@ -86,12 +86,12 @@ msgid ""
 " to the system."
 msgstr ""
 "当然，从车轮编码器到整体速度并不是完全直接的。当我们看到能获取的信息和我们期望的结果时，问题就来了：我们有八个变量，四个轮子的速度和四个方向，而我们想要三个输出：机器人的前进、侧向和旋转速度。如果你熟悉代数，特别是线性代数，你可能会认识到，这使得我们的系统被过度定义了——3个未知数，但是8个方程。我们有更多的信息，无法得到一个精确的结果。有几种方法来解决这个问题。通过"
-"  `设置精确的方程并将其放入计算机代数系统<https://www.chiefdelphi.com/t/paper-4-wheel-"
-"independent-drive-independent-steering-swerve/107383>`_，或者通过将方程以矩阵-"
+"  `设置精确的方程并将其放入计算机代数系统 <https://www.chiefdelphi.com/t/paper-4-wheel-"
+"independent-drive-independent-steering-swerve/107383>`_ ，或者通过将方程以矩阵-"
 "向量格式组合并使用线性方程求解器，我们可以获得系统的 \"最佳拟合\"。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:30
-#: 561d6c689380448d99c69cf5b438b147
+#: 4756f56bf61f456f9a456b231dc50aa2
 msgid ""
 "However, this sort of inexact fitting can be difficult to implement, often "
 "requiring inclusion of extra libraries. Due to the time sensitivity of the "
@@ -107,13 +107,13 @@ msgid ""
 "when combined with other sensors to “close the loop” on navigation."
 msgstr ""
 "然而，这种不精确的拟合可能很难实现，往往需要加入额外的库。由于本赛季的时间很紧，我们选择了一种简化的方法。由2841队的Kyle "
-"Lanman提供，我们改编了  `这种算法<https://www.chiefdelphi.com/t/calculating-odometry-of-"
-"a-swerve-"
-"drive/160043/6>`_，对变量直接取均值，直到我们从8个下降到我们需要的3个。虽然我们预计这不如更先进的方法准确，但我们发现它在校准后是非常准确的。只要轮速和加速度保持不会让机器打滑，这就是一种适合15秒自动时段的里程表测量方法，特别是当与其他传感器结合使用以"
+"Lanman提供，我们改编了  `这种算法 <https://www.chiefdelphi.com/t/calculating-odometry-"
+"of-a-swerve-drive/160043/6>`_ "
+"，对变量直接取均值，直到我们从8个下降到我们需要的3个。虽然我们预计这不如更先进的方法准确，但我们发现它在校准后是非常准确的。只要轮速和加速度保持不会让机器打滑，这就是一种适合15秒自动时段的里程表测量方法，特别是当与其他传感器结合使用以"
 " \"校正\"导航时。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:39
-#: b92aaad25b494121a250e2e15cbf8adb
+#: 7a4a77c7862c4ccfb91073d194760651
 msgid ""
 "In this formulation of forward kinematics, we start from a position where we"
 " assume we know our wheel speeds and wheel angles; call them with "
@@ -122,12 +122,12 @@ msgid ""
 "built in encoder, such as CTRE Falcon 500s or REV Neos, is advantageous for "
 "determining wheel speed."
 msgstr ""
-"在这种形式的正向运动学中，我们先假设，在某一时刻，我们与到我们的车轮速度与朝向——我们将其定义为：math:`ws_{FR}`, "
+"在这种形式的正向运动学中，我们先假设，在某一时刻，我们与到我们的车轮速度与朝向——我们将其定义为：:math:`ws_{FR}`, "
 ":math:`ws_{FL}`, :math:`wa_{RL}` ，以此类推，F/R与F/R分别表示左右、前后。通过电机内置的编码器——例如CTRE "
 "Falcon 500或者REV Neos内置的编码器，来决定轮速是极其麻烦的。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:44
-#: 8f4f078c38144164a3dbafe0d6a211da
+#: 2ba66a933f4a4d2fbcc3e9c13509c4ce
 msgid ""
 "We do need to make sure we've consistent, physically meaningful values for "
 "our wheel speeds. Whether we're using encoders built into the motor or ones "
@@ -140,7 +140,7 @@ msgstr ""
 "我们一定需要确保我们的车轮速度有一致的、有物理意义的数值。无论我们使用的是内置在电机中的编码器还是手动安装的编码器，它们都可能向我们提供的是以刻度和转数为单位的值，或一些刻度/秒或转数/秒的速度。我们需要将其与我们的传动系统减速和车轮直径结合起来，以获得一些转换率，从而能够获得我们的车轮速度，以每一时间的距离为单位，如英寸/秒、英尺/秒或米/秒。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:51
-#: 00217ab2b7a241948431ae28a15c3ac5
+#: 39996ffcea434593851e7c9dc6b8b262
 msgid ""
 "We can first calculate A, B, C, and D values from our wheelspeeds and "
 "angles, but this time, we're going to calculate them for each wheel. These "
@@ -150,7 +150,7 @@ msgstr ""
 "我们可以先用我们的轮速与角度计算ABCD四个数值，但这次，我们对每个轮子都要计算一次，单位是速度（每分钟的距离）因为我们只是将我们的轮子的转速（度每分钟）乘以一个角度分量——即每度对应的距离。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:55
-#: 49401ed2fbbd4e70ae2c99c68d7d16d6
+#: 7dec23c4b7ed48c59b1853dbb1de4b48
 msgid ""
 "B_{FL} = sin(wa_{FL}) * ws_{FL}\n"
 "\n"
@@ -159,7 +159,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:56
-#: c2f135d30b0043059655b7c1ffc49d40
+#: 4f7d94101e4a490f8854320155e467bf
 msgid ""
 "D_{FL} = cos(wa_{FL}) * ws_{FL}\n"
 "\n"
@@ -168,7 +168,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:57
-#: 1e9389e3f4534149becf515e5694a9ce
+#: 9c3cb5b4a8104c6ea4a4d87f24d14563
 msgid ""
 "B_{FR} = sin(wa_{FR}) * ws_{FR}\n"
 "\n"
@@ -177,7 +177,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:58
-#: 5309e695406d435c926df040fc5d5cd8
+#: c4461200c1b74c01beb42bcc959c0f73
 msgid ""
 "C_{FR} = cos(wa_{FR}) * ws_{FR}\n"
 "\n"
@@ -186,7 +186,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:59
-#: 68187e82f4ec42e69cebb1322b0829d2
+#: 2774cff06ac4403f9e67a01c2b06d09f
 msgid ""
 "A_{RL} = sin(wa_{RL}) * ws_{RL}\n"
 "\n"
@@ -195,7 +195,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:60
-#: 3d0fcbb0720e4c1a82216bfa4d7f6f12
+#: 4e2f25b024734e6eaf86f7bb9bbc615e
 msgid ""
 "D_{RL} = cos(wa_{RL}) * ws_{RL}\n"
 "\n"
@@ -204,7 +204,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:61
-#: fe733a201cdf470f9de90508571527f8
+#: 4e4492aa47d74c9bb20806fe46eb0318
 msgid ""
 "A_{RR} = sin(wa_{RR}) * ws_{RR}\n"
 "\n"
@@ -213,7 +213,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:62
-#: fb92396739ec44e893e3c1c26966d9f1
+#: c9ca0adf680a4ffa9b612c1747685520
 msgid ""
 "C_{RR} = cos(wa_{RR}) * ws_{RR}\n"
 "\n"
@@ -222,7 +222,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:64
-#: 54363fa2cbe348dbab8a220528806d55
+#: d6f87d9d531f44b985b379032e22a07a
 msgid ""
 "Well that wasn't much help with simplifying our variables! In order to make "
 "this more reasonable, we're going to do some averaging. For each value of A,"
@@ -234,7 +234,7 @@ msgstr ""
 "为了使之更合理，我们要开始取均值。对于A、B、C和D的每一个值，我们都要取两个值，然后取其平均值。这些平均值仍然以速度为单位，因为它们只是两个速度值的均值。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:69
-#: fc5af04f718f456b9de03a18d161a844
+#: f901e03a38ab451d82fefa3fb2603780
 msgid ""
 "A = (A_{RR} + A_{RL})/2\n"
 "\n"
@@ -243,7 +243,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:70
-#: ceb6712aef764e288f2a547da2e8f968
+#: 382d3a91d95442208446bc898b8d1f13
 msgid ""
 "B = (B_{FL} + A_{FR})/2\n"
 "\n"
@@ -252,7 +252,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:71
-#: 8b626a5ca5604760b0176a1b5428e4e2
+#: 47b2646e9f55438f93646e66554b688a
 msgid ""
 "C = (C_{FR} + C_{RR})/2\n"
 "\n"
@@ -261,7 +261,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:72
-#: c4d03206db6747ffaf322a6fddbee115
+#: 45341b33fbd5470eab4325529657a401
 msgid ""
 "D = (D_{FL} + D_{RL})/2\n"
 "\n"
@@ -270,7 +270,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:74
-#: 7286e928aff340388c21e1fe1bcb0e06
+#: 019b4c27fe33449caf45b2c58cd9f017
 msgid ""
 "Excellent, that's brought our complexity down some. Now we need to find our "
 "rotational velocity, or ROT. For this, we need physically accurate "
@@ -285,7 +285,7 @@ msgstr ""
 "很好，我们终于把我们的复杂度降下来了。现在我们需要找到我们的旋转速度，或ROT。然后，我们将根据机器前后（A/B）和左右（C/D）速度的值，计算出可能的旋转速度，并再次取平均值，得到一个单一的值。请注意，我们也可以从陀螺仪上得到这个ROT值（单位是弧度/秒），我们的机器人上应该已经有了这个陀螺仪，使得我们可以以场地为中心进行驱动。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:81
-#: 2fc60a64b20549e2bab23be59728bd20
+#: d6bc2c24485443b9bedfc6878bdffb3b
 msgid ""
 "ROT_{1} = (B − A)/L\n"
 "\n"
@@ -294,7 +294,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:82
-#: 487fb15745034a7a8390b6ed24fc3152
+#: 05d893115def4a7abde1b0266939ff65
 msgid ""
 "ROT_{2} = (C − D)/W\n"
 "\n"
@@ -303,7 +303,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:83
-#: 1f0f7ea9cb58476fabbb5c21413f65a6
+#: 9236c65e588e4e8c9b03922a2755c174
 msgid ""
 "ROT = (ROT_{1} + ROT_{2})/2\n"
 "\n"
@@ -312,7 +312,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:85
-#: 2c1e29b5a26f48a5ab630e5ffd5a1d1a
+#: cae2dbe82eb8426b83c55ad68240b996
 msgid ""
 "From here, we're simply going to incorporate this with our geometry and A, "
 "B, C, D values to obtain (again) two values each for forward and strafe "
@@ -322,7 +322,7 @@ msgstr ""
 "在此，我们将简单地将这与我们的几何学和A、B、C、D值结合起来，以（再次）获得前后和左右移动的的两个值，并取其平均值，以获得我们对向前和扫射速度的最终估计。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:89
-#: 6dad3425d1ba4663b607e1d6012fcf09
+#: 4dd38eb5cf3846ba959d7b2eb277a500
 msgid ""
 "FWD_{1} = ROT * (L/2) + A\n"
 "\n"
@@ -331,7 +331,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:90
-#: 20ef0f5178664c5298d7b7e88fbab104
+#: d13805b7c63f48b0bfef9295caa98643
 msgid ""
 "FWD_{2} = − ROT * (L/2) + B\n"
 "\n"
@@ -340,7 +340,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:91
-#: 1eb006d2ada9447ea28002ce93831bf1
+#: 6f3b50ee3b9b4c2aade2edd2bc944071
 msgid ""
 "FWD = (FWD_{1} + FWD_{2})/2\n"
 "\n"
@@ -349,7 +349,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:93
-#: 96fc5cc9dd77462eb3f45b2c8dfd0335
+#: ed44a192aad54fa4a3d9a0819fbb5123
 msgid ""
 "STR_{1} = ROT * (W/2) + C\n"
 "\n"
@@ -358,7 +358,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:94
-#: 0359063b45fd4ff5bf4865d30d1b0086
+#: 40c140413f554d3f8b04f1caa8ddf348
 msgid ""
 "STR_{2} = − ROT * (W/2) + D\n"
 "\n"
@@ -367,7 +367,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:95
-#: 5237b99454b345b2a71fdb4a9665924b
+#: 5825d95c9f374271b3b69821ac5d639c
 msgid ""
 "STR = (STR_{1} + STR_{2})/2\n"
 "\n"
@@ -376,7 +376,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:97
-#: c2f3d1f4919e46b6ab980316f27d0f3f
+#: 1a3008c72e494746acee2c9ebf6678e8
 msgid ""
 "Great! Now we've got something to work with. If we want our distance values "
 "to be usefu l, though, these velocities should be transformed so they're "
@@ -387,7 +387,7 @@ msgstr ""
 "现在终于又可以用的数据了。不过，如果我们希望我们的距离值真正可用，这些速度应该被转换为以场地为中心的。为了再把数据变换为我们可靠的以场地为中心的数据，我们将再次需要相对于场地的角度，通常由陀螺仪提供。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:101
-#: 2dedaebb51f144638883696187810f52
+#: df59821660534d4ca328f7306edc819e
 msgid ""
 "FWD_{new} = FWD * cos(θ) + STR * sin(θ)\n"
 "\n"
@@ -396,7 +396,7 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:102
-#: acf0765e59a5455db03b55f061d9c64b
+#: af0ae420073f4e2bae5ef7614e9ec840
 msgid ""
 "STR_{new} = STR * cos(θ) − FWD * sin(θ)\n"
 "\n"
@@ -405,12 +405,12 @@ msgstr ""
 "\n"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:105
-#: 06f5a382f6154e57b8bdd0712a4c1fa7
+#: c2f4527ee03b47f0b0c9880e6904d91c
 msgid "Odometry"
 msgstr "里程表"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:106
-#: b03726772e884bfb8d874c19fa5b029f
+#: c400507530d44cd8810aaa91bba16d0b
 msgid ""
 "From there, we can now figure out how fast we're actually going along the "
 "field - pretty nifty! To get to a position, we just need to integrate these "
@@ -426,7 +426,7 @@ msgstr ""
 "由此，我们现在可以算出我们实际上是以多快的速度沿着场地前进的——相当巧妙！我们可以把这些数据整合到一起。为了得到一个位置，我们只需要在时间上整合这些数据。这就像初始化一个定时器，并将其在当前循环运行时的值与上一次运行时的值相比较，以确定我们的循环的时间间隔也很简单。对于大多数机器人代码来说，这个值一般约为0.020秒，或20毫秒；然而，这只是一个名义上的数值，它可以根据机器人代码的行为而上下变化（主要是上升）。无论如何，我们总是可以把这个值和我们的速度整合到一个累加器中，以得到我们相对于开始记录时的位置。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:120
-#: a8b078e1694a41f0a7993ec6f524631c
+#: fc3c4bfd23074c888a4dcf5e89bd66f9
 msgid ""
 "We're calling our axis associated with strafing along and our axis "
 "associated with moving forward or back across. This turned out to facilitate"
@@ -434,7 +434,7 @@ msgid ""
 msgstr "顺带一提，我们用前后和左右来称呼我们的各个方向，这可比xyz轴易于沟通多了"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:124
-#: bffd61438b514fa7ad6f2bd7b3c8a415
+#: f7de08b804174c088bab772b1e3a6e63
 msgid ""
 "We now have our odometry. When using it in autonomous routines, we reset "
 "this value to zero at the start, and consider our coordinates relative to "
@@ -444,7 +444,7 @@ msgstr ""
 "我们现在有了我们的里程表。当在自动时段中使用它时，我们在开始时将这个值重置为零，并将我们程序内的坐标与机器人开始的位置相对应。这意味着机器人的初始位置拜访是非常重要的，因为任何误差都会通过里程表来体现。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:128
-#: 402189bf28e14a3ba6a001cad26ed35d
+#: dca8b467ab5541d883c76b494492ff31
 msgid ""
 "When you add the change every cycle, you always know where that wheel is. "
 "The same is done for the other 3 wheels. We use that information to find the"
@@ -459,7 +459,7 @@ msgstr ""
 "当你在每个周期添加变化时，你总是知道某个轮子的位置，对另外3个也是。我们用这些信息来定位机器人的中心。机器人的方向也可以用同样的方式来确定，但我们选择用我们的陀螺仪来做这个。我们只存储机器人中心的当前位置。我们将该位置发送到Dashboard，并在那里记录数据。我们能够据此绘制出机器人的位置图，并将其画在在场地地图上，使我们能够在不接触机器人的情况下对我们的自动进行改进。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:136
-#: ee0cbe3104ab49acbceb2c747dc22c24
+#: bd5c0b74983144319c625735bdef9678
 msgid ""
 "The next part of the puzzle is to tell the robot where to go next. We "
 "reverse the tracking process to instruct each wheel on where to go next. We "
@@ -477,12 +477,12 @@ msgstr ""
 "下一个问题是告诉机器人接下来要怎么走。我们把跟踪过程倒过来，告诉每个轮子下一步要去哪里。我们在子系统中输入所需的x、y坐标。每个轮子需要面对的角度被计算出来。除非机器人在移动时要旋转，否则所有车轮的角度都是一样的。如果机器人将在移动中改变航向，那么转弯修正量将被计入，并使得车轮面对不同的方向，并有不同的相对速度，直到实现旋转部分。我们使用一个定位循环来分配车轮的速度。我们只使用kP*误差。我们可以通过几个不同的标准来改变状态。我们可能会使用已实现的距离、intake传感器或瞄准反馈来告诉机器人，它已经完成了该任务。然后，机器人就会转到下一个任务。"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:147
-#: 72e3f14141854005a392a710e846fb40
+#: 7bc8476c196948cba28c7f21b9f861e9
 msgid "Calibration"
 msgstr "校准"
 
 #: ../source/docs/software-info-team1684/swerve-in-auton/the-math.rst:148
-#: 993d14c3213d4d89a0a803a552319659
+#: 66ec88f85479481794c3dd74894778e0
 msgid ""
 "If we used our nominal wheel diameters and gear ratios, these values should "
 "be pretty close to real-world values, but they probably won't be perfect. "
