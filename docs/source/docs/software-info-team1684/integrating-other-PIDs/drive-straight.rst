@@ -34,7 +34,7 @@ Then, you have a simple rotation PID which might look like this:
 
 .. code-block:: text
 
-    double calcY awStraight(double targetAngle, double curentAngle, double kP){
+    double calcYawStraight(double targetAngle, double curentAngle, double kP){
         double errorAngle = remainderf((targetAngle − currentAngle), 360);
         double correction = tx * kP;
         return correction;
@@ -45,10 +45,10 @@ You would call this function in Teleop like so:
 .. code-block:: text
 
     if(rot ! = 0){
-        storedY aw = yaw;
+        storedYaw = yaw;
     }else{
     if( abs(speed) > 0 || abs(strafe) > 0 ){
-        yawCorrection = calcY awStraight(storedY aw, yaw, 0.004);
+        yawCorrection = calcYawStraight(storedYaw, yaw, 0.004);
         }
     }
     move(fwd, rot + yawCorrection , str);
