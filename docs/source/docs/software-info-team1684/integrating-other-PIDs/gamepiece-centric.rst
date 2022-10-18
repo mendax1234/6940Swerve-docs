@@ -26,13 +26,13 @@ signal showed no more target.
 
 .. code-block:: text
 
-    double pixyV oltageRange = 3.3; //volts
+    double pixyVoltageRange = 3.3; //volts
         double pixyHFOV = 60; //degrees
         bool pixyFrontSeesBall(){
         return pixyFrontDigitalInput.Get();
     }
     double pixyFrontAngle(){
-        return (((pixyFrontAnalogInput.GetAverageV oltage())/pixyV oltageRange) − 0.5) * pixyHFOV ;
+        return (((pixyFrontAnalogInput.GetAverageVoltage())/pixyVoltageRange) − 0.5) * pixyHFOV;
     }
     double pixyFrontCorrection (){
         double pixyXkP = 0.004;
@@ -44,7 +44,7 @@ signal showed no more target.
         yawCorrection = pixyFrontCorrection();
         rot = 0;
     }else{
-        storedY aw = yaw;
+        storedYaw = yaw;
     }
 
     move(fwd, rot + yawCorrection , str);
