@@ -34,7 +34,7 @@ signal showed no more target.
     double pixyFrontAngle(){
         return (((pixyFrontAnalogInput.GetAverageVoltage())/pixyVoltageRange) − 0.5) * pixyHFOV;
     }
-    double pixyFrontCorrection (){
+    double pixyFrontCorrection(){
         double pixyXkP = 0.004;
         return pixyFrontAngle() * pixyXkP;
     }
@@ -54,7 +54,7 @@ target ball to allow for automatic adjustment in the case of minor set up varian
 
 .. code-block:: text
 
-    if(pixyFrontSeesBall() && (abs(pixyFrontAngle() + goalY aw) > 3.0)) {
+    if(pixyFrontSeesBall() && (abs(pixyFrontAngle() + goalYaw) > 3.0)) {
         move(0, yc, − copysignf(0.1, pixyFrontAngle()), true);
     }else{
         move(0, 0, 0, true);
