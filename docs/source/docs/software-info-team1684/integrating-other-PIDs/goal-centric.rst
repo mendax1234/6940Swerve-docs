@@ -157,13 +157,19 @@ How It's Done
 +++++++++++++++
 
 If you are using just tx to line up with the goal, here is what your code may look like:
-move(fwd, rot + limelightXPID(tx), str);
+
+.. code-block:: text
+
+    move(fwd, rot + limelightXPID(tx), str);
 
 Notice that the tx PID is added to rotate . We just want our robot to look at the target. So, all we have
 to do is turn toward the goal. We are only aiming using the Limelight , not moving.
 
 If you are using both tx and ty to line up with the goal, here is what your code may look like:
-move(fwd + limelightY PID(ty), rot + limelightXPID(tx), str);
+
+.. code-block:: text
+    
+    move(fwd + limelightY PID(ty), rot + limelightXPID(tx), str);
 
 In addition to tx , notice that the ty PID is added to forward . We want our robot to drive to a specific
 location relative to the target. So, we have to drive toward/away from the goal. We are moving to a
