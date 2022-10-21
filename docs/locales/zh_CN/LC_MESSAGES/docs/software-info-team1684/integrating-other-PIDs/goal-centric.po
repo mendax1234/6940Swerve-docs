@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 6940 Swerve\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-21 11:19+0000\n"
+"POT-Creation-Date: 2022-10-21 11:21+0000\n"
 "PO-Revision-Date: 2022-07-04 16:25+0000\n"
 "Last-Translator: Daniel Webber, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/frc-team-6940-1/teams/135321/zh_CN/)\n"
@@ -23,12 +23,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:2
-#: 12cc1e6341434cafb385e0f943839362
+#: 5827a2a1d2e84cfbaae14b9cd7408ab3
 msgid "Goal Centric (Starring the Limelight)"
 msgstr "瞄准得分框（使用limelight）"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:4
-#: e98b29283e254307818082e7ec30fe12
+#: dc618a9664fc49bf96a24de296850040
 msgid ""
 "In this section, we shall discuss integrating the `Limelight "
 "<https://docs.limelightvision.io/en/latest/getting_started.html>`_ with "
@@ -41,17 +41,17 @@ msgstr ""
 "整合到swerve底盘中。我们假设你已经具备了一些关于Limelight的基本知识。如果你使用了别的视觉解析软件，我们接下来讨论的概念也应该是类似的"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:9
-#: 39abc9c4837f4703b733467539c94805
+#: 72e9301091d14564964f6cec46c65956
 msgid "Vision Targeting"
 msgstr "视觉瞄准"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:12
-#: 8650f857846c46578df35b72f2d9a07e
+#: 59287ca3e5f4472bb450814ac2ae5479
 msgid "Essentials"
 msgstr "基本知识"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:14
-#: 89557d8438524ffa86c654bd95e0fa98
+#: 1cecbed2c3724b94a907d26ddb2bb669
 msgid ""
 "Almost all vision processing software should give you two very useful "
 "variables: tx & ty . Below is the description of these variables from the "
@@ -62,24 +62,24 @@ msgstr ""
 "<https://docs.limelightvision.io/en/latest/networktables_api.html>`_."
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst-1
-#: 741fe5a93df74cf6990f130fd0904292
+#: 3f04258d2dbf41e498280f8296f91cd2
 msgid "tx & ty1"
 msgstr "tx和ty 1"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:20
-#: 92492a08e6cb4cf3b370d23d69214548
+#: 072ee9ef0b8b436999154aabb8175a58
 msgid ""
 "In the simplest targeting implementations, all you need is `tx`. More "
 "complex targeting implementations will also utilize `ty`."
 msgstr "在最简单的瞄准过程中。你只需要用`tx` 。更复杂的目标瞄准则还会涉及ty"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst-1
-#: be98c14b7ad549819f38612c9ec68444
+#: e3e8aab2419d40d79ff79550989baf16
 msgid "tx & ty2"
 msgstr "tx 和 ty 2"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:26
-#: 1fc51aa347b64208af8e14a0009fd29b
+#: 91764ca7ee2a4bc189f63fdda3681bae
 msgid ""
 "In the left diagram, we show how the Limelight reports tx values. The black "
 "dotted line shows us the y-axis, where tx = 0. We can see that tx tells us "
@@ -90,7 +90,7 @@ msgstr ""
 "是如何返回tx值的。黑色虚线即为“y轴”。当目标落在这条线上时tx值为0。我们可以从图上看到tx告诉我们目标向左侧（此时tx取负数）或右侧（此时tx取正数）偏移了多少。"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:30
-#: 5be6d9f057b94a99bf6eedddd3d5f2a1
+#: f164a457bcd34e4dbdf4659ff5e30643
 msgid ""
 "In the right diagram, we show how the Limelight reports ty values. The black"
 " dotted line shows us the x-axis, where ty = 0. We can see that ty tells us "
@@ -101,12 +101,12 @@ msgstr ""
 "是如何返回tx值的。黑色虚线即为“x轴”。当目标落在这条线上时ty值为0。我们可以从图上看到ty告诉我们目标向上方（此时tx取正数）或下方（此时tx取负数）偏移了多少。"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:35
-#: 927672c13d894e8dacb463258eb0ed40
+#: fc69cb48cf4d47819fad51c5e0ef2e27
 msgid "Easy Mode"
 msgstr "简单模式"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:37
-#: 7382b3a64739457fb97a445778557ac3
+#: 507f9b9d63ca4ae7baa431bfe9fa9680
 msgid ""
 "The simplest vision targeting PID you can do only uses `tx` . Basically, you"
 " just want to turn towards the goal. This is done by applying a calculated "
@@ -117,14 +117,14 @@ msgstr ""
 "的值相反的修正值来达成这一功能。你的PID函数可能是这样的："
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:49
-#: f335543605f64e12885bcb7538c50fbc
+#: 76cd548439ee402d91f1c34b2d7f7833
 msgid ""
 "The kP should convert the error into a number you can use later in your "
 "method to move the drivetrain ( teleop or auton )."
 msgstr "kP常量应当将你与目标的偏移量（即error），变换为用于一个传入底盘使之移动的值"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:52
-#: 98cd0ccc28ae48f2809998dd5df0a365
+#: 694afd3674bf4383907463b18b14807b
 msgid ""
 "Unfortunately, this implementation isn't perfect. Oftentimes, the robot "
 "doesn't have enough power to correct when it is fairly close to the goal. "
@@ -132,12 +132,12 @@ msgid ""
 msgstr "很不幸的是，这个方法并不是最好的，很多时候当我们的机器贴近目标时，它没有足够的力去修正偏移量。我们所找到的最好的解决方案在下一个部分"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:56
-#: a8aab3fc92e14a20bf7327721c1fb8ad
+#: 49ba19b64d5e4bb9baab5b4aaa646540
 msgid "Advanced Mode"
 msgstr "进阶模式"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:58
-#: 2bc4beec90f747bba8c2e430981c7b4f
+#: fa28690b28814fda88aa85fb9384de20
 msgid ""
 "A more advanced version of the vision targeting PID implements a minimum "
 "correction and an error deadzone . Just like the previous one, tx is used "
@@ -148,12 +148,12 @@ msgstr ""
 "视觉瞄准PID的进阶模式是添加一个最小的输出值和死区。tx的使用方法和上一个方法是一样的。但是，最小输出值允许机器缓慢移动到目标角度而死区则允许机器人在机器已经足够近的时候停止旋转。你的PID函数可能是像这样的："
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:76
-#: db5a8c6472c248869159d0eea028913c
+#: 64100145587b463d8de9d3e4e929a3f4
 msgid "Hard Mode"
 msgstr "困难模式"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:78
-#: a7033c27335e4e5cb9ee22ebcbe8aaa1
+#: 854a81d341cd485589519801cdd73ff8
 msgid ""
 "A harder version of the vision targeting PID adds an integra l into the mix."
 " Just like the previous approaches,9 tx is used the same way. However, the "
@@ -165,7 +165,7 @@ msgstr ""
 "PID的困难模式将Integra，即积分，纳入考虑。9tx仍然像之前一样使用，但是，积分值在最后帮助机器人移动到正确的方向。它取代上一个部分的最小输出值。你的PID函数可能是这样的："
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:99
-#: 70bb7ced8e0e4c7183c108c818395953
+#: d24326cbf7484952841f3d6063f90378
 msgid ""
 "tuning the integral can be extremely difficult. From our own experience "
 "taking the advanced approach is much easier and has very similar results to "
@@ -173,12 +173,12 @@ msgid ""
 msgstr "调试积分会是非常困难的，从我们的经验而言，进阶模式的方法要远比这个方法简单，而且和这个方法有着非常相似的结果"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:102
-#: 3b4c37fc33544d6ab32be7061656a985
+#: 904cc995df044a68b012638eadf95b4a
 msgid "Expert Mode"
 msgstr "专家模式"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:104
-#: 3448928789104cfca45d1feb0258a409
+#: f5db3aa3599b475ca16915d8d0ed5d60
 msgid ""
 "A more complex version of the vision targeting PID utilizes both tx & ty . "
 "Just like the previous ones, tx is used the same way. However, now ty is "
@@ -189,7 +189,7 @@ msgstr ""
 "这一个更加复杂的视觉瞄准PID函数会将tx和ty都纳入考虑范围。我们仍然像之前一样使用tx，但是现在，我们用ty计算机器人到得分框的距离。取决于你赛季和你的机器人的样式，你可以有非常多不同的方法来使用ty。我们在此仅仅简短讨论其中一些最常见的方法。"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:109
-#: 5f282909113d40bfa81f54633aaae0c5
+#: a1b1a7fc211d49b2b9f985d399692eac
 msgid ""
 "Because ty gives us the vertical offset (in degrees) we are away from the "
 "target, we can use that to achieve a specific position. (For the purposes of"
@@ -200,7 +200,7 @@ msgstr ""
 "（为了简化，我们在这一样例中采用伪代码）你的PID瞄准函数可能是这个样子的："
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:134
-#: 124013037fc44abca0b391089691ad3c
+#: 3f5c0fff11bc4d548a75ff541398e187
 msgid ""
 "Together, these two PIDs enable your robot to turn towards and line up to "
 "the target, while driving to a desired distance away from the target. You "
@@ -210,7 +210,7 @@ msgstr ""
 "这两个PID组合起来使得你的机器人可以瞄准你的目标并且移动到离目标的指定距离。你可以通过给ty加偏移量（ty - 3)来改变这个指定的距离。"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:138
-#: cf2cca8124b242a6a3f3d739e6cb8c8b
+#: 01280a9575cd4b2db5156d192d8ec7f1
 msgid ""
 "Another use for ty is to use the “distance” to enhance your scoring "
 "mechanism. For example, you can change the speed of a shooter wheel based "
@@ -223,17 +223,17 @@ msgstr ""
 "另一个使用ty的好方法是使用测得的距离来增强你的得分能力。举例来说：你可以根据距离来改变shooter的转速或者hood的角度。你也可以根据竖直方向上的偏移量来改变抬升的高度。你甚至可以把得分功能禁用直到机器离得分框足够近。但正因为可能性是如此之多，我们就完全不展示任何的伪代码"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:145
-#: ae7202c5566b4e5d92c00da5b0179a83
+#: 21319056c48445a7b941b13668363b0a
 msgid "Goal-Centric"
 msgstr "以目标为参照系"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:148
-#: f6ea157701044e62be5bb665864e6015
+#: d9c0df0b76d443ccb67e83fdccca25a7
 msgid "Introduction"
 msgstr "引言"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:150
-#: 6597447406034654bc0b42c468b4ad8f
+#: 284e0f46acb247678d9ffffa5c3d8c32
 msgid ""
 "In goal centric, instead of the driver joysticks referencing the field (as "
 "in field-centric control), they reference a specific goal or target. In the "
@@ -248,19 +248,12 @@ msgstr ""
 "Station和Rocker为参照系，用来放置Hatch。更重要地，你可以瞄准任何场地要素来使得得分更加地迅速以及简易。如果被正确的部署，我们的机器会自然地瞄准目标并围绕它以一个弧线的形式移动。"
 
 #: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:157
-#: 234ca90e9b4349fc957231eaedf3fe6b
+#: 936c1a8b897742bda97e19c86fcd58c5
 msgid "How It's Done"
 msgstr "实现"
 
-#: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:159
-#: 85cc6508601c4ef7825b72cecde950d0
-msgid ""
-"If you are using just tx to line up with the goal, here is what your code "
-"may look like: move(fwd, rot + limelightXPID(tx), str);"
-msgstr "如果你只用tx来瞄准目标，那么你的代码可能是像这个样子的：move(fwd, rot + limelightXPID(tx), str);"
-
-#: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:162
-#: 9628b2d2e409406fa062f5a57a38a5f5
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:165
+#: 702e785b50e042e5bed881a4ef13e18d
 msgid ""
 "Notice that the tx PID is added to rotate . We just want our robot to look "
 "at the target. So, all we have to do is turn toward the goal. We are only "
@@ -268,18 +261,8 @@ msgid ""
 msgstr ""
 "要注意tx PID是用来控制机器人旋转的，我们只是希望我们的机器瞄准目标，所以，我们所作的只是转向目标，我们只用Limelight来瞄准，而不是用移动"
 
-#: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:165
-#: dc80c0d958d246e790c933295edf1760
-msgid ""
-"If you are using both tx and ty to line up with the goal, here is what your "
-"code may look like: move(fwd + limelightY PID(ty), rot + limelightXPID(tx), "
-"str);"
-msgstr ""
-"如果你同时使用tx和ty来瞄准你的目标，那么你的代码可能是像这个样子的：move(fwd + limelightY PID(ty), rot + "
-"limelightXPID(tx), str);"
-
-#: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:168
-#: cf5718a60df94e3d906f2ea258745917
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:174
+#: 04243f6d37624940b9497a104491a5c7
 msgid ""
 "In addition to tx , notice that the ty PID is added to forward . We want our"
 " robot to drive to a specific location relative to the target. So, we have "
@@ -287,8 +270,8 @@ msgid ""
 "looking at the target."
 msgstr "除了tx，要注意ty的PID是用来控制机器人前后移动的，我们希望我们的机器与目标之间维持一个特定的距离。所以我们会在面向目标时前后移动"
 
-#: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:172
-#: ccf9267da3584d4cb19698f4c0e8146a
+#: ../source/docs/software-info-team1684/integrating-other-PIDs/goal-centric.rst:178
+#: a8bf0356f3f34ce5aa6b1e813649ac02
 msgid ""
 "These functions must be called every cycle. The robot can't properly correct"
 " invalid positioning based on old data."
