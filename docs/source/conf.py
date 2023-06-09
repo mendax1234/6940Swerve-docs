@@ -3,7 +3,7 @@
 # -- Project information
 
 project = '6940 Swerve'
-copyright = '2022, Daniel Webber (mendax1234)'
+copyright = '2022-2023, Daniel Webber (mendax1234)'
 author = 'Daniel Webber (mendax1234)'
 
 # -- General configuration
