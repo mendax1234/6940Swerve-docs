@@ -91,6 +91,9 @@ Content
    :hidden:
 
    docs/software-info-team6940/index
+   docs/software-info-team6940/swerve/index
+   docs/software-info-team6940/sensors/index
+   docs/software-info-team6940/shoot-while-move/index
 
 .. toctree:: 
     :maxdepth: 2
