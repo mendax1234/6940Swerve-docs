@@ -1,4 +1,7 @@
 Software Info From Team 6940
 =============================
 
-In Season 2022, Team 6940 has achieved many breakthroughs in program. 
+总览
+----
+在这个部分，你会对6940在2022赛季使用的代码有全面和深入的了解，包括但不限于Swerve控制相关，各类传感器的使用，以及6940在2022赛季对移动射球算法的研究。了解这些有助于你更加深入的掌握FRC的编程技术。
+
