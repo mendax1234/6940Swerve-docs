@@ -1,0 +1,2 @@
+Shooting while moving algorithm
+=================================
